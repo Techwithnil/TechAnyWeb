@@ -1,0 +1,187 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</header>
+{% block title %}
+Website page
+{% endblock %}
+
+{% block body %}
+
+<body style="background-color:darkseagreen;">
+
+  <div class="container"> 
+
+    <img src="{% static 'blog/image/web/webban.png' %}" alt="Avatar" width="100%"><br><br><br><br>
+
+
+
+
+    <main class="container">
+      <div class="row">
+          <div class="col-md-3">
+            <section class="contact content-section " style="background-color:cadetblue; border-color: black;">
+              <img src="{% static 'blog/image/web/1.jpg' %}" alt="Avatar" width="100%"  class="rounded-circle" ><br><br>
+           <h3 class="text-white text-center">Front End HTML Website</h3><br><hr>
+           <h1 class="text-center"><b>500Rs</b></h1>
+           <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+           <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+           
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:mediumslateblue; border-color: black;">
+              <img src="{% static 'blog/image/web/2.jpg' %}" alt="Avatar" width="100%"  class="rounded-circle" >
+              <h3 class="text-white text-center">Front End Django Website</h3><br><hr>
+              <h1 class="text-center"><b>700Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:mediumseagreen; border-color: black;">
+              <img src="{% static 'blog/image/web/3.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" >
+              <h3 class="text-white text-center">Only Contact Form Back End Django Website</h3><hr>
+              <h1 class="text-center"><b>1000Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+          </div>
+        
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:olive; border-color: black;">
+              <img src="{% static 'blog/image/web/4.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br>
+              <h3 class="text-white text-center">Back End Django Website</h3><br><hr>
+              <h1 class="text-center"><b>1500Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>      
+          </div>
+        
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:peru; border-color: black;">
+              <img src="{% static 'blog/image/web/5.png' %}" alt="Avatar" width="100%" class="rounded-circle" ><br>
+              <h3 class="text-white text-center">Login Register Django Website</h3><hr>
+              <h1 class="text-center"><b>2500Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+          </div>
+       
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:slategrey; border-color: black;">
+              <img src="{% static 'blog/image/web/7.png' %}" alt="Avatar" width="100%" class="rounded-circle" >
+              <h3 class="text-white text-center">Youtuber Django Website</h3><hr>
+              <h1 class="text-center"><b>2700Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+             </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:violet; border-color: black;">
+              <img src="{% static 'blog/image/web/8.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br>
+              <h3 class="text-white text-center">College Django Website</h3><br><hr>
+              <h1 class="text-center"><b>2800Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:teal; border-color: black;">
+              <img src="{% static 'blog/image/web/9.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br><br>
+              <h3 class="text-white text-center">Classes Django Website</h3><br><hr>
+              <h1 class="text-center"><b>3000Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:lightslategrey; border-color: black;">
+              <img src="{% static 'blog/image/web/16.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" >
+              <h3 class="text-white text-center">Conctruction Django Website</h3><hr>
+              <h1 class="text-center"><b>3200Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>             
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:tomato; border-color: black;">
+              <img src="{% static 'blog/image/web/10.jfif' %}" alt="Avatar" width="100%" class="rounded-circle" ><br><br>
+              <h3 class="text-white text-center">Businessman Django Website</h3><hr>
+              <h1 class="text-center"><b>3500Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:yellowgreen; border-color: black;">
+              <img src="{% static 'blog/image/web/11.jfif' %}" alt="Avatar" width="100%" class="rounded-circle" >
+              <h3 class="text-white text-center">Hospital Django Website</h3><hr>
+              <h1 class="text-center"><b>3700Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:crimson; border-color: black;">
+              <img src="{% static 'blog/image/web/12.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br><br>
+              <h3 class="text-white text-center">Music Django Website</h3><br><hr>
+              <h1 class="text-center"><b>4000Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:blueviolet; border-color: black;">
+              <img src="{% static 'blog/image/web/13.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br><br>
+              <h3 class="text-white text-center">Blog Django Website</h3><br><hr>
+              <h1 class="text-center"><b>4200Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:brown; border-color: black;">
+              <img src="{% static 'blog/image/web/14.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br>
+              <h3 class="text-white text-center">Hacker Blog Django Website</h3><br><hr>
+              <h1 class="text-center"><b>4300Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn  btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:gold; border-color: black;">
+              <img src="{% static 'blog/image/web/15.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" ><br>
+              <h3 class="text-white text-center">E-Shoping Django Website</h3><br><hr>
+              <h1 class="text-center"><b>4700Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+          <div class="col-md-3">
+            <section class="contact content-section" style="background-color:seagreen; border-color: black;">
+              <img src="{% static 'blog/image/web/6.jpg' %}" alt="Avatar" width="100%" class="rounded-circle" >
+              <h3 class="text-white text-center">Unlimeted Back End Django Website</h3><hr>
+              <h1 class="text-center"><b>5000Rs</b></h1>
+              <a href="{% url 'paypage' %}" class="btn  btn-block"  style="background-color:cyan;" role="button" >Hire</a>
+              <a href="{% url 'contactpage' %}" class="btn btn-block"  style="background-color:orangered;" role="button" >Contact</a>
+            </section>
+                  
+          </div>
+
+      </div>
+  </main>
+  <br><br><br><br><br>
+    </div>
+</body>
+{% endblock %}

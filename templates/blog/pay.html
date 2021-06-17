@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</header>
+{% block title %}
+Website page
+{% endblock %}
+
+{% block body %}
+
+<body style="background-color:darksalmon;">
+
+  <div class="container"> 
+    <img src="{% static 'blog/image/online1.jpg' %}" alt="Avatar" width="100%"><br><br><br>
+
+    <main>
+    <div class="row">
+    <div class="col-md-8">
+      <img src="{% static 'blog/image/online.png' %}" alt="Avatar" width="80%"><br>
+      <section class="contact content-section" style="background-color:khaki;" >
+      <h4>NOTE:</h4>
+      <h5 class="text-success">1. Please First Payment in use QR code </h5><br>
+      <h5 class="text-danger">2. Second Payment Screan sort Send this Whatsaap no (7350942634)</h5>   
+    </div>
+    <div class="col-md-4">
+        <section class="contact content-section" style="background-color: black; border-color: black;" >
+            <h5 class="text-center text-white" style="background-color: black;"><b></b>PAYMENT HERE</b></h5><br><br>
+            <img src="{% static 'blog/image/qrt.png' %}" alt="Avatar" width="100%">
+          </section> 
+             
+    </div>
+    </div>
+    </main>
+  <br><br>
+    </div>
+</body>
+{% endblock %}

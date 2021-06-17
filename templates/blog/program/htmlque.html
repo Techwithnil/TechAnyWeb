@@ -1,0 +1,449 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body style="background-color:peru;">
+<div class="container" >    
+    
+    <h1 class="page-title text-center text-white bg-primary" >HTML Interview Questions</h1>
+
+    <h4>1) What is HTML?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>It stands for Hyper Text Markup Language. It is a language of World Wide Web. It is a standard text information language that is employed to form and show pages on the Web page.</p>
+    <hr/>
+    <h4>2) What are Tags?</h4>
+    <p><strong>Answer:</strong></p>
+    <p><em><strong> </strong></em>HTML tags are composed of only three things: opening tag, content and ending tag. Some tags are unclosed tags. HTML documents are made of two things; they are content, and tags</p>
+    <p>Content is placed between tags to shows data on the web browser.</p>
+    <hr/>
+    <h4>3) Do all HTML tags have end tag?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>No. There are few HTML tags that don&#8217;t need a closing tag. For example: &lt;img&gt; tag, &lt;hr&gt; tag.</p>
+    <hr/>
+    <h4>4) What are some common lists that are used when designing a page?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>There are several common lists which are used to design a page. You can opt any or a combination of the following list types:</p>
+    <ul>
+    <li>    Ordered list</li>
+    <li>    Unordered list</li>
+    <li>    Menu list</li>
+    <li>    Directory list</li>
+    <li>    Definition list</li>
+    </ul>
+    <hr/>
+    <h4>5) What is the difference between HTML elements and tags?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>HTML elements are to communicate the browser to render text. When the elements are covered both side with brackets &lt;&gt;, they form HTML tags. Most of the time, tags are available to try in pair and surround content.</p>
+    <hr/>
+    <h4>6) What is semantic HTML?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Semantic HTML is a coding style. It is the use of HTML markup to strengthen the semantics or meaning of the content. For example: In semantic HTML &lt;b&gt; &lt;/b&gt; tag is not used for bold statement as well as &lt;i&gt; &lt;/i&gt; tag is used for italic. Instead of these we use &lt;strong&gt;&lt;/strong&gt; and &lt;em&gt;&lt;/em&gt; tags.</p>
+    <hr/>
+    <h4>7) What is image map?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Image map facilitates you link to many different web pages or web sites using a single image. You’ll outline shapes in images that you want to make part of an image mapping.</p>
+    <hr/>
+    <h4>8) How to insert a copyright symbol on a browser page?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Can be done by giving &amp;copy; or &amp;#169; in an HTML file.</p>
+    <hr/>
+    <h4>9) How do you keep list elements straight in an HTML file?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>We can keep the list elements straight by using indents.</p>
+    <hr/>
+    <h4>10) Does a hyperlink only apply to text?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>No, you can use hyperlinks on text and images too.</p>
+    <hr/>
+    <h4>11) What is a style sheet?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>A style sheet is used to build a consistent, movable, and well designed style template. You can add these templates on several different web pages and can apply in different types.</p>
+    <hr/>
+    <h4>12) Can you create a multi colored text on a web page?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Yes. To create a multicolor text on a web page you can use &lt;font color =&#8221;color&#8221;&gt; &lt;/font&gt; for the specific texts you want to color.</p>
+    <hr/>
+    <h4>13) Is it possible to change the color of the bullet?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Yes, the color of the bullet is always the color of the first text of the list. So, if you wanna change the color of the bullet, you must change the color of the text.</p>
+    <hr/>
+    <h4>14) What is a marquee?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Marquee is used to get the scrolling text on a web page. You should put the text which you want to scroll within the <strong>&lt;marquee&gt;&#8230;&#8230;&lt;/marquee&gt; tag</strong>.</p>
+    <hr/>
+    <h4>15) How many tags can be used to separate section of texts?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>Three tags are there, to separate the texts. i.e.. usually <strong>&lt;br&gt;</strong> tag is used to separate line of texts. Other tags are <strong>&lt;p&gt;</strong> tag and<strong> &lt;blockquote&gt;</strong> tag.</p>
+    <hr/>
+    <h4>16) How to make a picture a background image of a web page?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>To make a picture a background image on a web page, you should put the following tag code after the &lt;/head&gt; tag.</p>
+    <p><strong>&lt;body background = &#8220;image1.gif&#8221;&gt; </strong></p>
+    <p>Here, replace the &#8220;<strong>image1.gif</strong>&#8221; with the name of your image file name which you want to display on your web page.</p>
+    <hr/>
+    <h4>17) What are empty elements?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>HTML elements with no content are referred to as  empty elements. For example: <strong>&lt;br&gt;, &lt;hr&gt;</strong> etc.</p>
+    <hr/>
+    <h4>18) What is the use of span tag? Give one example.</h4>
+    <p><strong>Answer:</strong></p>
+    <p>The span tag is used for following things like:</p>
+    <ul>
+    <li>    For adding color on text</li>
+    <li>    For adding background on text</li>
+    <li>    Highlight any color text etc.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <p>&lt;p&gt;</p>
+    <p>&lt;span style=&#8221;color:#ffffff;&#8221;&gt;</p>
+    <p>In this page we use span.</p>
+    <p>&lt;/span&gt;</p>
+    <p>&lt;/p&gt;</p>
+    <hr/>
+    <h4>19) What is the use of iframe tag?</h4>
+    <p><strong>Answer:</strong></p>
+    <p>An iframe is used to show a web page within a web page.</p>
+    <p><strong>Syntax:</strong></p>
+    <p>&lt;iframe src=&#8221;URL&#8221;&gt;&lt;/iframe&gt;</p>
+    <p><strong>Example:</strong></p>
+    <p>&lt;iframe src=&#8221;demo_iframe.html&#8221; width=&#8221;200px&#8221; height=&#8221;200px&#8221;&gt;&lt;/iframe&gt;</p>
+    <p>Target to a link:</p>
+    <p>&lt;iframe src=&#8221;http://www.nareshit.com&#8221; name=&#8221;iframe_a&#8221;&gt;&lt;/iframe&gt;</p>
+    <hr/>
+<h4>20) What is canvas in HTML5?</h4>
+<p><strong>Answer:</strong></p>
+<p>It is an HTML area which is used to draw graphics.</p>
+<hr/>
+<h4>21) What is SVG?</h4>
+<p><strong>Answer:</strong></p>
+<p>HTML SVG is used to explain the two dimensional vector and vector/raster graphics.</p>
+<hr/>
+<h4>22) What are the different new form element types in HTML 5?</h4>
+<p><strong>Answer:</strong></p>
+<p>Following is a list of 10 new important elements in HTML 5:</p>
+<ul>
+<li>Color</li>
+<li>Date</li>
+<li>Datetime-local</li>
+<li>Email</li>
+<li>Time</li>
+<li>Url</li>
+<li>Range</li>
+<li>Telephone</li>
+<li>Number</li>
+<li>Search</li>
+</ul>
+<hr/>
+<h4>23) Is there any need to change the web browsers to support HTML5?</h4>
+<p><strong>Answer:</strong></p>
+<p>No. Major browsers (updated versions) support HTML 5. For example: Chrome, Firefox, Opera, Safari, IE etc.</p>
+<hr/>
+<h4>24) Which video formats are supported by HTML5?</h4>
+<p><strong>Answer:</strong></p>
+<p>HTML 5 supports three types of video format:</p>
+<ul>
+<li>mp4</li>
+<li>webm</li>
+<li>ogg</li>
+</ul>
+<hr/>
+<h4>25) Is audio tag supported in HTML 5?</h4>
+<p><strong>Answer:</strong></p>
+<p>Yes. It’s used to add sound or music files on the web page.</p>
+<hr/>
+<h4>26) What is the difference between progress and meter tag?</h4>
+<p><strong>Answer:</strong></p>
+<p>The progress tag is used to represent the progress of the task only whereas the meter tag is used to measure data within a given range.</p>
+<hr/>
+<h4>27) What is the use of figure tag in HTML 5?</h4>
+<p><strong>Answer:</strong></p>
+<p>The figure tag is used to add a photo within the document on the web page.</p>
+<hr/>
+<h4>28) What is button tag?</h4>
+<p><strong>Answer:</strong></p>
+<p>The button tag is used in HTML 5. It is used to create a clickable button inside HTML form on the web page. It is usually accustomed produce a &#8220;submit&#8221; or &#8220;reset&#8221; button.</p>
+<hr/>
+<h4>29) What does details and summary tag?</h4>
+<p><strong>Answer:</strong></p>
+<p>The details tag is used to specify some extra details on the web page. It can be viewed or hidden on demand. The summary tag is used with details tag.</p>
+<hr/>
+<h4>30) What is datalist tag?</h4>
+<p><strong>Answer:</strong></p>
+<p>The HTML 5 datalist tag provides an auto complete feature on form element. It facilitates users to choose the predefined options.</p>
+<hr/>
+<h4>31) How tags are migrated from HTML4 to HTML5?</h4>
+<p><strong>Answer:</strong></p>
+<p>No.         Typical HTML4 Typical HTML5</p>
+<ul>
+<li> &lt;div id=&#8221;header&#8221;&gt;          &lt;header&gt;</li>
+<li>&lt;div id=&#8221;menu&#8221;&gt;             &lt;nav&gt;</li>
+<li>&lt;div id=&#8221;content&#8221;&gt;        &lt;section&gt;</li>
+<li>&lt;div id=&#8221;post&#8221;&gt;                &lt;article&gt;</li>
+<li>&lt;div id=&#8221;footer&#8221;&gt;            &lt;footer&gt;</li>
+</ul>
+<p style="text-align: center;"><strong>Header and Footer Example</strong></p>
+<p><strong>HTML 4 Header and Footer:</strong></p>
+<ol>
+<li>&lt;div id=&#8221;header&#8221;&gt;</li>
+<li>&lt;h1&gt;Monday Times&lt;/h1&gt;</li>
+<li>&lt;/div&gt;</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>&lt;div id=&#8221;footer&#8221;&gt;</li>
+<li>&lt;p&gt;&amp;copy; nareshit. All rights reserved.&lt;/p&gt;</li>
+<li>&lt;/div&gt;</li>
+</ol>
+<p><strong>HTML 5 Header and Footer:</strong></p>
+<ol>
+<li>&lt;header&gt;</li>
+<li>&lt;h1&gt;Monday Times&lt;/h1&gt;</li>
+<li>&lt;/header&gt;</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>&lt;footer&gt;</li>
+<li>&lt;p&gt;© nareshit. All rights reserved.&lt;/p&gt;</li>
+<li>&lt;/footer&gt;</li>
+</ol>
+<p style="text-align: center;"><strong>Menu Example</strong></p>
+<p><strong>HTML 4 Menu:</strong></p>
+<ol>
+<li>&lt;div id=&#8221;menu&#8221;&gt;</li>
+<li>&lt;ul&gt;</li>
+<li>&lt;li&gt;News&lt;/li&gt;</li>
+<li>&lt;li&gt;Sports&lt;/li&gt;</li>
+<li>&lt;li&gt;Weather&lt;/li&gt;</li>
+<li>&lt;/ul&gt;</li>
+<li>&lt;/div&gt;</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>HTML 5 Menu:</strong></p>
+<ol>
+<li>&lt;nav&gt;</li>
+<li>&lt;ul&gt;</li>
+<li>&lt;li&gt;News&lt;/li&gt;</li>
+<li>&lt;li&gt;Sports&lt;/li&gt;</li>
+<li>&lt;li&gt;Weather&lt;/li&gt;</li>
+<li>&lt;/ul&gt;</li>
+<li>&lt;/nav&gt;</li>
+</ol>
+<hr/>
+<h4>32) If I do not put &lt;!DOCTYPE html&gt; will HTML 5 work?</h4>
+<p><strong>Answer:</strong></p>
+<p>No, browser won’t be ready to identify that it’s a HTML document and HTML 5 tags will not function properly.</p>
+<hr/>
+<h4>33) What is the use of required attribute in HTML5?</h4>
+<p><strong>Answer:</strong></p>
+<p>It forces user to fill text on textarea or textfield before submitting form. It is used for form validation.</p>
+<p style="text-align: left;">Example:</p>
+<p>Name: &lt;input type=&#8221;text&#8221; name=&#8221;name&#8221; required&gt;</p>
+<hr/>
+<h4>34) What are the new &lt;input&gt; types for form validation in HTML5?</h4>
+<p><strong>Answer:</strong></p>
+<p>The new input types for form validation are email, url, number, tel and date.</p>
+<p>Example:</p>
+<p>&lt;input type=&#8221;email&#8221;&gt;</p>
+<hr/>
+<h3 class="text-white text-center bg-primary"><strong>CSS INTERVIEW QUESTIONS</strong></h3>
+<h3>1) What is CSS?</h3>
+<p><strong>Answer:</strong></p>
+<p>CSS stands for Cascading Style Sheet. It is a preferred styling language which is used with HTML to design websites.</p>
+<hr/>
+<h3>2) What is the origin of CSS?</h3>
+<p><strong>Answer:</strong></p>
+<p>SGML (Standard Generalized Markup Language) is that the origin of CSS.</p>
+<hr/>
+<h3>3) What are the different variations of CSS?</h3>
+<p><strong>Answer:</strong></p>
+<p>Following are the different variations of CSS:</p>
+<ul>
+<li>CSS1</li>
+<li>CSS2</li>
+<li>CSS2.1</li>
+<li>CSS3</li>
+<li>CSS4</li>
+</ul>
+<hr/>
+<h3>4) How can you integrate CSS on a web page?</h3>
+<p><strong>Answer:</strong></p>
+<p>There are three ways to integrate CSS on web pages.</p>
+<ul>
+<li>Inline method</li>
+<li>Embedded/Internal method</li>
+<li>Linked/Imported/External method</li>
+</ul>
+<hr/>
+<h3>5) What are the advantages of CSS?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>Bandwidth</li>
+<li>Page reformatting</li>
+<li>Site-wide consistency</li>
+<li>Accessibility</li>
+<li>Content separated from presentation</li>
+</ul>
+<hr/>
+<h3>6) What are the limitations of CSS?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>Ascending by selectors is not possible</li>
+<li>Limitations of vertical control</li>
+<li>Pseudo-class not controlled by dynamic behavior</li>
+<li>No expressions</li>
+<li>No column declaration</li>
+<li>Rules, styles, targeting specific text not possible</li>
+</ul>
+<hr/>
+<h3>7) What are the CSS frameworks?</h3>
+<p><strong>Answer:</strong></p>
+<p>CSS frameworks are the preplanned libraries which makes easy and more standard compliant web page styling.</p>
+<hr/>
+<h3>8) Why background and color are the separate properties if they should always be set together?</h3>
+<p><strong>Answer:</strong></p>
+<p>There are two reasons behind this:</p>
+<ul>
+<li>It enhances the legibility of style sheets. The background property is a complicated property in CSS and if it’s combined with color, the complexity will further increases.</li>
+<li>Color is an inherited property whereas background isn’t. So this can make confusion further.</li>
+</ul>
+<hr/>
+<h3>9) What is Embedded Style Sheet?</h3>
+<p><strong>Answer:</strong></p>
+<p>An Embedded style sheet could be a CSS style specification method used with HTML. You can embed the whole style sheet in an HTML document by using the STYLE element.</p>
+<hr/>
+<h3>10) What are the advantages of Embedded Style Sheets?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>You can create classes for use on multiple tag types within the document.</li>
+<li>You can use selector and grouping strategy to apply styles in complex situations.</li>
+<li>No additional download is needed to import the information.</li>
+</ul>
+<hr/>
+<h3>11) What is CSS selector?</h3>
+<p><strong>Answer:</strong></p>
+<p>It is a string that identifies the elements to which a particular declaration will apply some styles. It is additional referred as a link between the HTML document and the style sheet. It is equivalent of HTML elements.</p>
+<hr/>
+<h3>12) What is ruleset?</h3>
+<ul>
+<li>Ruleset is used to identify that selectors can be hookup with other selectors. It has two parts:</li>
+<li>Selector</li>
+<li>Declaration</li>
+</ul>
+<hr/>
+<h3>13) What is the difference between class selectors and id selectors?</h3>
+<p><strong>Answer:</strong></p>
+<p>An overall block is given to class selector, where id selectors take only a single element differing from other elements.</p>
+<hr/>
+<h3>14) What are the advantages of External Style Sheets?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>You can create classes for reusing it in several documents.</li>
+<li>By using it, you&#8217;ll be able to control the styles of multiple documents from one file.</li>
+<li>In complex situations, you&#8217;ll be able to use selectors and grouping methods to apply styles.</li>
+</ul>
+<hr/>
+<h3>15) What is the difference between inline, embedded and external style sheets?</h3>
+<p><strong>Answer:</strong></p>
+<p><strong>Inline:</strong> Inline Style Sheet is used only to style a small piece of code.</p>
+<p><strong>Embedded:</strong> Embedded style sheets are put between the &lt;head&gt;&#8230;&lt;/head&gt; tags.</p>
+<p><strong>External:</strong> This is often used to apply the style to all the pages within your webpage by changing just one style sheet.</p>
+<hr/>
+<h3>16) What is RWD?</h3>
+<p><strong>Answer:</strong></p>
+<p>RWD stands for Responsive Web Design. This technique is used to show the designed page perfectly on each and every screen size and device. For example: Mobile, Tablet, desktop, laptop etc. You don&#8217;t need to create a specific page for each device.</p>
+<hr/>
+<h3>17) What are the benefits of CSS sprites?</h3>
+<p><strong>Answer:</strong></p>
+<p>If a web page has large no. of pictures that takes a longer time to load because each image separately sends out an http request. The concept of CSS sprites is used to decrease the scale of loading time for a web page because it combines the various small images into one image. It decreases the number of http requests and hence the loading time.</p>
+<hr/>
+<h3>18) What is the difference between logical tags and physical tags?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>Physical tags are referred to as presentational mark-up whereas logical tags are useless for appearances.</li>
+<li>Physical tags are newer versions on the other hand logical tags are old and concentrate mainly on content.</li>
+</ul>
+<hr/>
+<h3>19) What is the CSS Box model and what are its elements?</h3>
+<p><strong>Answer:</strong></p>
+<p>The CSS box model is used to outline the planning and layout of elements of CSS.</p>
+<ul>
+<li>The elements are:</li>
+<li>Margin</li>
+<li>Border</li>
+<li>Padding</li>
+<li>Content</li>
+</ul>
+<hr/>
+<h3>20) What is the float property of CSS?</h3>
+<p><strong>Answer:</strong></p>
+<p>The CSS float property is used to move or adjust the image to the right or left along with the texts to be wrapped around it. It doesn&#8217;t modify the property of the elements used before it.</p>
+<hr/>
+<h3>21) How to restore the default property value using CSS?</h3>
+<p><strong>Answer:</strong></p>
+<p>In short, there’s no easy way to restore to default values to whatever a browser uses.</p>
+<p>The nearest possibility is to use the &#8216;initial&#8217; property value, which will able to restore the default CSS values, rather than the browser&#8217;s default styles.</p>
+<hr/>
+<h3>22) What is the purpose of the z-index and how is it used?</h3>
+<p><strong>Answer:</strong></p>
+<p>The z-index helps specify the stack order of positioned elements that may overlap each other. The z-index default value is zero, and can take on either a negative or positive number.</p>
+<ul>
+<li>An element with a higher z-index is always stacked on top than a lower index.</li>
+<li>Z-Index can take the following values:</li>
+<li>Auto: Sets the stack order is equal to its parents.</li>
+<li>Initial: Sets this property to its default value zero.</li>
+<li>Number: Orders the stack order.</li>
+<li>Inherit: Inherits this property from its parent element.</li>
+</ul>
+<hr/>
+<h3>23) Explain the difference between visibility: hidden and display: none?</h3>
+<p><strong>Answer:</strong></p>
+<p>visibility: hidden &#8211; simply hides the element however it’ll occupy space and affect the layout of the document.</p>
+<p>display: none &#8211; also hides the element however won’t occupy space. It will not have an effect on the layout of the document.</p>
+<hr/>
+<h3>24) What do you understand by W3C?</h3>
+<p><strong>Answer:</strong></p>
+<p>W3C stands for World Wide Web Consortium.</p>
+<hr/>
+<h3>25) What is tweening?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>It is the method of generating intermediate frames between two images.</li>
+<li>It provides the impression that the first image has smoothly evolved into the second one.</li>
+<li>It is a vital technique utilized in all sorts of animations.</li>
+<li>In CSS3, Transforms (matrix, rotate, scale, translate etc.) module can be used to achieve tweening.</li>
+</ul>
+<hr/>
+<h3>26) What is the difference between CSS2 and CSS3?</h3>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>The main distinguish mlbetween CSS2 and CSS3 is that CSS3 is divided into different sections which are also known as modules.</li>
+<li>Unlike CSS2, CSS3 modules are supported by almost all browsers.</li>
+</ul>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+{% endblock %}

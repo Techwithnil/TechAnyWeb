@@ -1,0 +1,29 @@
+
+
+{% extends 'blog/base.html' %}
+
+{% block title %}
+   Create Post
+{% endblock %}
+
+{% block body %}
+<section class="contact content-section " style="background-color:orangered;" >
+   <form method="POST">
+          {% csrf_token %}
+          <fieldset class="form-group">
+            <h2 class="border-bottom mb-6 text-white text-center" style="background-color: black;">Post Aricle</h2>
+              <table>
+                 {{ form.as_table }}
+              </table>
+          </fieldset>
+          <div class="">
+            <button type="submit" class="btn btn-success btn-block">Post</button>
+            <button type="reset" class="btn btn-dark btn-block"> Reset</button>
+            <a href="/blogpost/" class="btn btn-info btn-block" role="button" >Cancel</a>
+
+              
+
+          </div>
+      </form>
+</section>
+{% endblock %}

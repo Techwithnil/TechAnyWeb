@@ -1,0 +1,848 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body style="background-color:navajowhite;">
+<div class="container" >         
+
+
+
+
+            
+    <article class="post-medium post-4578 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-interview-questions">
+
+        <div class="row">
+                        <div class="col-lg-12">
+                    
+                    <div class="post-content">
+                                                <h2 class="entry-title text-white text-center" style="background-color: mediumblue;">JavaScript Interview Questions</h2><hr/>
+    <h3>1) What is JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>JavaScript is a scripting language. It is different from Java language. It is object-based, lightweight and cross platform. It is widely used for client side validation.</p>
+    <hr/>
+    <h3>2) What is the difference between JavaScript and jscript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Netscape provided the JavaScript language. Microsoft modified the name and called it JScript to avoid the trademark issue. In another words, you can say JScript is same as JavaScript, but it is provided by Microsoft.</p>
+    <hr/>
+    <h3>3) How to write a hello world example of JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>A basic example of JavaScript hello world is given below. You should place it inside the body tag of html.</p>
+    <p>&lt;script type=&#8221;text/javascript&#8221;&gt;</p>
+    <p>document.write(&#8220;JavaScript Hello World!&#8221;);</p>
+    <p>&lt;/script&gt;</p>
+    <hr/>
+    <h3>4) How to use external JavaScript file?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>I am assuming that js file name is samplefile.js, place the following script tag inside the head tag.</p>
+    <p>&lt;script type=&#8221;text/javascript&#8221; src=&#8221; samplefile.js&#8221;&gt;&lt;/script&gt;</p>
+    <hr/>
+    <h3>5) Is JavaScript case sensitive language?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Yes.</p>
+    <hr/>
+    <h3>6) What is BOM?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>BOM stands for Browser Object Model. It provides interaction with the browser. The default object of browser is window. Browser Object Model</p>
+    <hr/>
+    <h3>7) What is DOM? What is the use of document object?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>DOM stands for Document Object Model. A document object represents the html document. It can be accustomed to access and change the content of html of Document Object Model</p>
+    <hr/>
+    <h3>8) What is the use of window object?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The window object is automatically created by the browser that represents a window of a browser.</p>
+    <p>It is used to show the popup dialog box such as alert confirm dialog box, dialog box, input dialog box etc.</p>
+    <hr/>
+    <h3>9) What is the use of history object?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The history object of browser is accustomed switch to history pages like back and forward from current page or another page. There are three methods of history object.</p>
+    <p>history.back()</p>
+    <p>history.forward()</p>
+    <p>history.go(number): number may be positive for forward, negative for backward.</p>
+    <hr/>
+    <h3>10) How to write comment in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>There are two types of comments in JavaScript.</p>
+    <p>Single Line Comment: It is written as // (double forward slash)</p>
+    <p>Multi Line Comment: It is written as slash with asterisk symbol as /* write comment here */</p>
+    <hr/>
+    <h3>11) How to create function in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>To create function in JavaScript, syntax as follows.</p>
+    <p>function function_name(){</p>
+    <p>//function body</p>
+    <p>}</p>
+    <hr/>
+    <h3>12) What are the JavaScript data types?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>There are two types of data types in JavaScript:</p>
+    <ul>
+    <li>Primitive Data Types</li>
+    <li>Non-primitive Data Types</li>
+    </ul>
+    <hr/>
+    <h3>13) What is the difference between == and ===?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The == operator checks equality only whereas === checks equality and data type i.e. value must be of same type(strict in nature).</p>
+    <hr/>
+    <h3>14) How to write html code dynamically using JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The innerHTML property is employed to write the HTML code using JavaScript dynamically. Let&#8217;s see a sample example:</p>
+    <p>document.getElementById(&#8216;mylocation&#8217;).innerHTML=&#8221;&lt;h2&gt;This is heading using JavaScript&lt;/h2&gt;&#8221;;</p>
+    <hr/>
+    <h3>15) How to write normal text code using JavaScript dynamically?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The innerText property is empployed to write the simple text using JavaScript dynamically. Let&#8217;s see a simple Example:</p>
+    <p>document.getElementById(&#8216;mylocation&#8217;).innerText=&#8221;This is text using JavaScript&#8221;;</p>
+    <hr/>
+    <h3>16) How to create objects in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>There are three ways in which to form an object in JavaScript.</p>
+    <ul>
+    <li>    By object literal</li>
+    <li>    By creating instance of Object</li>
+    <li>    By Object Constructor</li>
+    </ul>
+    <p>Let&#8217;s see an easy code to create object using object literal.</p>
+    <p>emp={id:102,name:&#8221;Rahul Kumar&#8221;,salary:50000}</p>
+    <hr/>
+    <h3>17) How to create array in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>There are three ways in which to form an array in JavaScript.</p>
+    <ul>
+    <li>    By array literal</li>
+    <li>    By creating instance of Array</li>
+    <li>    By using an Array constructor</li>
+    </ul>
+    <p>Let&#8217;s see an easy code to create array using object literal.</p>
+    <p>var emp=[&#8220;Shyam&#8221;,&#8221;Vimal&#8221;,&#8221;Ratan&#8221;];</p>
+    <hr/>
+    <h3>18) What does the isNaN() function?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The isNan() function returns true if the variable or given value is not a number.</p>
+    <hr/>
+    <h3>19) What is the output of 10+20+&#8221;30&#8243; in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>3030 because 10+20 will be 30. If there is numeric value before and after +, it is treated is binary + and inside double codes it is treated as string value (arithmetic operator).</p>
+    <hr/>
+    <h3>20) What is the output of &#8220;10&#8221;+20+30 in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Output is 102030 because after a string all the + will be treated as string concatenation operator (not binary +).</p>
+    <hr/>
+    <h3>21) Difference between Client side JavaScript and Server side JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Client side JavaScript comprises the basic language and predefined objects that are relevant to running java script in a browser. The client side JavaScript is embedded directly by within the HTML pages. This script is understood by the browser at run time.</p>
+    <p>Server side JavaScript also resembles like client side javascript. It has relevant java script which is to be run in a server. The server sides JavaScript are deployed only after compilation.</p>
+    <hr/>
+    <h3>22) In which location cookies are stored on the hard disk?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The storage of cookies on the hard disk depends on OS and also the browser.</p>
+    <p>The Netscape navigator on Windows uses samplecookies.txt file that contains all the cookies. The path is : c:\Program Files\Netscape\Users\Username\samplecookies.txt</p>
+    <p>The Internet Explorer stores the cookies on a file <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f78299969a92b7809295849e8392d9838f83d9">[email&#160;protected]</a> The path is: c:\Windows\Cookies\<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="24514a45494164734146574d50410a505c500a">[email&#160;protected]</a></p>
+    <hr/>
+    <h3>23) What is the real name of JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Original name was Mocha, a name chosen by Marc Andreessen, founder of Netscape. In Sep 1995, the name was changed to LiveScript. In Dec 1995, after receiving a trademark license from Sun, the name JavaScript was adopted.</p>
+    <hr/>
+    <h3>24) What is the difference between undefined value and null value?</h3>
+    <p><strong>Answer:</strong></p>
+    <ul>
+    <li>Undefined value is the value that is not defined and has no keyword is known as undefined value. For Example:</li>
+    </ul>
+    <p>int number;//Here, number has undefined value.</p>
+    <ul>
+    <li>Null value is the value that is explicitly specified by the keyword &#8220;null&#8221; is known as null value. For Example:</li>
+    </ul>
+    <p>String str=null;//Here, str has a null value.</p>
+    <hr/>
+    <h3>24) How to set the cursor to wait in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Cursor can be set  in JavaScript by using &#8220;cursor&#8221; property. The following example illustrates the usage:</p>
+    <p>&lt;script&gt;</p>
+    <p>window.document.body.style.cursor = &#8220;wait&#8221;;</p>
+    <p>&lt;/script&gt;</p>
+    <hr/>
+    <h3>25) What is this?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>var myArray = [[[]]];</p>
+    <p>Three dimensional array.</p>
+    <hr/>
+    <h3>26) Are Java and JavaScript same?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>No, Java and JavaScript are the both are different languages. JavaScript is a client side scripting language with some limitations whereas Java is a robust, secured and object-oriented programming language.</p>
+    <hr/>
+    <h3>27) What is negative infinity?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by 0.</p>
+    <hr/>
+    <h3>28) What is difference between View state and Session state?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>&#8220;View state&#8221; is restricted to a page in a session whereas &#8220;Session state&#8221; is specific to a user or browser which will be accessed across all pages in the web application.</p>
+    <hr/>
+    <h3>29) What are the pop up boxes available in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <ul>
+    <li>    Alert Box</li>
+    <li>    Confirm Box</li>
+    <li>    Prompt Box</li>
+    </ul>
+    <hr/>
+    <h3>30) How can we detect OS of the client machine using JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>The navigator.appVersion string can be used to detect the operating system on the client machine.</p>
+    <hr/>
+    <h3>31) How to submit a form using JavaScript by clicking a link?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Let&#8217;s see the JavaScript code to submit form on clicking the link.</p>
+    <p>&lt;form name=&#8221;myform&#8221; action=&#8221;index.php&#8221;&gt;</p>
+    <p>Search: &lt;input type=&#8217;text&#8217; name=&#8217;query&#8217; /&gt;</p>
+    <p>&lt;a href=&#8221;javascript: submitform()&#8221;&gt;Search&lt;/a&gt;</p>
+    <p>&lt;/form&gt;</p>
+    <p>&lt;script type=&#8221;text/javascript&#8221;&gt;</p>
+    <p>function submitform()</p>
+    <p>{</p>
+    <p>document.myform.submit();</p>
+    <p>}</p>
+    <p>&lt;/script&gt;</p>
+    <hr/>
+    <h3>32) Is JavaScript faster than ASP script?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>Yes, as a result of it doesn&#8217;t require web server&#8217;s support for execution.</p>
+    <hr/>
+    <h3>33) How to change the background color of HTML document using JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>&lt;script type=&#8221;text/javascript&#8221;&gt;</p>
+    <p>document.body.bgColor=&#8221;pink&#8221;;</p>
+    <p>&lt;/script&gt;</p>
+    <hr/>
+    <h3>34) How to handle exceptions in JavaScript?</h3>
+    <p><strong>Answer:</strong></p>
+    <p>By the help of try/catch block, we are able to handle exceptions in JavaScript. JavaScript supports try, catch, finally and throw keywords for exception handling.</p>
+    <br><br><br><br><br>
+
+    <h2 class="entry-title text-white text-center" style="background-color: mediumblue;">AngularJS Interview Questions</h2><hr>
+<h3>1.What is root directive? Can we use angularjs with out ng –app?</h3>
+<p>The root directive in Angular JS  is ng-app. We  declare this directive in the root element of the main html document(index.html)</p>
+<ul>
+<li>ng-app is called root directive because the angular framework starts execution  of the application from  ng-app. And this  process is called <strong>Auto bootstrap</strong>`</li>
+<li>We can run the angular application without ng-app  through manual bootstrap</li>
+<li><strong>Manual bootstrap: </strong>Execution of the Angular application forcefully with out ng-app is called  Manual bootstrap&#8230;.</li>
+<li>Sample code to run the application by using manual bootstrap i.e without using ng-app</li>
+</ul>
+<p>&lt;html&gt;</p>
+<p>&lt;h1 style=”color:red”  ng-app=”app”  ng-bind=”var_one”&gt;&lt;/h1&gt;</p>
+<p>&lt;h2   id=”myh2” ng-bind=”var_two”&gt;&lt;/h2&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>Manualbootstrap.js</p>
+<p>angular.element(document).ready(function(response){</p>
+<p>angular.bootstrap(document.getElementById(“myh2”),[“app”]);</p>
+<p>});</p>
+<p>In the abovee code where there is ng-app scope that will be executed using auto bootstrap that is h1 element</p>
+<p>And the h2 element executes using manual bootstrap</p>
+<p><strong>Note:</strong>  We have to include (load) the manualbootstrap.js file in the index.html file</p>
+<p><strong>Note: </strong> We can use any number of <strong>ng-app</strong> in the application.. as the application is divided in to number of modules  so we can integrate every modules by creating one more new project each having a  ng-app  shown below</p>
+<p>Example:</p>
+<p><strong>In app.js file</strong></p>
+<p>Var app = angular.module(“app”,[])</p>
+<p>Here we can the add different  ng-apps of different modules</p>
+<hr/>
+<h3>2.What are the Features of AngularJS?</h3>
+<p>Angular js is a JavaScript framework to create Rich Internet Applications and the application written in Angular JS are cross browser compatible i.e., executes  on any major web browser.</p>
+<p><strong>The most important key features of the Angular JS are</strong></p>
+<ul>
+<li><strong>Data-Binding:</strong> It is automatic data synchronization between model and view..</li>
+<li><strong>Scope: </strong>These are objects that refer to the model. They act as a glue between controller and view.</li>
+<li><strong>Controller: </strong>A controller is a<strong>JavaScript </strong>file which contains attributes/properties and functions. Each controller has scope as a parameter which refers to the application/module that controller is to control.</li>
+<li><strong>Services</strong>− AngularJS has several built-in services for example $https which is used to make requests using some url and fetch the required data. These services create the objects only once and this object is shared to all the controllers. So they are called singleton objects which are instantiated only once in app.</li>
+<li><strong>Filters</strong>− AngularJS provides filters to transform data</li>
+</ul>
+<p><strong>Example:</strong> currency Format a number to a currency format. date Format a date to a specified format. <strong>Filter</strong> Select a subset of items from an array. Json Format an object to a JSON string&#8230;</p>
+<p>These select a subset of items from an array and return a new array</p>
+<ul>
+<li><strong>Directives</strong>− directives are markers on a DOM element (such as an attribute, element nameor CSS class) that tell AngularJS&#8217;s <strong>HTML compiler</strong>  to attach a specified behaviour to that DOM element</li>
+</ul>
+<p><strong>There are two types of directives they are</strong></p>
+<p><strong>Pre -defined directives:</strong>  These are built in directives provided by the  angular frame work ex: ng-model, ng-bind, ng-repeat etc</p>
+<p><strong>Custom directives:</strong> creating our own directives based on application requirement called as custom directives</p>
+<p>ex: my_directive&#8230;&#8230;&#8230;&#8230;&#8230;.. custom directive</p>
+<p>&lt;my_directive&gt;&lt;/my_directive&gt;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.elementt level usage</p>
+<p>&lt;div my_directive&gt;&lt;/div&gt; &#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;attribute level usage</p>
+<ul>
+<li><strong>Templates</strong>− These are the rendered view with information from the controller and model. These can be a single file (like index.html) or multiple views in one page using &#8220;partials&#8221;</li>
+<li><strong>Routing</strong>− It is concept of switching views.   This concept is in question no :4</li>
+<li><strong>Deep Linking</strong>− Deep linking allows you to encode the state of application in the URL so that it can be bookmarked. The application can then be restored from the URL to the same state.</li>
+<li><strong>Dependency Injection</strong>− AngularJS has a built-in dependency injection subsystem that helps the developer by making the application easier to develop, understand, and test.</li>
+</ul>
+<hr/>
+<h3>3.Dependencies for routing</h3>
+<p>Loading the Target Templates to the Source Templates without refreshing is called as Routing in Single Page Application</p>
+<p>In AngularJs Routing can be done in two ways<strong>:</strong></p>
+<ul>
+<li><strong>ngRoute Module</strong></li>
+<li><strong>Router Module</strong></li>
+<li><strong>ngRoute Module: </strong>The ngRoute Module routes  your application to different pages without reloading the entire application.</li>
+<li><strong>Router Module:</strong> The<strong>UI</strong>&#8211;<strong>Router</strong> is a <strong>routing</strong> framework for <strong>AngularJS </strong>built by the AngularUI team. It provides a different approach than ngRoute in that it changes your application views based on state of the application and not just the route URL ( i.e.  ngroute just route the url and ui router changes the view based on state of application)</li>
+</ul>
+<ul>
+<li><strong>Development of Single Page Application By Using ngRoute Module.</strong></li>
+<li>ngRoute is the Predefined Module in AngularJS</li>
+<li>ngRoute is the Native Module in AngularJS</li>
+</ul>
+<p><strong>TO Download the ngRoute module by using bower.</strong></p>
+<p><strong>bower.json-</strong></p>
+<p>dependencies:{</p>
+<p>&#8220;angular&#8221;:&#8221;~1.5.0&#8243;,</p>
+<p>&#8220;angular-route&#8221;:&#8221;~1.5.0&#8243;</p>
+<p>}</p>
+<p><strong>TO Download the ui-router module by using bower</strong></p>
+<p><strong>bower.json &#8211;</strong></p>
+<p>dependencies:{</p>
+<p>&#8220;angular&#8221;:&#8221;~1.6.0&#8243;,</p>
+<p>&#8220;angular-ui-router&#8221;:&#8221;~0.2.18&#8243;</p>
+<p>}</p>
+<hr/>
+<h3>4.What are the Differences Between ngRoute and ui.router module?</h3>
+<ul>
+<li>ngRoute module is &#8220;native module&#8221; in angularJS</li>
+<li><strong>var app = angular.module(&#8220;app&#8221;,[&#8220;ngRoute&#8221;]);</strong></li>
+<li>router module is the 3rd party module.</li>
+<li><strong>var app=angular.module(&#8220;app&#8221;,[&#8220;ui.router&#8221;]);</strong></li>
+<li>ngRoute won&#8217;t supports the Nested Views in Single Page Applications.</li>
+<li>router supports the Nested Views in Single page Application.</li>
+<li>ngRoute won&#8217;t supports the Named Views in Single Page Application.</li>
+<li>router supports the Named Views in Single page Application.</li>
+<li>ngRoute won&#8217;t Supports the &#8220;Objects passing&#8221; as URL Parameters</li>
+<li>router supports the &#8220;Objects&#8221; as the URL Parameters</li>
+<li>ngRoute in bower</li>
+<li>angular-route:&#8217;~1.5.0&#8242;</li>
+<li>router in bower</li>
+<li>angular-ui-router:&#8221;~0.2.18&#8243;</li>
+</ul>
+<p>&nbsp;</p>
+<hr/>
+<h3>5.What is MVC?</h3>
+<p><strong>MVC is a design pattern used to isolate business logic from presentation.</strong></p>
+<ul>
+<li>The MVC pattern has been given importance by many developers as a useful pattern for the reuse of object code and a pattern that allows them to reduce the time it takes to develop applications with user interfaces.</li>
+<li>The Model-View-Controller (MVC)is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller. Each of these components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard web development framework to create scalable and extensible projects.</li>
+</ul>
+<p><strong>MVC Components</strong></p>
+<ul>
+<li><strong>Model:</strong>The Model component corresponds to all the data related logic that the user works with. This can represent either the data that is being transferred between the View and Controller components or any other business logic related data. For example, a Customer object will retrieve the customer information from the database, manipulate it and update it data back to the database or use it to render data.</li>
+</ul>
+<ul>
+<li><strong>View:</strong>The View component is used for all the UI logic of the application. For example, the Customer view would include all the UI components such as text boxes, dropdowns, etc. that the final user interacts with.</li>
+<li><strong>Controller:</strong>Controllers act as an interface between Model and View components to process all the business logic and incoming requests, manipulate data using the Model component and interact with the Views to render the final output. For example, the Customer controller would handle all the interactions and inputs from the Customer View and update the database using the Customer Model. The same controller would be used to view the Customer data.</li>
+</ul>
+<p>&nbsp;</p>
+<hr/>
+<h3>6.What is Ng-init  directive?</h3>
+<ul>
+<li>ng-init directive is used to intialize the application data Statically.</li>
+<li>ng-init directive is used to define a local variable with value.</li>
+<li>It is supported by all html elements.</li>
+</ul>
+<p><strong>Syntax:</strong>  &lt;element ng-init=&#8221;expression&#8221;&gt;                        &lt;/element&gt;</p>
+<p><strong>Example:</strong></p>
+<p>&lt;div ng-app=&#8221;app &#8221;</p>
+<p>ng-init=&#8221;name=&#8217;naresh it&#8217; &#8220;&gt;</p>
+<p>&lt;h1&gt;{ { name } } &lt;/h1&gt;</p>
+<p>&lt;/div&gt;</p>
+<p><strong>Note:</strong> In this example we are giving   &#8216;name&#8217; as local variable.</p>
+<hr/>
+<h3>7.What are the Difference between $scope and  $rootscope?</h3>
+<ul>
+<li>$scope is a glue between controller and view.</li>
+<li>$rootscope is a parent object of all $scope angular abjects created in a     web page.</li>
+<li>$scope is created with ng-controller.   $rootscope is created with ng-app.</li>
+<li>Each angular application has exactly one rootscope, but may have several    child scopes.</li>
+<li>The s$cope will be available only inside the controller. But we can access $rootscope in all  the controllers.</li>
+</ul>
+<hr/>
+<h3>8.What is Internationalization ?</h3>
+<p><strong>Internationalization</strong> is the process of developing products in such a way that  they can be localized for languages and cultures easily. Localization (l10n), is the process of adapting applications and text to enable their usability in a particular cultural or linguistic market.</p>
+<p>We implement internationalization in two ways <strong>i18n</strong> and <strong>l10n</strong></p>
+<hr/>
+<h3>9.How to implement Internationalization in Angular Js?</h3>
+<p>To implement Internationalization in angularjs, the angular-translate is an AngularJS module.</p>
+<ul>
+<li>That brings i18n (internationalization) and l10n (localization) into your Angular app.</li>
+<li>It allows you to create a JSON file that represents translation data as per language.</li>
+<li>The angular-translate library (angular-translate.js) also provides built-in directives and filters that make the process of internationalizing simple.</li>
+<li>i18n and L10n</li>
+</ul>
+<p><strong>First we need to install:        </strong></p>
+<p>bower install angular-i18n</p>
+<p><strong>Example:</strong></p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;Angular JS Forms&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h2&gt;AngularJS Sample Application&lt;/h2&gt;</p>
+<p>&lt;div ng-app = &#8220;mainApp&#8221; ng-controller = &#8220;StudentController&#8221;&gt;</p>
+<p>{ {fees | currency } }  &lt;br/&gt;&lt;br/&gt;</p>
+<p>{ {admissiondate | date } }  &lt;br/&gt;&lt;br/&gt;</p>
+<p>{ {rollno | number } }</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;script src = &#8220;https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js&#8221;&gt;&lt;/script&gt;</p>
+<p>&lt;!&#8211; &lt;script src = &#8220;https://code.angularjs.org/1.3.14/i18n/angular-locale_da-dk.js&#8221;&gt;&lt;/script&gt; &#8211;&gt;</p>
+<p>&lt;script&gt;</p>
+<p>var mainApp = angular.module(&#8220;mainApp&#8221;, []);</p>
+<p>mainApp.controller(&#8216;StudentController&#8217;, function($scope) {</p>
+<p>$scope.fees = 100;</p>
+<p>$scope.admissiondate  = new Date();</p>
+<p>$scope.rollno = 123.45;</p>
+<p>});</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p><strong>Output:</strong></p>
+<p>AngularJS Sample Application</p>
+<p>$100.00</p>
+<p>Feb 27, 2017</p>
+<p>123.45</p>
+<hr/>
+<h3>10.Types of Data Binding in AngularJS?</h3>
+<p>The <strong>data binding</strong> is the data synchronization processes between the model and view components</p>
+<p>In AngularJS  when model data got changed that time the view data will change automatically and vice versa.</p>
+<p>We have two types of data bindings available in AngularJS those are</p>
+<ol>
+<li>One-Way data binding</li>
+<li>Two-Way data binding</li>
+</ol>
+<p><strong>One-Way Data Binding</strong></p>
+<ul>
+<li>In <strong>One-Way</strong>data binding, view will  not update automatically when data model changed.</li>
+<li>we need to write custom code to make it updated every time.</li>
+<li>Its not a synchronization processes and it will process data in one.</li>
+</ul>
+<p><strong>Two-way Data Binding</strong></p>
+<p>In <strong>Two-way</strong> data binding, view updates automatically when data model changed.</p>
+<ul>
+<li>Its synchronization processes and two way data binding.</li>
+<li>This two-way data binding using<a href="http://tutlane.com/tutorial/angularjs/angularjs-ng-model-directive-with-example">ng-model</a></li>
+<li>If we use ng-model directive in html control it will update value automatically whenever data got changed in input control.</li>
+</ul>
+<hr/>
+<p>&nbsp;</p>
+<h3>11.Example of One Way Data Binding in AngularJS?</h3>
+<p><strong> </strong><strong>Following is the example of using one way data binding in AngularJS application.</strong></p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html xmlns=&#8221;http://www.w3.org/1999/xhtml&#8221;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;</p>
+<p>AngularJs One way Binding Example</p>
+<p>&lt;/title&gt;</p>
+<p>&lt;script src=&#8221;http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js&#8221;&gt;&lt;/script&gt;</p>
+<p>&lt;script type=&#8221;text/javascript&#8221;&gt;</p>
+<p>var app = angular.module(&#8216;angularonebindapp&#8217;, []);</p>
+<p>app.controller(&#8216;angularonebindingCtrl&#8217;, function ($scope) {</p>
+<p>$scope.name = &#8216;Welcome to one way binding&#8217;;</p>
+<p>});</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body ng-app=&#8221;angularonebindapp&#8221;&gt;</p>
+<p>&lt;div ng-controller=&#8221;angularonebindingCtrl&#8221;&gt;</p>
+<p>&lt;p&gt;</p>
+<p>Message:   {{ name }}</p>
+<p>&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>Here if you observe above code we are binding <a href="http://tutlane.com/tutorial/angularjs/angularjs-ng-model-directive-with-example">model</a> values to html elements using data bindings but html elements it won&#8217;t change the values in <a href="http://tutlane.com/tutorial/angularjs/angularjs-ng-model-directive-with-example">model</a> its one way data binding. Now run application and see the output.</p>
+<p><strong>Output of AngularJS One-way Data Binding</strong></p>
+<p>Following is the output of AngularJS one way data binding</p>
+<p><strong>Message:</strong>  Welcome to one way binding</p>
+<hr/>
+<h3>13.AngularJS Two-way Data Binding?</h3>
+<p>In <strong>Two-way</strong> data binding, view (UI part) updates automatically when data model changed. Its synchronization processes and two way data binding that will be like as shown following image. We can achieve this two-way data binding using ng-model directive. If we use ng-model directive in html control it will update value automatically whenever data got changed in input control.</p>
+<p>&nbsp;</p>
+<hr/>
+<h3>14.How Does Data Binding work in the AngularJS?</h3>
+<p>In AngularJs, it will remember present values and compare it with previous value. If any changes found in previous value that time change event will fire automatically and it will update data every time when data got changed.</p>
+<p>The HTML tells the AngularJs compiler to create the <strong>$watch</strong> for controller methods and its run inside the <strong>$apply</strong> method. We will see simple example for two way data binding in angularjs.</p>
+<hr/>
+<h3>15.Example of Two Way Data Binding in AngularJS?</h3>
+<p><strong>Following is the example of binding data in two way in AngularJS applications.</strong></p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html xmlns=&#8221;http://www.w3.org/1999/xhtml&#8221;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;title&gt;</p>
+<p>AngularJs Two Binding Example</p>
+<p>&lt;/title&gt;</p>
+<p>&lt;script src=&#8221;http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js&#8221;&gt;&lt;/script&gt;</p>
+<p>&lt;script type=&#8221;text/javascript&#8221;&gt;</p>
+<p>var app = angular.module(&#8216;angulartwobindapp&#8217;, []);</p>
+<p>app.controller(&#8216;angulartwobindingCtrl&#8217;, function ($scope) {</p>
+<p>$scope.name = &#8216;Welcome to two way binding&#8217;;</p>
+<p>});</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body ng-app=&#8221;angulartwobindapp&#8221;&gt;</p>
+<p>&lt;div ng-controller=&#8221;angulartwobindingCtrl&#8221;&gt;</p>
+<p>Enter Name : &lt;input type=&#8221;text&#8221; ng-model=&#8221;name&#8221; style=&#8221;width:250px&#8221; /&gt;</p>
+<p>&lt;p&gt;</p>
+<p>Entered Name:   {{ name }}</p>
+<p>&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>If you observe above code we defined ng-model objective to html control and used same ng-model value to show input control value. Here whenever we change input control value automatically the appearance value also will get changed. Now we will run and see the output.</p>
+<p><strong>Output of AngularJS Two-way Data Binding</strong></p>
+<p>Following is the result of two way data binding in angularjs application</p>
+<hr/>
+<h3>16.What is the need of ng-controller and ng-model in Angular?</h3>
+<p>The ng-model Directive With the ng-model directive you can bind the value of an input field to a variable created in AngularJS.</p>
+<p><strong>Example</strong></p>
+<p>&lt;div ng-app=&#8221;myApp&#8221; ng-controller=&#8221;myCtrl&#8221;&gt;<br/>
+Name: &lt;input ng-model=&#8221;name&#8221;&gt;<br/>
+&lt;/div&gt;</p>
+<p>&lt;script&gt;<br/>
+var app = angular.module(&#8216;myApp&#8217;, []);<br/>
+app.controller(&#8216;myCtrl&#8217;, function($scope) {<br/>
+$scope.name = &#8220;John Doe&#8221;;<br/>
+});<br/>
+&lt;/script&gt;</p>
+<ul>
+<li>AngularJS controllers<strong>control the data</strong> of AngularJS applications.</li>
+<li>AngularJS controllers are regular<strong>JavaScript Objects</strong>.</li>
+</ul>
+<hr/>
+<h3>17.What is the difference between $parse and $eval?</h3>
+<p><strong>$eval:</strong></p>
+<ul>
+<li>The AngularJS $eval method is used to executes the AngularJS expression on the current scope and returns the result.</li>
+<li>In AngularJS, expressions are similar to JavaScript code snippets that are usually placed in bindings such as {{ expression }}.</li>
+<li>AngularJS used internally $eval to resolve AngularJS expressions, such as {{variable}}.</li>
+<li>The important difference between $eval and $parse is that $eval is a scope method that executes an expression on the current scope,</li>
+<li>while $parse is a globally available service. The $eval method takes AngularJS expression and local variable object as parameter.</li>
+<li>$eval takes an angular expression, evaluates it and returns the actual result of that expression.</li>
+</ul>
+<hr/>
+<h3>18.Is AngularJS Code is Reusable?</h3>
+<p>I&#8217;m using Angular to develop commenting functionality for a web app. currently there are two sections in the application were a user can comment:</p>
+<ul>
+<li>Category</li>
+<li>Product</li>
+<li>About 90% of the commenting functionality is the same for both sections and as such I would like to make this reusable &#8211; i.e write some service or controller that I can reference/use as a base.</li>
+<li>So far, my research seems to point to using a factory service but unfortunately this doesn&#8217;t seem to work (I&#8217;ve spent the whole day running through various tutorials).</li>
+<li>It is quite possible that I am over thinking this and making it far too complicated but I honestly don&#8217;t know which way to turn anymore.</li>
+</ul>
+<p><strong>Here with a quick and dirty overview of what I have so far:</strong></p>
+<p><strong>HTML view for the category</strong></p>
+<ul>
+<li>Controller for the category (receives data from service and posts data to service in order to bind data to model)</li>
+<li>Service for the category (retrieve and stores all the necessary data)<br/>
+The product uses the same logic and a lot of the code in the service and controller will be duplicated. I&#8217;ve merged the two services into one service successfully but I&#8217;m having trouble doing the same for the controller.</li>
+</ul>
+<p><strong>Do I:</strong></p>
+<p>Write a base controller that will communicate with the above mentioned service and that will hook up with the two existing controllers</p>
+<p>(OR)</p>
+<p>Write a factory/provider service that hooks up to the two existing controllers as well as the above mentioned service.</p>
+<hr/>
+<h3>19.What is the difference between ngshow and ngif and Ng hide?</h3>
+<p><strong>ng-Show/nghide</strong></p>
+<ul>
+<li>ngShow directive is a part of module ng.</li>
+<li>It is used to show or hide the elements based on boolean values.</li>
+<li>The ng-show directive shows the specified HTML element if the expression evaluates to true, otherwise the HTML element is hidden.</li>
+<li>ngShow/ngHide work with the show and hide events that are triggered when the directive expression is true and false in Animations</li>
+<li>The great part about these directives is that &#8220;we don’t have to do any of the showing or hiding ourselves with CSS or JavaScript&#8221;.</li>
+<li>Supported by all HTML elements</li>
+<li>Both ng-show and ng-if receive a condition and hide from view the directive’s element in case the condition evaluates to false.</li>
+<li>ng-show (and its sibling ng-hide) toggle the appearance of the element by adding the CSS display: none style.</li>
+<li>The ng-hide directive hides the HTML element if the expression evaluates to true.</li>
+<li>ng-hide is also a predefined CSS class in AngularJS, and sets the element&#8217;s display to none.</li>
+</ul>
+<p><strong>Syntax:</strong></p>
+<p>&lt;element ng-show=&#8221;expression&#8221;&gt;&lt;/element&gt;</p>
+<p><strong>Parameter:</strong></p>
+<p><strong>Value        Description</strong></p>
+<p>&#8212;&#8211;          &#8212;&#8212;&#8212;&#8211;</p>
+<p>expression    An expression that will show the element only if the expression returns true.</p>
+<p><strong>Example:</strong></p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;body ng-app=&#8221;&#8221;&gt;</p>
+<p>Show HTML: &lt;input type=&#8221;checkbox&#8221; ng-model=&#8221;myVar&#8221;&gt;</p>
+<p>&lt;div ng-show=&#8221;myVar&#8221;&gt;</p>
+<p>&lt;h1&gt;Welcome&lt;/h1&gt;</p>
+<p>&lt;p&gt;Welcome to my Show Directive.&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>&nbsp;</p>
+<hr/><h3>20.How to implement securities in angular js? And what do u mean by IAutho?</h3>
+<p><strong>Security?</strong></p>
+<ul>
+<li>Security is one of the most important parts of writing a web application—perhaps the most important part!</li>
+<li>Angular is not made to enhance security of our web application but to help the web application run smooth and user-friendly.</li>
+<li>Do not mix client and server templates</li>
+<li>Do not use user input to generate templates dynamically</li>
+<li>Do not run user input through $scope.$eval (or any of the other expression parsing functions)</li>
+<li>You can not access a angular variable/scope from console of your browser .</li>
+<li>It Prevents cross-side-scripting attacks.</li>
+<li>Prevents HTML injection attacks.</li>
+<li>NG-CSP directive is given in angular to stop injecting inline codes to the application.</li>
+<li>you have to send every http using ajax and you need to have an api for the back-end.</li>
+<li>When developers build client apps with server back ends they approach the application as though they control the entire ecosystem.</li>
+<li>Assumptions are often made that the client they built will only ever talk to the server side APIs they built in the way they designed them.</li>
+<li>HTTP Requests, Whenever your application makes requests to a server there are potential security issues that need to be blocked.</li>
+<li>Using Local Caches, There are various places that the browser can store (or cache) data.</li>
+<li>Within AngularJS there are objects created by the $cacheFactory.</li>
+<li>These objects, such as $templateCache are used to store and retrieve data,</li>
+<li>Primarily used by $http and the script directive to cache templates and other data.</li>
+<li>Similarly the browser itself offers local Storage and session Storage objects for caching</li>
+<li>Attackers with local access can retrieve sensitive data from this cache even when users are not authenticated.</li>
+</ul>
+<hr/>
+<h3>21.What is AngularJS?</h3>
+<ul>
+<li><a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">AngularJs</a> is a client side UI frame work and also Client side JavaScript Framework for building Dynamic web application,it fallows MVC(Model View Controller)pattern.</li>
+<li>It has set of ready to use modules to simplify building of Single Page Applications.</li>
+</ul>
+<hr/>
+<h3>22.Advantages of AngularJS?</h3>
+<ul>
+<li>AngularJS supports MVC Pattern</li>
+<li>It supports two way data-binding</li>
+<li>It supports both client and server communication</li>
+<li>It supports Animation</li>
+<li>Event handles</li>
+<li>Supports Rest full services</li>
+<li>Supports Static and Angular Templates</li>
+<li>AngularJS provides reusable components.</li>
+</ul>
+<hr/>
+<h3>23.Disadvantages of AngularJS?</h3>
+<ul>
+<li>Not security</li>
+<li>Difficult to understanding the Angular Application because of no coding standards given by venders</li>
+<li>Client should enable the JavaScript then only you can run the Angular Applications</li>
+<li>More than 2000 watchers can severely lag the UI. That limits the complexity of your Angular forms, especially big data grids and lists.</li>
+</ul>
+<hr>
+<h3>24.Advantages of AngularJS?</h3>
+<ul>
+<li><strong>Global community support </strong>is one of the factors, that can easily make Angular the best javascript framework. Developers and designers constantly collaborate and contribute to the community, increasing credibility and reliability of the framework.</li>
+<li>It is a <strong>full-fledged framework</strong>that can run in any browser or platform. Moreover, it is consistent, overwhelmed with ready-made tools, ng components are robust and quite mature, as contrasted with React.</li>
+<li><strong>Two-way data bind</strong>is probably the top feature, as it diffuses the impact after every minor data change and does way with the need for further effort with data sync in view and model.</li>
+</ul>
+<p>Given the fact that our company makes active use of ng2, it is essential to include react vs angular 2 comparison as well.</p>
+<ul>
+<li><strong>TypeScript </strong>is an enhanced JS super-set that supplies optional static type checking, object-based programming patterns, and high-performance typing features.</li>
+</ul>
+<hr/>
+<h3>25.What are the Advantages of React JS?</h3>
+<ul>
+<li><strong>JSX </strong>is a JS syntax that enables HTML quotes and usage of HTML tag syntax for subcomponents rendering. It promotes building of machine-readable code and provides ability to compound components in one compile-time verified file.</li>
+<li><strong>Prompt rendering</strong>is among the best features of React that gives a significant edge over Angular. The technology comprises smart methods to mitigate the amount of DOM operations, optimize and accelerate the updates process. Virtual DOM (Document Object Model) is of great use while handling vast databases.</li>
+<li>The core difference between reactjs and angularjs is that React is <strong>JS-centric</strong>, while ng2 remains HTML-centric. JavaScript is far more robust, than HTML, that makes React far more simple, focused and consistent.</li>
+</ul>
+<hr/>
+<h3>26.What is Routing?</h3>
+<p>Loading the Target Templates to the Source Templates without refreshing is called as Routing in Single Page Application</p>
+<p>If you want to navigate to different pages in your application, but you also want the application to be a SPA (Single Page Application), with no page reloading, you can use the ngRoute module.</p>
+<p><strong>In how many ways we can achieve the Routings  in Angular Js</strong></p>
+<p>In AngularJs Routing can be done in two ways<strong>:</strong></p>
+<ul>
+<li><strong>ngRoute Module</strong></li>
+<li><strong>Router Module</strong></li>
+</ul>
+<p><strong>ngRoute Module: </strong>The ngRoute Module routes  your application to different pages without reloading the entire application.</p>
+<p><strong>Ui.Router Module:</strong> The <strong>UI</strong>&#8211;<strong>Router</strong> is a <strong>routing</strong> framework for <strong>AngularJS </strong>built by the AngularUI team. It provides a different approach than ngRoute in that it changes your application views based on state of the application and not just the route URL ( i.e.  ngroute just route the url and ui router changes the view based on state of application)</p>
+<hr/>
+<h3>27.What are the advantages of services in angularjs?</h3>
+<ul>
+<li>Gives us the instance of a function (object)- You just instantiated with the ‘new’ keyword and you’ll add properties to ‘this’ and the service will return ‘this’.When you pass the service into your controller, those properties on ‘this’ will now be available on that controller through your service. (Hypothetical Scenario)</li>
+<li>Singleton and will only be created once</li>
+<li>Reusable components</li>
+<li>Dependencies are injected as constructor arguments</li>
+<li>Used for simple creation logic</li>
+<li>If you&#8217;re using a class you could use the service provider</li>
+</ul>
+<p>Syntax: module.service(‘serviceName’, function);</p>
+<hr/>
+<h3>28.In how many can we create the services?</h3>
+<p>There are  5 types of services we can create</p>
+<ul>
+<li>Using the service() method</li>
+<li>Using the factory() method</li>
+<li>Using the provider() method</li>
+<li>Using the value() method</li>
+<li>Using the constant() method</li>
+</ul>
+<hr/>
+<h3>29.What are the types of scopes available in custom directives?</h3>
+<ul>
+<li>Scopeis an object that refers to the application model. It is an execution context for  Scopes are arranged in hierarchical structure which mimic the DOM structure of the application. Scopes can watch expressions and propagate events.</li>
+<li>This is to ease the understanding of the $scope in the custom directives. While creating custom directives we have to apply different types of functionalities, so for that we must know about the $scope behavior in the directives.</li>
+<li>$scope has a very important role in AngularJS, it works as a mediator (or like a glue) between the logic &amp; view in an Angular application.Now if we talk about the custom directives, then first question which arises is-</li>
+</ul>
+<p>“In any application if we want some specific functionality and we want to reuse that in whole application module, then for this we need to develop a set of code. Angular calls it directives.”</p>
+<p>I am not going to discuss so much about custom directives basics here. In this blog I am just focusing on use of $scope into directives.</p>
+<ul>
+<li>So, when we create a custom directive ithas a default scope, which is the parent scope (the controller’s scope from where the directive is called). This behavior is by default, until and unless we do not set the scope.</li>
+<li>As we know that whenever we define a directive, there is a “directive definition object” (DDO), in which we set some parameters like- restrict, template, require, scope etc.</li>
+</ul>
+<hr/>
+<h3>30.What is component? How do we create it and Advntages?</h3>
+<ul>
+<li>In AngularJS, a Component is a special kind ofdirective that uses a simpler configuration which is suitable for a component-based application structure.</li>
+<li>Components can be registered using the.component() method of an AngularJS module (returned by module()). The method takes two arguments:</li>
+<li>The name of the Component (as string).</li>
+<li>The Component config object.</li>
+</ul>
+<p><strong>Advantages of Components</strong>:</p>
+<ul>
+<li>simpler configuration than plain directives</li>
+<li>promote sane defaults and best practices</li>
+<li>optimized for component-based architecture</li>
+<li>writing component directives will make it easier to upgrade to Angular</li>
+</ul>
+<p><strong>Use of compile and link function ?</strong></p>
+<ul>
+<li>Compilation phase a directive also has a chance to modify the DOM node before a scope is attached to it;</li>
+<li>Compilation phase we do not have access to the $scope data</li>
+<li>If the directive needs to access the scope, its link function allows that</li>
+</ul>
+<p>In the link phase the data i.e. ($scope) is attached to the template function and executed to get the final HTML output.</p>
+<hr/>
+<h3>31.What is Isolate scope?</h3>
+<ul>
+<li>An isolate scope is a scope that exists separately with no prototypal inheritance at all; a clean slate. To create an isolate scope it&#8217;s as simple as setting thescope property to an empty object hash {}.</li>
+</ul>
+<hr/>
+<h3>32.How to get custom currency symbol using filters?</h3>
+<p><strong>Html:</strong></p>
+<p>&lt;div ng-app ng-controller=&#8221;myCtrl&#8221;&gt;</p>
+<p>&lt;div&gt;Currency: &lt;input ng-model=&#8221;currencySymbol&#8221;/&gt;&lt;/div&gt;</p>
+<p>&lt;div&gt;Currency Amount: &lt;input ng-model=&#8221;currencyAmount&#8221;/&gt;&lt;/div&gt;</p>
+<p>&lt;div&gt;formatted: { {currencyAmount | currency:currencySymbol} }&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p><strong>Javascript:</strong></p>
+<p>function myCtrl($scope) {</p>
+<p>$scope.currencySymbol = &#8216;USD$&#8217;;</p>
+<p>$scope.currencyAmount = &#8216;100.1232131&#8217;;</p>
+<p>}</p>
+<hr/>
+<h3>33.How Databinding works Internally in AngularJS?</h3>
+<p>AngularJS handle data-binding mechanism with the help of three powerful functions: $watch(), $digest() and $apply(). Most of the time AngularJS will call the $scope.$watch() and $scope.$digest() functions for you, but in some cases you may have to call these functions yourself to update new values.</p>
+<p><strong>$watch()</strong> &#8211; This function is used to observe changes in a variable on the $scope. It accepts three parameters: expression, listener and equality object, where listener and equality object are optional parameters.</p>
+<p><strong>$digest()</strong> &#8211; This function iterates through all the watches in the $scope object, and its child $scope objects (if it has any). When $digest() iterates over the watches, it checks if the value of the expression has changed. If the value has changed, AngularJS calls the listener with the new value and the old value. The $digest() function is called whenever AngularJS thinks it is necessary. For example, after a button click, or after an AJAX call. You may have some cases where AngularJS does not call the $digest() function for you. In that case you have to call it yourself.</p>
+<p><strong>$apply()</strong> &#8211; Angular do auto-magically updates only those model changes which are inside AngularJS context. When you do change in any model outside of the Angular context (like browser DOM events, setTimeout, XHR or third party libraries), then you need to inform Angular of the changes by calling $apply() manually. When the $apply() function call finishes AngularJS calls $digest() internally, so all data bindings are updated.</p>
+<hr/>
+<h3>34.AngularJS: How to name directives?</h3>
+<p>Quick tips to avoid issues with custom directive names AngularJS directives allow us to use our own vocabulary to create semantic HTML components. To take advantage of that we should be aware of how it works to avoid some annoying and hard to find issues.</p>
+<hr/>
+<h3>35.Differences between defining and using?</h3>
+<p>Before start digging into the best practices, let&#8217;s understand the fundamentals. Let&#8217;s see how to define and then, how to use an directive.</p>
+<hr/>
+<h3>36.Advantages Of AngularJS?</h3>
+<ul>
+<li>Built by Google: AngularJS has been developed as well as maintained by dedicated Google engineers.</li>
+<li>AngularJS provides capability to create Single Page Application in a very clean and maintainable way.</li>
+<li>AngularJS provides data binding capability to HTML thus giving user a rich and responsive experience.</li>
+<li>AngularJS code is unit testable.</li>
+<li>AngularJS provides reusable components.</li>
+<li>With AngularJS, developer write less code and get more functionality.</li>
+<li>AngularJS applications can run on all major browsers and smart phones including Android and iOS based phones/tablets.</li>
+<li>In AngularJS, views are pure html pages, and controllers written in JavaScript do the business processing.</li>
+</ul>
+<hr/>
+<h3>37.Life Cycle Of AngularJS ?</h3>
+<p><strong> </strong>The three phases of the life cycle of an AngularJS application happen each time a web page is loaded in the browser.</p>
+<p><strong>The following sections describe these phases of an AngularJS application.</strong></p>
+<p>1) <strong>The Bootstrap Phase:-</strong> The first phase of the AngularJS life cycle is the bootstrap phase, which occurs when the AngularJS JavaScript library is downloaded to the browser.</p>
+<ul>
+<li>AngularJS initializes its own necessary components and then initializes your module, which the ng-app directive points to. The module is loaded, and any dependencies are injected into your module and made available to code within the module.</li>
+</ul>
+<p>2) <strong>The Compilation Phase:-</strong>The second phase of the AngularJS life cycle is the HTML compilation stage.</p>
+<ul>
+<li>Initially when a web page is loaded, a static form of the DOM is loaded in the browser.</li>
+<li>During the compilation phase, the static DOM is replaced with a dynamic DOM that represents the AngularJS view.</li>
+<li>This phase involves two parts: traversing the static DOM and collecting all the directives and then linking the directives to the appropriate JavaScript functionality in the AngularJS</li>
+<li>built-in library or custom directive code. The directives are combined with a scope to produce the dynamic or live view.</li>
+</ul>
+<p>3) <strong>The Runtime Data Binding Phase:-</strong> The final phase of the AngularJS application is the runtime phase, which exists until the user reloads or navigates away from a web page. At that point, any changes in the scope are reflected in the view, and any changes in the view are directly updated in the scope, making the scope the single source of data for the view.</p>
+<ul>
+<li>AngularJS behaves differently from traditional methods of binding data.</li>
+<li>Traditional methods combine a template with data received from the engine and then manipulate the DOM each time the data changes. AngularJS compiles the DOM only once and then links the compiled template as necessary, making it much more efficient than traditional methods.</li>
+</ul>
+<hr/>
+<h3>38.What are ng-repeat special variables?</h3>
+<ul>
+<li>The ng-repeat directive has a set of special variables which you are useful while iterating the collection. These variables are as follows:</li>
+</ul>
+<p>1) $index</p>
+<p>2) $first</p>
+<p>3) $middle</p>
+<p>4) $last</p>
+<ul>
+<li>The $index contains the index of the element being iterated. The $first,</li>
+</ul>
+<p>$middle and $last returns a Boolean value depending on whether the current item is the first, middle or last element in the collection being iterated.</p>
+<hr/>
+<h3>39.What is $scope and $rootScope?</h3>
+<ul>
+<li>$scope is an object that is accessible from current component e.g Controller, Service only. $rootScope refers to an object which is accessible from everywhere of the application. You can think $rootScope as global variable and $scope as local variables</li>
+</ul>
+<hr/>
+<h3>40.What is event handling in AngularJS?</h3>
+<ul>
+<li>When we want to create advanced AngularJS applications such as User Interaction Forms, then we need to handle DOM events like mouse clicks, moves, keyboard presses, change events and so on.</li>
+<li>AngularJS has a simple model for how to add event listeners.</li>
+<li>We can attach an event listener to an HTML element using one of the following</li>
+</ul>
+<p><strong>AngularJS event listener directives:</strong></p>
+<ul>
+<li>ng-click</li>
+<li>ng-dbl-click</li>
+<li>ng-mousedown</li>
+<li>ng-mouseup</li>
+<li>ng-mouseenter</li>
+<li>ng-mouseleave</li>
+<li>ng-mousemove</li>
+<li>ng-mouseover</li>
+<li>ng-keydown</li>
+<li>ng-keyup</li>
+<li>ng-keypress</li>
+<li>ng-change</li>
+</ul>
+<hr/>
+<h3>41.Can angular applications (ng-app) be nested within each other?</h3>
+<ul>
+<li><strong>AngularJS applications</strong>cannot be <strong>nested within each other</strong>. Only one<strong>AngularJS application can</strong> be auto-bootstrapped per HTML document. The first<strong>ngApp</strong> found in the document <strong>will</strong> be used to define the root element to auto-bootstrap as an <strong>application</strong></li>
+</ul>
+<hr/>
+<h3>42.How to handel event in Angularjs ?</h3>
+<ul>
+<li>To handle an event that is emitted or broadcasted, you use the$on()</li>
+<li>Syntax :$on(<em>name,</em> listener)</li>
+</ul>
+<hr/>
+<h3>43.Mention what are the styling form that ngModel adds to CSS classes ?</h3>
+<p><strong> </strong>ngModel adds these CSS classes to allow styling of form as well as control</p>
+<ul>
+<li>ng- valid</li>
+<li>ng- invalid</li>
+<li>ng-pristine</li>
+<li>ng-dirty</li>
+</ul>
+<hr/>
+<h3>44.Who created Angular JS ?</h3>
+<p>AngularJS was created, as a side project, in 2009 by two developers, Misko Hevery and Adam Abrons. The two originally envisioned their project, GetAngular, to be an end-to-end tool that allowed web designers to interact with both the frontend and the backend.</p>
+<p><strong>Google.</strong></p>
+<p>One of the original creators, Adam Abrons stopped working on AngularJS but Misko Hevery and his manager, Brad Green, spun the original GetAngular project into a new project, named it AngularJS, and built a team to create an maintain it within Google.</p>
+<p>One of AngularJS&#8217; first big wins internally at Google occurred when the company DoubleClick was acquired by Google and they started rewriting part of their application using AngularJS. Because of DoubleClick&#8217;s initial success, Google seems to have invested even more resources into Angular and has blessed AngularJS for internal and external product usage.</p>
+<p>Because of this, the Angular team inside Google has grown rapidly.</p>
+<br>
+<br>
+<br>
+</div>
+</body>
+{% endblock %}

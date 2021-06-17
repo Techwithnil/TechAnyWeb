@@ -1,0 +1,1390 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body style="background-color:salmon;">
+<div class="container" >    
+    <h1 class="page-title text-white text-center" style="background-color:darkblue;">Django Interview Questions</h1><hr/>
+
+
+    <h4><strong>1. What is Django?</strong></h4>
+    <p><strong>Ans:</strong> <b>Django</b> is a high-level <b>Python</b> Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It&#8217;s free and open source..</p>
+    <hr />
+    <h4><strong>2. What does Django mean?</strong></h4>
+    <p><strong>Ans:</strong> Django is named after Django Reinhardt, a gypsy jazz guitarist from the 1930s to early 1950s who is known as one of the best guitarists of all time.</p>
+    <hr />
+    <h4><strong>3. Which architectural pattern does Django Follow?</strong></h4>
+    <p><strong>Ans:</strong> Django follows <strong>Model-View Template</strong> (MVT) architectural pattern.</p>
+    <hr />
+    <h4><strong>4. Explain the architecture of Django?</strong></h4>
+    <p><strong>Ans:</strong> Django is based on <strong>MVT</strong> architecture. It contains the following layers:</p>
+    <p>Models: It describes the database schema and data structure.</p>
+    <p>Views: The view layer is a user interface. It controls what a user sees, the view retrieves data from appropriate models and execute any calculation made to the data and pass it to the template.</p>
+    <p>Templates: It determines how the user sees it. It describes how the data received from the views should be changed or formatted for display on the page.</p>
+    <p>Controller: Controller is the heart of the system. It handles requests and responses, setting up database connections and loading add-ons. It specifies the Django framework and URL parsing.</p>
+    <hr />
+    <h4><strong>5. Which foundation manages Django web framework?</strong></h4>
+    <p>Ans: Django web framework is managed and maintained by an independent and non-profit organization named Django Software Foundation (DSF).</p>
+    <hr />
+    <h4><strong>6. Is Django stable?</strong></h4>
+    <p><strong>Ans:</strong> Yes, Django is quite stable. Many companies like Disqus, Instagram, Pinterest, and Mozilla have been using Django for many years.</p>
+    <hr />
+    <h4><strong>7. What are the features available in Django web framework?</strong></h4>
+    <p><strong>Ans:</strong> Features available in Django web framework are:</p>
+    <p>Admin Interface (CRUD)<br />
+    Templating<br />
+    Form handling<br />
+    Internationalization<br />
+    Session, user management, role-based permissions<br />
+    Object-relational mapping (ORM)<br />
+    Testing Framework<br />
+    Fantastic Documentation</p>
+    <hr />
+    <h4><strong>8. What are the advantages of using Django for web development?</strong></h4>
+    <p><strong>Ans:</strong> It facilitates you to divide code modules into logical groups to make it flexible to change.<br />
+    It provides auto-generated web admin to make website administration easy.<br />
+    It provides pre-packaged API for common user tasks.<br />
+    It provides template system to define HTML template for your web page to avoid code duplication.<br />
+    It enables you to define what URL is for a given function.<br />
+    It enables you to separate business logic from the HTML.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>9. How to create a project in Django?</strong></h4>
+    <p><strong>Ans:</strong> To start a project in Django, use the command $django-admin.py and then use the following command:</p>
+    <p>Project</p>
+    <p>_init_.py</p>
+    <p>manage.py</p>
+    <p>settings.py</p>
+    <p>urls.py</p>
+    <hr />
+    <h4><strong>10. What are the inheritance styles in Django?</strong></h4>
+    <p><strong>Ans:</strong> There are three possible inheritance styles in Django:</p>
+    <p><strong>1. Abstract base classes:</strong> This style is used when you only want parent?s class to hold information that you don’t want to type out for each child model.</p>
+    <p><strong>2. Multi-table Inheritance:</strong> This style is used if you are sub-classing an existing model and need each model to have its own database table.</p>
+    <p><strong>3. Proxy models:</strong> This style is used, if you only want to modify the Python level behavior of the model, without changing the model’s fields.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>11. How can you set up the database in Djanago?</strong></h4>
+    <p><strong>Ans:</strong> To set up a database in Django, you can use the command edit mysite/setting.py , it is a normal python module with module level representing Django settings.</p>
+    <p>By default, Django uses SQLite database. It is easy for Django users because it doesn’t require any other type of installation. In the case of other database you have to the following keys in the DATABASE ‘default’ item to match your database connection settings.</p>
+    <p>Engines: you can change database by using ‘django.db.backends.sqlite3’ , ‘django.db.backeneds.mysql’, ‘django.db.backends.postgresql_psycopg2’, ‘django.db.backends.oracle’ and so on</p>
+    <p>Name: The name of your database. In the case if you are using SQLite as your database, in that case database will be a file on your computer, Name should be a full absolute path, including file name of that file.</p>
+    <p>Note: You have to add setting likes setting like Password, Host, User, etc. in your database, if you are not choosing SQLite as your database.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>12. What does the Django templates contain?</strong></h4>
+    <p><strong>Ans:</strong> A template is a simple text file. It can create any text-based format like XML, CSV, HTML, etc. A template contains variables that get replaced with values when the template is evaluated and tags (%tag%) that controls the logic of the template.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>13. Is Django a content management system (CMS)?</strong></h4>
+    <p><strong>Ans:</strong> No, Django is not a CMS. Instead, it is a Web framework and a programming tool that makes you able to build websites.</p>
+    <hr />
+    <h4><strong>14. What is the use of session framework in Django?</strong></h4>
+    <p><strong>Ans:</strong> The session framework facilitates you to store and retrieve arbitrary data on a per-site visitor basis. It stores data on the server side and abstracts the receiving and sending of cookies. Session can be implemented through a piece of middleware.</p>
+    <hr />
+    <h4><strong>15. How can you set up static files in Django?</strong></h4>
+    <p><strong>Ans:</strong> There are three main things required to set up static files in Django:</p>
+    <p>1. Set STATIC_ROOT in settings.py</p>
+    <p>2. run manage.py collectsatic</p>
+    <p>3. set up a Static Files entry on the PythonAnywhere web tab</p>
+    <hr />
+    <h4><strong>16. How to use file based sessions?</strong></h4>
+    <p><strong>Ans:</strong> You have to set the SESSION_ENGINE settings to “django.contrib.sessions.backends.file” to use file based session.</p>
+    <hr />
+    <h4><strong>17. What is some typical usage of middlewares in Django?</strong></h4>
+    <p><strong>Ans:</strong> Some usage of middlewares in Django is:</p>
+    <p>Session management,<br />
+    Use authentication<br />
+    Cross-site request forgery protection<br />
+    Content Gzipping, etc.</p>
+    <hr />
+    <h4><strong>18. What does of Django field class types do?</strong></h4>
+    <p><strong>Ans:</strong> The Django field class types specify:</p>
+    <p>The database column type.<br />
+    The default HTML widget to avail while rendering a form field.<br />
+    The minimal validation requirements used in Django admin.<br />
+    Automatic generated forms.</p>
+    <hr />
+    <h4><strong>19. What is the command to start Django’s built-in development server?</strong></h4>
+    <p>A. manage.py runserver<br />
+    B. manage.py –start<br />
+    C. manage.py run<br />
+    D. manage.py startserver –dev<br />
+    E. manage.py –run<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>20. Given a model named ‘User’ that contains a DateTime field named ‘last_login’, how do you query for users that have never logged in?</strong></h4>
+    <p>A. User.objects.filter( last_login=Null )<br />
+    B. User.objects.filter( last_login__null=True )<br />
+    C. User.objects.filter( last_login__isnull=False )<br />
+    D. User.objects.filter( last_login__isnull=True )<br />
+    E. User.objects.filter( last_login=Never )<br />
+    Ans: D</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>21. What does the Django command `manage.py shell` do?</strong></h4>
+    <p>A. Starts a command line in whatever $SHELL your environment uses.<br />
+    B. Starts a Django command prompt with your Python environment pre-loaded.<br />
+    C. Starts a Python command prompt with your Django environment pre-loaded.<br />
+    D. Loads a special Pythonic version of the Bash shell.<br />
+    E. Loads a Python command prompt you can use to sync your database schema remotely.<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>22. Assuming you’ve imported the proper Django model file, how do you add a ‘User’ model to the Django admin?</strong></h4>
+    <p>A. admin.register( Users )<br />
+    B. admin.site( self, User )<br />
+    C. user.site.register( Admin )<br />
+    D. users.site.register( Admin )<br />
+    E. admin.site.register( User )<br />
+    Ans: E</p>
+    <hr />
+    <h4><strong>23. What is the Django command to start a new app named ‘users’ in an existing project?</strong></h4>
+    <p>A. manage.py –newapp users<br />
+    B. manage.py newapp users<br />
+    C. manage.py –startapp users<br />
+    D. manage.py startapp users<br />
+    E. manage.py start users<br />
+    Ans: D</p>
+    <hr />
+    <h4><strong>24. What does a urls.py file do in Django?</strong></h4>
+    <p>A. This file contains site deployment data such as server names and ports.<br />
+    B. It contains a site map of Django-approved URLs.<br />
+    C. It contains URL matching patterns and their corresponding view methods.<br />
+    D. You run this file when you get obscure 404 Not Found errors in your server logs.<br />
+    E. This file provides an up to date list of how-to URLs for learning Django more easily.<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>25. What is the command to run Django’s development server on port 8080 on IP address 12.34.56.78?</strong></h4>
+    <p>A. manage.py –run 12.34.56.78 8080<br />
+    B. manage.py –dev 12.34.56.78:8080<br />
+    C. manage.py runserver 12.34.56.78:8000<br />
+    D. manage.py run 12.34.56.78:8080<br />
+    E. manage.py runserver 12.34.56.78:8080<br />
+    Ans: E</p>
+    <hr />
+    <h4><strong>26. Django is written using what programming language?</strong></h4>
+    <p>A. PHP<br />
+    B. Ruby<br />
+    C. Javascript<br />
+    D. Java<br />
+    E. Python<br />
+    Ans: E</p>
+    <hr />
+    <h4><strong>27. After you make a new ‘app’ in your existing Django project, how do you get Django to notice it?</strong></h4>
+    <p>A. No additional action is required, Django notices new apps automatically.<br />
+    B. Run the `manage.py validate` command, and then start a new shell.<br />
+    C. Run the `manage.py syncdb` command.<br />
+    D. In settings.py, add the app to the PROJECT_APPS variable.<br />
+    E. In settings.py, add the new app to the INSTALLED_APPS variable.<br />
+    Ans: E</p>
+    <hr />
+    <p>&nbsp;</p>
+    </div>
+    </div> <!-- .et_pb_text -->
+    </div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_2_5 et_pb_column_2    et_pb_css_mix_blend_mode_passthrough et-last-child">
+    <div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_2 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3 class="western"><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>   Our Upcoming </b></span></span><span style="font-family: Liberation Serif, serif;"><b>Webinar</b></span><span style="font-family: Liberation Serif, serif;"><b>/</b></span><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>Training  </b></span></span></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_3 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <ul>
+    <li>
+    <h5><span style="color: #003366;"><a style="color: #003366;" href="https://docs.google.com/forms/d/e/1FAIpQLSelemb7MisCd0noWLjkBtN4pyB0YHqeSaQzfzKzPUTdMBLTqA/viewform?usp=send_form"><strong>Free Webinar | RPA &amp; AI for Project Managers</strong></a></span></h5>
+    </li>
+    <li>
+    <h5><span style="color: #003366;"><strong><a style="color: #003366;" href="https://forms.gle/d5cvJfaUn8kFbGiQA">Free Webinar | How to become an RPA developer without coding</a></strong></span></h5>
+    </li>
+    <li>
+    <h5><span style="color: #003366;"><strong><a style="color: #003366;" href="https://pages.razorpay.com/pl_FDRroh72cwz9Rn/view">RPA UiPath Online Training (Weekend) </a></strong></span></h5>
+    </li>
+    </ul>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider_1 et_pb_space et_pb_divider_hidden"><div class="et_pb_divider_internal"></div></div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_4 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3 class="western"><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>   RPA Challenges</b></span></span></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_5 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="810" src="https://www.youtube.com/embed/bt7BJiGPPSY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_6 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="810" src="https://www.youtube.com/embed/F_LBophLFzk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_7 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="810" src="https://www.youtube.com/embed/nAiH4rV6EVM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_8 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="810" src="https://www.youtube.com/embed/bNxQR2eFamw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_9 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/AlyppcM63hY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_10 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/1FuKNiUuohU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider_2 et_pb_space et_pb_divider_hidden"><div class="et_pb_divider_internal"></div></div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_11 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3 class="western"><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>   Our Interview Q &amp; A</b></span></span></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_12 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <ul>
+    <li>
+    <h5><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blue-prism-interview-questions-and-answers/">Blue Prism Interview Questions &amp; Answers </a></span></strong></h5>
+    </li>
+    <li>
+    <h5><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/uipath-interview-questions-and-answers/">UiPath Interview Questions &amp; Answers</a></span></strong></h5>
+    </li>
+    <li>
+    <h5><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/python-interview-questions-and-answers-for-freshers">Python Interview Questions &amp; Answers</a></span></strong></h5>
+    </li>
+    <li>
+    <h5><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/python-django-interview-questions-and-answers-for-freshers/">Django Interview Questions &amp; Answers </a></span></strong></h5>
+    </li>
+    <li>
+    <h5><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/python-pandas-interview-questions-and-answers-for-freshers">Pandas Interview Questions &amp; Answers</a></span></strong></h5>
+    </li>
+    <li>
+    <h5><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/machine-learning-interview-questions-and-answers-for-freshers/">Machine Learning Interview Questions And Answers</a></span></strong></h5>
+    </li>
+    </ul>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_13 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3 class="western"><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>   Our Blogs</b></span></span></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_14 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/cognitive-rpa-and-the-need-for-the-change/">Cognitive RPA And The Need For The Change</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/non_it-person-uipath-rpa-journey/">Non_IT Person UiPath RPA Journey</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/future-of-manufacturing-using-ai/" rel="bookmark">Future of Manufacturing Using AI</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/artificial-intelligence-machine-learning-and-deep-learning/" rel="bookmark">The Difference Between Artificial Intelligence, Machine learning And Deep Learning</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/key-features-to-grow-your-career-with-rpa/" rel="bookmark">Top 10 Key Features to Grow your Career with RPA</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/how-robotics-industry-overcome-the-awareness-gap/" rel="bookmark">How Robotics Industry Overcome the Awareness Gap?</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/rpa-is-it-the-fresh-it-job-killer/" rel="bookmark">RPA : Is it the fresh IT job killer?</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/the-history-of-data-science/" rel="bookmark">THE HISTORY OF DATA SCIENCE</a></span></strong><br />
+    <strong><span style="color: #003366;"><a style="color: #003366;" href="https://www.kausalvikash.in/blog/fundamentals-of-robotic-process-automation-rpa/" rel="bookmark">Fundamentals of Robotic Process Automation (RPA)</a></span></strong></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider_3 et_pb_space et_pb_divider_hidden"><div class="et_pb_divider_internal"></div></div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_15 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3 class="western"><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>   Our Learning Videos</b></span></span></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_16 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/aGmPZ47vkhI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_17 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/4rNhqwd8q6s?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_18 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/6538VxAz3K4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_19 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/D8ErW3Mlhcg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_20 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/LhaD8cj1QIk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider_4 et_pb_space et_pb_divider_hidden"><div class="et_pb_divider_internal"></div></div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_21 et_pb_bg_layout_dark  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3 class="western"><span style="font-family: Liberation Serif, serif;"><span style="font-family: Liberation Serif, serif;"><b>    RPA Use Cases</b></span></span></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_22 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="810" src="https://www.youtube.com/embed/7smsNFM86Lc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_23 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="810" src="https://www.youtube.com/embed/YYBhPqwiwrs?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_24 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/jtLTwOSBHaE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_25 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <p><iframe width="1080" height="608" src="https://www.youtube.com/embed/z0Jt4EMK8d4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    </div> <!-- .et_pb_text -->
+    </div> <!-- .et_pb_column -->
+    </div> <!-- .et_pb_row -->
+    </div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_3 et_section_regular">
+    <div class="et_pb_row et_pb_row_2">
+    <div class="et_pb_column et_pb_column_4_4 et_pb_column_3    et_pb_css_mix_blend_mode_passthrough et-last-child">
+    <div class="et_pb_module et_pb_cta_0 et_pb_promo et_pb_bg_layout_dark  et_pb_text_align_center" style="background-color: #001f63;">
+    <div class="et_pb_promo_description">
+    <h2 class="et_pb_module_header">FREE Counselling &amp; DEMO | Python | Data Science with Python | Online</h2>
+    </div>
+    <div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://forms.gle/BCnjDa88fnzpNtay9" target="_blank">Register Now !</a></div>
+    </div><div class="et_pb_module et_pb_text et_pb_text_26 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h4><strong>28. What is the purpose of settings.py?</strong></h4>
+    <p>A. To configure settings for the Django project<br />
+    B. To configure settings for an app<br />
+    C. To set the date and time on the server<br />
+    D. To sync the database schema<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>29. How do you define a ‘name’ field in a Django model with a maximum length of 255 characters?</strong></h4>
+    <p>A. name = models.CharField(max_len=255)<br />
+    B. model.CharField(max_length=255)<br />
+    C. name = models.CharField(max_length=255)<br />
+    D. model = CharField(max_length=255)<br />
+    E. name = model.StringField(max_length=auto)<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>30. What is the definition of a good Django app?</strong></h4>
+    <p>A. A good Django app provides a small, specific piece of functionality that can be used in any number of Django projects.<br />
+    B. A good Django app is a fully functioning website that has 100% test coverage.<br />
+    C. A good Django app is highly customized and cannot be used in multiple projects.<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>31. What is the most easiest, fastest, and most stable deployment choice in most cases with Django?</strong></h4>
+    <p>A. FastCGI<br />
+    B. mod_wsgi<br />
+    C. SCGI<br />
+    D. AJP<br />
+    Ans: B</p>
+    <hr />
+    <h4><strong>32. How do you exclude a specific field from a ModelForm?</strong></h4>
+    <p>A. Create a new Form, don’t use a ModelForm<br />
+    B. Use the exclude parameter in the Meta class in your form<br />
+    C. Set the field to hidden<br />
+    D. You can not do this<br />
+    Ans: B</p>
+    <hr />
+    <h4><strong>33. Assuming you have a Django model named ‘User’, how do you define a foreign key field for this model in another model?</strong></h4>
+    <p>A. model = new ForeignKey(User)<br />
+    B. user = models.IntegerKey(User)<br />
+    C. user = models.ForeignKey(User)<br />
+    D. models.ForeignKey( self, User )<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>34. What preferred method do you add to a Django model to get a better string representation of the model in the Django admin?</strong></h4>
+    <p>A. __unicode__<br />
+    B. to_s( self )<br />
+    C. __translate__<br />
+    D. __utf_8__<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>36. What is Model Form used for?</strong></h4>
+    <p>A. To model an input form for a template<br />
+    B. To specify rules for correct form when writing Django code<br />
+    C. To define a form based on an existing model<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>37. What happens if MyObject.objects.get() is called with parameters that do not match an existing item in the database?</strong></h4>
+    <p>A. The Http404 exception is raised.<br />
+    B. The DatabaseError exception is raised.<br />
+    C. The MyObject.DoesNotExist exception is raised.<br />
+    D. The object is created and returned.<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>38. A set of helpful applications to use within your Django projects is included in the official distribution. This module is called what?</strong></h4>
+    <p>A. django.extras<br />
+    B. django.helpers<br />
+    C. django.utilities<br />
+    D. django.ponies<br />
+    E. django.contrib<br />
+    Ans: E</p>
+    <hr />
+    <h4><strong>39. What is the correct syntax for including a class based view in a URLconf?</strong></h4>
+    <p>A. (r’^pattern/$’, YourView.as_view()),<br />
+    B. (r’^pattern/$’, YourView.init()),<br />
+    C. (r’^pattern/$’, YourView),<br />
+    D. (r’^pattern/$’, YourView()),<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>40. What is the command to start a new Django project called ‘myproject’?</strong></h4>
+    <p>A. django-admin.py startproject myproject<br />
+    B. django-admin.py –start myproject<br />
+    C. django.py startproject myproject<br />
+    D. django.py –new myproject<br />
+    E. django.py new myproject<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>41. How to make django timezone-aware?</strong></h4>
+    <p>A. In settings.py: USE_L10N=True<br />
+    B. in views.py, import timezone<br />
+    C. in views.py, import tz<br />
+    D. in urls.py, import timezone<br />
+    E. In settings.py: USE_TZ=True<br />
+    Ans: E</p>
+    <hr />
+    <h4><strong>42. In Django how would you retrieve all the ‘User’ records from a given database?</strong></h4>
+    <p>A. User.objects.all()<br />
+    B. Users.objects.all()<br />
+    C. User.all_records()<br />
+    D. User.object.all()<br />
+    E. User.objects<br />
+    Ans: A</p>
+    <hr />
+    <h4><strong>43. How can you define additional behavior and characteristics of a Django class?</strong></h4>
+    <p>A. def setUp():<br />
+    B. class Meta:<br />
+    C. class __init__:<br />
+    D. def Meta():<br />
+    E. def __init__():<br />
+    Ans: B</p>
+    <hr />
+    <h4><strong>44. What is the Django shortcut method to more easily render an html response?</strong></h4>
+    <p>A. render_to_html<br />
+    B. render_to_response<br />
+    C. response_render<br />
+    D. render<br />
+    Ans: B</p>
+    <hr />
+    <h4><strong>45. What does the Django command `manage.py validate` do?</strong></h4>
+    <p>A. Checks for errors in your views.<br />
+    B. Checks for errors in your templates.<br />
+    C. Checks for errors in your controllers.<br />
+    D. Checks for errors in your models.<br />
+    E. Checks for errors in your settings.py file.<br />
+    Ans: D</p>
+    <hr />
+    <h4><strong>46. What is the correct way to include django’s admin urls? from django.contrib import admin’) from django.conf.urls import patterns, include, url urlpatterns = patterns(”, ______________________ )</strong></h4>
+    <p>A. url(r’^admin/’, admin.as_view(), name=’admin ),<br />
+    B. url(r’^admin/’, include(admin) ),<br />
+    C. url(r’^admin/’, include(admin.site.urls) ),<br />
+    D. url(r’^admin/’, admin.urls ),<br />
+    E. admin.autodiscover()<br />
+    Ans: C</p>
+    <hr />
+    <h4><strong>152. Where to store static files in django ?</strong></h4>
+    <p>Static files are stored in the folder called <strong>static </strong>in the Django app.</p>
+    <p>&nbsp;</p>
+    <h4><strong>49. What is the purpose of the STATIC_ROOT setting?</strong></h4>
+    <p>A. Defines the URL prefix where static files will be served from .<br />
+    B. Defines the location where all static files will be copied by the ‘collectstatic’ management command, to be served by the production webserver.<br />
+    C. A project’s static assets should be stored here to be served by the development server.<br />
+    D. Defines the location for serving user uploaded files.<br />
+    Ans: B</p>
+    <p>&nbsp;</p>
+    <hr />
+    <h4><strong>50. How to create a DateTimeField named created and filled in only on the creation with the current time?</strong></h4>
+    <p>A. created = models.CreationTimeField()<br />
+    B. created = models.DateTimeField(default=datetime.datetime.now())<br />
+    C. created = models.DateTimeField(auto_now_add=True, auto_now=True)<br />
+    D. created = models.DateTimeField(auto_now=True)<br />
+    E. created = models.DateTimeField(auto_now_add=True)<br />
+    Ans: E</p>
+    <hr />
+    <p>&nbsp;</p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_cta_1 et_pb_promo et_pb_bg_layout_dark  et_pb_text_align_center" style="background-color: #001f63;">
+    <div class="et_pb_promo_description">
+    <h2 class="et_pb_module_header">FREE Counselling &amp; DEMO | Python | Data Science with Python | Online</h2>
+    </div>
+    <div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://forms.gle/BCnjDa88fnzpNtay9" target="_blank">Register Now !</a></div>
+    </div><div class="et_pb_module et_pb_text et_pb_text_27 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h3><strong>51. What is the difference between a project and an app in Django?</strong></h3>
+    <p><strong>Ans:</strong> In Django, a project is the entire application and an app is a module inside the project that deals with one specific requirement. E.g., if the entire project is an ecommerce site, then inside the project we will have several apps, such as the retail site app, the buyer site app, the shipment site app, etc.</p>
+    <hr />
+    <h3><strong>52. What is Django Admin Interface?</strong></h3>
+    <p><strong>Ans:</strong> Django comes with a fully customizable in-built admin interface, which lets us see and make changes to all the data in the database of registered apps and models. To use a database table with the admin interface, we need to register the model in the admin.py file.</p>
+    <hr />
+    <h3><strong>53. Explain Django’s Request/Response Cycle.</strong></h3>
+    <p><strong>Ans:</strong> In the Request/Response Cycle, first, a request is received by the Django server. Then, the server looks for a matching URL in the urlpatterns defined for the project. If no matching URL is found, then a response with 404 status code is returned. If a URL matches, then the corresponding code in the view file associated with the URL is executed to build and send a response.</p>
+    <hr />
+    <h3><strong>54. What is a model in Django?</strong></h3>
+    <p><strong>Ans:</strong> A model is a Python class in Django that is derived from the django.db.models.Model class. A model is used in Django to represent a table in a database. It is used to interact with and get results from the database tables of our application.</p>
+    <hr />
+    <h3><strong>55. What are migrations in Django?</strong></h3>
+    <p><strong>Ans:</strong> A migration in Django is a Python file that contains changes we make to our models so that they can be converted into a database schema in our DBMS. So, instead of manually making changes to our database schema by writing queries in our DBMS shell, we can just make changes to our models. Then, we can use Django to generate migrations from those model changes and run those migrations to make changes to our database schema.</p>
+    <hr />
+    <h3><strong>56. What are views in Django?</strong></h3>
+    <p><strong>Ans:</strong> A view in Django is a class and/or a function that receives a request and returns a response. A view is usually associated with urlpatterns, and the logic encapsulated in a view is run when a request to the URL associated with it is run. A view, among other things, gets data from the database using models, passes that data to the templates, and sends back the rendered template to the user as an HttpResponse.</p>
+    <hr />
+    <h3><strong>57. What is the use of the include function in the urls.py file in Django?</strong></h3>
+    <p><strong>Ans:</strong> As in Django there can be many apps, each app may have some URLs that it responds to. Rather than registering all URLs for all apps in a single urls.py file, each app maintains its own urls.py file, and in the project’s urls.py file we use each individual urls.py file of each app by using the include function.</p>
+    <hr />
+    <h3><strong>58. Why is Django called a loosely coupled framework?</strong></h3>
+    <p><strong>Ans:</strong> Django is called a loosely coupled framework because of its MVT architecture, which is a variant of the MVC architecture. It helps in separating the server code from the client-related code. Django’s models and views take care of the code that needs to be run on the server like getting records from database, etc., and the templates are mostly HTML and CSS that just need data from models passed in by the views to render them. Since these components are independent of each other, Django is called a loosely coupled framework.</p>
+    <hr />
+    <h3></h3>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_28 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h4><strong>59.Mention the architecture of <a href="https://www.kausalvikash.in/python-training-in-pune/">Django</a> architecture?</strong></h4>
+    <p><strong>Ans:</strong> Django architecture consists of</p>
+    <ul>
+    <li><strong>Models:</strong> It describes your database schema and your data structure</li>
+    <li><strong>Views:</strong> It controls what a user sees, the view retrieves data from appropriate models and execute any calculation made to the data and pass it to the template</li>
+    <li><strong>Templates:</strong> It determines how the user sees it. It describes how the data received from the views should be changed or formatted for display on the page</li>
+    <li><strong>Controller:</strong> The Django framework and URL parsing</li>
+    </ul>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>60. Why <a href="https://www.kausalvikash.in/python-training-in-pune/">Django</a> should be used for web-development?</strong></h4>
+    <p><strong>Ans:</strong></p>
+    <ul>
+    <li>It allows you to divide code modules into logical groups to make it flexible to change</li>
+    <li>To ease the website administration, it provides auto-generated web admin</li>
+    <li>It provides pre-packaged API for common user tasks</li>
+    <li>It gives you template system to define HTML template for your web page to avoid code duplication</li>
+    <li>It enables you to define what URL be for a given function</li>
+    <li>It enables you to separate business logic from the HTML</li>
+    <li>Everything is in python</li>
+    </ul>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>61. Explain how you can create a project in <a href="https://www.kausalvikash.in/python-training-in-pune/">Django</a>?</strong></h4>
+    <p><strong>Ans: </strong>To start a project in Django, you use command $ django-admin.py and then use the command<br />
+    <strong>Project</strong><br />
+    <strong>_init_.py</strong><br />
+    <strong>manage.py</strong><br />
+    <strong>settings.py</strong><br />
+    <strong>urls.py</strong></p>
+    <hr />
+    <div class="wpb_text_column wpb_content_element ">
+    <div class="wpb_wrapper">
+    <p>&nbsp;</p>
+    <h4><strong>62. Explain how you can set up the Database in Django?</strong></h4>
+    <p><strong>Ans: </strong>You can use the command edit <strong>mysite/setting.py </strong>, it is a normal python module with module level representing Django settings.<br />
+    Django uses SQLite by default; it is easy for Django users as such it won’t require any other type of installation. In the case your database choice is different that you have to the following keys in the <strong>DATABASE ‘default’ </strong>item to match your database connection settings</p>
+    <ul>
+    <li><strong>Engines:</strong> you can change database by using ‘django.db.backends.sqlite3’ , ‘django.db.backeneds.mysql’, ‘django.db.backends.postgresql_psycopg2’, ‘django.db.backends.oracle’ and so on</li>
+    <li><strong>Name: </strong>The name of your database. In the case if you are using SQLite as your database, in that case database will be a file on your computer, Name should be a full absolute path, including file name of that file.</li>
+    </ul>
+    <p>If you are not choosing SQLite as your database then setting like Password, Host, User, etc. must be added.</p>
+    <p>&nbsp;</p>
+    <hr />
+    <h4><strong>63. Give an example how you can write a VIEW in <a href="https://www.kausalvikash.in/python-training-in-pune/">Django</a>?</strong></h4>
+    <p><strong>Ans: </strong>Views are Django functions that take a request and return a response.  To write a view in Django we take a simple example of “Guru99_home” which uses the template Guru99_home.html and uses the date-time module to tell us what the time is whenever the page is refreshed.  The file we required to edit is called view.py, and it will be inside mysite/myapp/</p>
+    <p>Copy the below code into it and save the file<br />
+    <strong>       from datatime import datetime</strong><br />
+    <strong>      from django.shortcuts import render</strong><br />
+    <strong>     def home (request):</strong><br />
+    <strong>return render(request, ‘Guru99_home.html’, {‘right_now’: datetime.utcnow()})</strong><br />
+    Once you have determined the VIEW, you can uncomment this line in urls.py<br />
+    <strong># url ( r ‘^$’ , ‘mysite.myapp.views.home’ , name ‘Guru99’),</strong><br />
+    The last step will reload your web app so that the changes are noticed by the web server.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>64. Explain how you can setup static files in <a href="https://www.kausalvikash.in/python-training-in-pune/">Django</a>?</strong></h4>
+    <p><strong>Ans: </strong>There are three main things required to set up static files in Django</p>
+    <ul>
+    <li>Set STATIC_ROOT in settings.py</li>
+    <li>run manage.py collectsatic</li>
+    <li>set up a Static Files entry on the <strong>PythonAnywhere</strong> web tab</li>
+    </ul>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>65. Mention what does the Django templates consists of?</strong></h4>
+    <p><strong>Ans: </strong>The template is a simple text file.  It can create any text-based format like XML, CSV, HTML, etc.  A template contains variables that get replaced with values when the template is evaluated and tags (% tag %) that controls the logic of the template.</p>
+    <hr />
+    <h4><strong>66. Explain the use of session framework in Django?</strong></h4>
+    <p><strong>Ans:</strong> In Django, the session framework enables you to store and retrieve arbitrary data on a per-site-visitor basis.  It stores data on the server side and abstracts the receiving and sending of cookies.  Session can be implemented through a piece of middleware.</p>
+    </div>
+    </div>
+    <hr />
+    <p>&nbsp;</p>
+    <div class="wpb_text_column wpb_content_element ">
+    <div class="wpb_wrapper">
+    <h4><strong>67. Explain how you can use file based sessions?</strong></h4>
+    <p><strong>Ans: </strong>To use file based session you have to set the <strong>SESSION_ENGINE </strong>settings to “django.contrib.sessions.backends.file”</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>68. Explain the migration in Django and how you can do in SQL?</strong></h4>
+    <p><strong>Ans: </strong>Migration in Django is to make changes to your models like deleting a model, adding a field, etc. into your database schema.  There are several commands you use to interact with migrations.</p>
+    <ul>
+    <li>Migrate</li>
+    <li>Makemigrations</li>
+    <li>Sqlmigrate</li>
+    </ul>
+    <p>To do the migration in SQL, you have to print the SQL statement for resetting sequences for a given app name.<br />
+    <strong>django-admin.py sqlsequencreset</strong><br />
+    Use this command to generate SQL that will fix cases where a sequence is out sync with its automatically incremented field data.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>69. Mention what command line can be used to load data into Django?</strong></h4>
+    <p><strong>Ans: </strong>To load data into Django you have to use the command line<strong> Django-admin.py loaddata. </strong>The command line will searches the data and loads the contents of the named fixtures into the database.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>70. Explain what does django-admin.py makemessages command is used for?</strong></h4>
+    <p><strong>Ans: </strong>This command line executes over the entire source tree of the current directory and abstracts all the strings marked for translation.  It makes a message file in the locale directory.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>71. List out the inheritance styles in Django?</strong></h4>
+    <p><strong>Ans: </strong>In Django, there is three possible inheritance styles</p>
+    <ul>
+    <li><strong>Abstract base classes:</strong> This style is used when you only wants parent’s class to hold information that you don’t want to type out for each child model</li>
+    <li><strong>Multi-table Inheritance:</strong> This style is used If you are sub-classing an existing model and need each model to have its own database table</li>
+    <li><strong>Proxy models:</strong> You can use this model, If you only want to modify the Python level behavior of the model, without changing the model’s fields</li>
+    </ul>
+    <hr />
+    <h4></h4>
+    <h4><strong>72. Mention what does the Django field class types?</strong></h4>
+    <p><strong>Ans: </strong>Field class types determines</p>
+    <ul>
+    <li>The database column type</li>
+    <li>The default HTML widget to avail while rendering a form field</li>
+    <li>The minimal validation requirements used in Django admin and in automatically generated forms</li>
+    </ul>
+    <hr />
+    <h4></h4>
+    <h4><strong>73. What constitutes Django templates ?</strong></h4>
+    <p><strong>Ans</strong>: Template can create formats like XML,HTML and CSV(which are text based formats). In general terms template is a simple text file. It is made up of variables that will later be replaced by values after the template is evaluated and has tags which will control template’s logic.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>74. List some typical usage of middlewares in Django.</strong></h4>
+    <p><strong>Ans: </strong>Some of the typical usage of middlewares in Django are: Session management, user authentication, cross-site request forgery protection, content Gzipping, etc.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>75. How do you use views in Django? </strong></h4>
+    <p><strong>Ans: </strong>Views will take request to return response.  Let’s write a view in Django :  “example” using template example.html , using  the date-time module to tell us exact time of reloading the page.  Let’s edit a file called view.py, and it will be inside randomsite/randomapp/<br />
+    <strong>To do this save and copy following into a file:</strong><br />
+    Default</p>
+    <p>from datatime import datetime</p>
+    <p>from django.shortcuts import render</p>
+    <p>def home (request):</p>
+    <p>return render(request, ‘Guru99_home.html’, {‘right_now’: datetime.utcnow()})<br />
+    Default</p>
+    <p>You have to determine the  VIEW first, and then uncomment this line located in file <em>urls.py</em></p>
+    <p><strong># url ( r ‘^$’ , ‘randomsite.randomapp.views.home’ , name ‘example’),</strong></p>
+    <hr />
+    <h4></h4>
+    <h4><strong>76. How do you make a Django app that is test driven and will display Fibonacci’s sequence?</strong></h4>
+    <p>This will reload the site making changes obvious.</p>
+    <p><strong>Ans: </strong>Keep in mind that it should take an index number and output the sequence. Additionally, there should be a page that shows the most recent generated sequences.</p>
+    <p>Following is one of the solution for generating fibonacci series:<br />
+    Default</p>
+    <p>def fib(n):</p>
+    <p>“Complexity: O(log(n))”</p>
+    <p>if n &lt;= 0:</p>
+    <p>return 0</p>
+    <p>i = n – 1</p>
+    <p>(a, b) = (1, 0)</p>
+    <p>(c, d) = (0, 1)</p>
+    <p>while i &gt; 0:</p>
+    <p>if i % 2:</p>
+    <p>(a, b) = (d * b + c * a,  d * (b + a) + c * b)</p>
+    <p>(c, d) = (c * c + d * d, d * (2 * c + d))</p>
+    <p>i = i / 2</p>
+    <p>return a + b<br />
+    Default</p>
+    <p>Below is a model that would keep track of latest numbers:</p>
+    <p>from django.db import models</p>
+    <p>class Fibonacci(models.Model):</p>
+    <p>parameter = models.IntegerField(primary_key=True)</p>
+    <p>result = models.CharField(max_length=200)</p>
+    <p>time = models.DateTimeField()<br />
+    DefaultFor view, you can simply use the following code:</p>
+    <p>&nbsp;</p>
+    <p>from models import Fibonacci</p>
+    <p>def index(request):</p>
+    <p>result = None</p>
+    <p>if request.method==”POST”:</p>
+    <p>try:</p>
+    <p>n=int(request.POST.get(‘n’))</p>
+    <p>except:</p>
+    <p>return Http404</p>
+    <p>try:</p>
+    <p>result = Fibonacci.objects.get(pk=n)</p>
+    <p>result.time = datetime.now()</p>
+    <p>except DoesNotExist:</p>
+    <p>result = str(fib(n))</p>
+    <p>result = Fibonacci(n, result, datetime.now())</p>
+    <p>result.save()</p>
+    <p>return direct_to_template(request, ‘base.html’, {‘result’:result.result})<br />
+    You could use models to get last ‘n’ entities.</p>
+    </div>
+    </div>
+    <div class="wpb_single_image wpb_content_element vc_align_left"></div>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>77.What makes up Django architecture?</strong></h4>
+    <p><strong>Ans: </strong>Django runs on MVC architecture. Following are the components that make up django architecture:</p>
+    <ul>
+    <li><strong>Models:</strong> Models elaborate back-end stuffs like database schema.(relationships)</li>
+    <li><strong>Views: </strong>Views control what is to be shown to end-user.</li>
+    <li><strong>Templates:</strong> Templates deal with formatting of view.</li>
+    <li><strong>Controller:</strong> Takes entire control of Models.A MVC framework can be compared to a Cable TV with remote. A Television set is View(that interacts with end user), cable provider is model(that works in back-end) and Controller is remote that controls which channel to select and display it through view.</li>
+    </ul>
+    <hr />
+    <h4></h4>
+    <h4><strong>78. What does session framework do in django framework ?</strong></h4>
+    <p><strong>Ans:</strong> Session framework in django will store data on server side and interact with end-users. Session is generally used with a middle-ware. It also helps in receiving and sending cookies for authentication of a user.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>79.Can you create singleton object in python?If yes, how do you do it?</strong></h4>
+    <p><strong>Ans: </strong>Yes, you can create singleton object. Here’s how you do it :</p>
+    <p>Default</p>
+    <table>
+    <tbody>
+    <tr>
+    <td>12</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</td>
+    <td>class Singleton(object):def __new__(cls,*args,**kwargs):</p>
+    <p>if not hasattr(cls,’_inst’):</p>
+    <p>cls._inst = super(Singleton,cls).__new__(cls,*args,**kwargs)</p>
+    <p>return cls._inst</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <p><strong> </strong></p>
+    <h4><strong>80. Mention caching strategies that you know in Django!</strong></h4>
+    <p><strong>Ans:</strong> Few caching strategies that are available in Django are as follows:</p>
+    <ul>
+    <li>File sytem caching</li>
+    <li>In-memory caching</li>
+    <li>Using Memcached</li>
+    <li>Database caching</li>
+    </ul>
+    <hr />
+    <p>&nbsp;</p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_cta_2 et_pb_promo et_pb_bg_layout_dark  et_pb_text_align_center" style="background-color: #001f63;">
+    <div class="et_pb_promo_description">
+    <h2 class="et_pb_module_header">FREE Counselling &amp; DEMO | Python | Data Science with Python | Online</h2>
+    </div>
+    <div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://forms.gle/BCnjDa88fnzpNtay9" target="_blank">Register Now !</a></div>
+    </div><div class="et_pb_module et_pb_text et_pb_text_29 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h4><strong>81. What are inheritance type in Django?</strong></h4>
+    <p><strong>Ans: </strong>There are 3 inheritance types in Django</p>
+    <ul>
+    <li>Abstract base classes</li>
+    <li>Multi-table Inheritance</li>
+    <li>Proxy models</li>
+    </ul>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>82. What do you think are limitation of <a href="https://www.kausalvikash.in/python-training-in-pune/">Django</a> Object relation mapping(ORM) ?</strong></h4>
+    <p><strong>Ans: </strong>If the data is complex and consists of multiple joins using the SQL  will be clearer.</p>
+    <p>If Performance is a concern for your, ORM aren’t your choice. Genrally. Object-relation-mapping are considered good option to construct an optimized query, SQL has an upper hand when compared to ORM.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>83. How to Start Django project with ‘Hello World!’? Just say hello world in django project.</strong></h4>
+    <p><strong>Ans:</strong> <strong>There are 7 steps ahead to start Django project.</strong></p>
+    <p><strong>Step 1:</strong> Create project in terminal/shell</p>
+    <p>f2finterview:~$ django-admin.py startproject sampleproject</p>
+    <p><strong>Step 2:</strong> Create application</p>
+    <p>f2finterview:~$ cd sampleproject/</p>
+    <p>f2finterview:~/sampleproject$ python manage.py startapp sampleapp</p>
+    <p><strong>Step 3:</strong> Make template directory and index.html file</p>
+    <p>f2finterview:~/sampleproject$ mkdir templates</p>
+    <p>f2finterview:~/sampleproject$ cd templates/</p>
+    <p>f2finterview:~/sampleproject/templates$ touch index.html</p>
+    <p><strong>Step 4:</strong> Configure initial configuration in settings.py</p>
+    <p>Add PROJECT_PATH and PROJECT_NAME</p>
+    <p>import os</p>
+    <p>PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))</p>
+    <p>PROJECT_NAME = ‘sampleproject’</p>
+    <p>Add Template directories path</p>
+    <p>TEMPLATE_DIRS = (</p>
+    <p>os.path.join(PROJECT_PATH, ‘templates’),</p>
+    <p>)</p>
+    <p>Add Your app to INSTALLED_APPS</p>
+    <p>INSTALLED_APPS = (</p>
+    <p>‘sampleapp’,</p>
+    <p>)</p>
+    <p><strong>Step 5:</strong> Urls configuration in urls.py</p>
+    <p>from django.conf.urls.defaults import patterns, include, url</p>
+    <p>urlpatterns = patterns(”,</p>
+    <p>url(r’^$’, ‘sampleproject.sampleapp.views.index’, name=’index’),</p>
+    <p>)</p>
+    <p><strong>Step 6:</strong> Add index method in views.py</p>
+    <p>from django.shortcuts import render_to_response, get_object_or_404</p>
+    <p>from django.template import RequestContext</p>
+    <p>def index(request):</p>
+    <p>welcome_msg = ‘Hello World’</p>
+    <p>return render_to_response(‘index.html’,locals(),context_instance=RequestContext(request))</p>
+    <p><strong>Step7:</strong> Add welcome_msg in index.html</p>
+    <p>&lt;!DOCTYPE html&gt;</p>
+    <p>&lt;html&gt;</p>
+    <p>&lt;body&gt;</p>
+    <p>&lt;h1&gt;My First Heading For Say…&lt;/h1&gt;</p>
+    <p>&lt;p&gt;{{welcome_msg}}&lt;/p&gt;</p>
+    <p>&lt;/body&gt;</p>
+    <p>&lt;/html&gt;</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>84. How to login with email instead of username in Django?</strong></h4>
+    <p><strong>Ans: </strong>Use bellow sample method to login with email or username.</p>
+    <p>from django.conf import settings<br />
+    from django.contrib.auth import authenticate, login, REDIRECT_FIELD_NAME<br />
+    from django.shortcuts import render_to_response<br />
+    from django.contrib.sites.models import Site<br />
+    from django.template import Context, RequestContext<br />
+    from django.views.decorators.cache import never_cache<br />
+    from django.views.decorators.csrf import csrf_protect<br />
+    @csrf_protect<br />
+    @never_cache<br />
+    def signin(request,redirect_field_name=REDIRECT_FIELD_NAME,authentication_form=LoginForm):<br />
+    redirect_to = request.REQUEST.get(redirect_field_name, settings.LOGIN_REDIRECT_URL)<br />
+    form = authentication_form()<br />
+    current_site = Site.objects.get_current()<br />
+    if request.method == “POST”:<br />
+    pDict =request.POST.copy()<br />
+    form = authentication_form(data=request.POST)<br />
+    if form.is_valid():<br />
+    username = form.cleaned_data[‘username’]<br />
+    password = form.cleaned_data[‘password’]<br />
+    try:<br />
+    user = User.objects.get(email=username)<br />
+    username = user.username<br />
+    except User.DoesNotExist:<br />
+    username = username<br />
+    user = authenticate(username=username, password=password)<br />
+    # Log the user in.<br />
+    login(request, user)<br />
+    return HttpResponseRedirect(redirect_to)<br />
+    else:<br />
+    form = authentication_form()<br />
+    request.session.set_test_cookie()<br />
+    if Site._meta.installed:<br />
+    current_site = Site.objects.get_current()<br />
+    else:<br />
+    current_site = RequestSite(request)<br />
+    return render_to_response(‘login.html’,locals(), context_instance=RequestContext(request))</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>85. How Django processes a request?</strong></h4>
+    <p><strong>Ans:</strong> When a user requests a page from your Django-powered site, this is the algorithm the system follows to determine which Python code to execute:<br />
+    Django determines the root URLconf module to use. Ordinarily, this is the value of the ROOT_URLCONF setting, but if the incoming HttpRequest object has an attribute called urlconf (set by middleware request processing), its value will be used in place of the ROOT_URLCONF setting.<br />
+    Django loads that Python module and looks for the variable urlpatterns. This should be a Python list, in the format returned by the function django.conf.urls.patterns()<br />
+    Django runs through each URL pattern, in order, and stops at the first one that matches the requested URL.</p>
+    <p>Once one of the regexes matches, Django imports and calls the given view, which is a simple Python function (or a class based view). The view gets passed an HttpRequest as its first argument and any values captured in the regex as remaining arguments.</p>
+    <p>If no regex matches, or if an exception is raised during any point in this process, Django invokes an appropriate error-handling view.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>86. How to filter latest record by date in Django?</strong></h4>
+    <p><strong>Ans: Messages(models.Model):</strong><br />
+    <strong> </strong>    message_from = models.ForeignKey(User,related_name=”%(class)s_from”)<br />
+    message_to = models.ForeignKey(User,related_name=”%(class)s_to”)<br />
+    message=models.CharField(max_length=140,help_text=”Your message”)<br />
+    created_on = models.DateTimeField(auto_now_add=True)<br />
+    class Meta:<br />
+    db_table = ‘messages’</p>
+    <p><strong>Query</strong>:messages = Messages.objects.filter(message_to = user).order_by(‘-created_on’)[0]</p>
+    <p><strong>Output:</strong></p>
+    <p>message_from | message_to  | message                 | created_on</p>
+    <p>——————|—————–|——————–|——————–</p>
+    <p>Stephen        | Anto              | Hi, How are you? | 2012-10-09 14:27:48</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>87.How to filter data from Django models using python datetime?</strong></h4>
+    <p><strong>Ans:</strong> Assume Bellow model for storing messages with timelines<br />
+    class Message(models.Model):<br />
+    from = models.ForeignKey(User,related_name = “%(class)s_from”)<br />
+    to = models.ForeignKey(User, related_name = “%(class)s_to”)<br />
+    msg = models.CharField(max_length=255)<br />
+    rating = models.IntegerField(blank=’True’,default=0)<br />
+    created_on = models.DateTimeField(auto_now_add=True)<br />
+    updated_on = models.DateTimeField(auto_now=True)<br />
+    Filter messages with specified Date and Time<br />
+    today = date.today().strftime(‘%Y-%m-%d’)</p>
+    <p>yesterday = date.today() – timedelta(days=1)<br />
+    yesterday = yesterday.strftime(‘%Y-%m-%d’)</p>
+    <p>this_month = date.today().strftime(‘%m’)<br />
+    last_month = date.today() – timedelta(days=32)<br />
+    last_month = last_month.strftime(‘%m’)<br />
+    this_year = date.today().strftime(‘%Y’)</p>
+    <p>last_year = date.today() – timedelta(days=367)<br />
+    last_year = last_year.strftime(‘%Y’)</p>
+    <p>today_msgs = Message.objects.filter(created_on__gte=today).count()<br />
+    yesterday_msgs = Message.objects.filter(created_on__gte=yesterday).count()<br />
+    this_month_msgs = Message.objects.filter(created_on__month=this_month,created_on__year=this_year).count()<br />
+    last_month_msgs = Message.objects.filter(created_on__month=last_month,created_on__year=this_year).count()<br />
+    this_year_msgs = Message.objects.filter(created_on__year=this_year).count()<br />
+    last_year_msgs = Message.objects.filter(created_on__year=last_year).count()</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>88. What does Django mean?</strong></h4>
+    <p><strong>Ans:</strong> Django is named after Django Reinhardt, a gypsy jazz guitarist from the 1930s to early 1950s who is known as one of the best guitarists of all time.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>89. Which architectural pattern does Django Follow?</strong></h4>
+    <p><strong>Ans:</strong> Django follows Model-View Controller (MVC) architectural pattern.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>90. Is Django a high level web framework or low level framework?</strong></h4>
+    <p><strong>Ans:</strong> Django is a high level Python’s web framework which was designed for rapid development and clean realistic design.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>91. How would you pronounce Django?</strong></h4>
+    <p><strong>Ans:</strong> Django is pronounced JANG-oh. Here D is silent.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>92. How does Django work?</strong></h4>
+    <p><strong>Ans:</strong> Django can be broken into many components:</p>
+    <p><strong>Models.py file:</strong> This file defines your data model by extending your single line of code into full database tables and add a pre-built administration section to manage content.</p>
+    <p><strong>Urls.py file:</strong> It uses regular expression to capture URL patterns for processing.</p>
+    <p><strong>Views.py file:</strong> It is the main part of Django. The actual processing happens in view.<br />
+    When a visitor lands on Django page, first Django checks the URLs pattern you have created and uses information to retrieve the view. After that view processes the request, querying your database if necessary, and passes the requested information to template.<br />
+    After that the template renders the data in a layout you have created and displays the page.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>93. Which foundation manages Django web framework?</strong></h4>
+    <p><strong>Ans:</strong> Django web framework is managed and maintained by an independent and non-profit organization named Django Software Foundation (DSF).</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>94. Is Django stable?</strong></h4>
+    <p><strong>Ans:</strong> Yes, Django is quite stable. Many companies like Disqus, Instagram, Pinterest, and Mozilla have been using Django for many years.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>95. What are the features available in Django web framework?</strong></h4>
+    <p><strong>Ans:</strong> Features available in <a href="https://www.kausalvikash.in/python-training-in-pune/">Django </a>web framework are:</p>
+    <ul>
+    <li>Admin Interface (CRUD)</li>
+    <li>Templating</li>
+    <li>Form handling</li>
+    <li>Internationalization</li>
+    <li>Session, user management, role-based permissions</li>
+    <li>Object-relational mapping (ORM)</li>
+    <li>Testing Framework</li>
+    <li>Fantastic Documentation</li>
+    </ul>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>96. What are the advantages of using Django for web development?</strong></h4>
+    <p><strong>Ans:</strong></p>
+    <ul>
+    <li>It facilitates you to divide code modules into logical groups to make it flexible to change.</li>
+    <li>It provides auto-generated web admin to make website administration easy.</li>
+    <li>It provides pre-packaged API for common user tasks.</li>
+    <li>It provides template system to define HTML template for your web page to avoid code duplication.</li>
+    <li>It enables you to define what URL is for a given function.</li>
+    <li>It enables you to separate business logic from the HTML.</li>
+    </ul>
+    <hr />
+    <h4><strong>97. How to create a project in Django?</strong></h4>
+    <p><strong>Ans:</strong> To start a project in Django, use the command <strong>$django-admin.py</strong> and then use the following command:<br />
+    <strong>Project</strong><br />
+    <strong>_init_.py</strong><br />
+    <strong>manage.py</strong><br />
+    <strong>settings.py</strong><br />
+    <strong>urls.py</strong></p>
+    <hr />
+    <h4><strong>98. What are the inheritance styles in Django?</strong></h4>
+    <p><strong>Ans: There are three possible inheritance styles in Django:</strong></p>
+    <p><strong>1) Abstract base classes:</strong> This style is used when you only want parent’s class to hold information that you don’t want to type out for each child model.</p>
+    <p><strong>2) Multi-table Inheritance:</strong> This style is used if you are sub-classing an existing model and need each model to have its own database table.</p>
+    <p><strong>3) Proxy models:</strong> This style is used, if you only want to modify the Python level behavior of the model, without changing the model’s fields.</p>
+    <hr />
+    <h4><strong>99. How can you set up the database in Djanago</strong>?</h4>
+    <p><strong>Ans: A:</strong> To set up a database in Django, you can use the command edit mysite/setting.py , it is a normal python module with module level representing Django settings.<br />
+    By default, Django uses SQLite database. It is easy for Django users because it doesn’t require any other type of installation. In the case of other database you have to the following keys in the DATABASE ‘default’ item to match your database connection settings.</p>
+    <p><strong>Engines:</strong> you can change database by using ‘django.db.backends.sqlite3’ , ‘django.db.backeneds.mysql’, ‘django.db.backends.postgresql_psycopg2’, ‘django.db.backends.oracle’ and so on</p>
+    <p><strong>Name:</strong> The name of your database. In the case if you are using SQLite as your database, in that case database will be a file on your computer, Name should be a full absolute path, including file name of that file.<br />
+    <strong>Note:</strong> You have to add setting likes setting like Password, Host, User, etc. in your database, if you are not choosing SQLite as your database.</p>
+    <hr />
+    <h4><strong>100. What does the Django templates contain?</strong></h4>
+    <p><strong>Ans:</strong> A template is a simple text file. It can create any text-based format like XML, CSV, HTML, etc. A template contains variables that get replaced with values when the template is evaluated and tags (%tag%) that controls the logic of the template.</p>
+    <hr />
+    <h4><strong>101. Is Django a content management system (CMS)?</strong></h4>
+    <p><strong>Ans:</strong> No, Django is not a CMS. Instead, it is a Web framework and a programming tool that makes you able to build websites.</p>
+    <hr />
+    <h4><strong>102.What is the use of session framework in Django?</strong></h4>
+    <p><strong>Ans</strong>: The session framework facilitates you to store and retrieve arbitrary data on a per-site visitor basis. It stores data on the server side and abstracts the receiving and sending of cookies. Session can be implemented through a piece of middleware.</p>
+    <hr />
+    <p>&nbsp;</p>
+    </div>
+    </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_cta_3 et_pb_promo et_pb_bg_layout_dark  et_pb_text_align_center" style="background-color: #001f63;">
+    <div class="et_pb_promo_description">
+    <h2 class="et_pb_module_header">FREE Counselling &amp; DEMO | Python | Data Science with Python | Online</h2>
+    </div>
+    <div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://forms.gle/BCnjDa88fnzpNtay9" target="_blank">Register Now !</a></div>
+    </div><div class="et_pb_module et_pb_text et_pb_text_30 et_pb_bg_layout_light  et_pb_text_align_left">
+    <div class="et_pb_text_inner">
+    <h4><strong>103. </strong>Explain Django Admin Interface?</h4>
+    <p><strong>Ans. </strong>The Django Admin interface is predefined interface made to fulfill the need of web developers as they won’t need to make another admin panel which is time-consuming and expensive.</p>
+    <p>Django Admin is application imported from django.contrib packages. It is operated by the organization itself and thus  doesn’t need the extensive frontend.</p>
+    <p>Admin interface of Django has its own user authentication and most of the general features. It also offers lots of advanced features like authorization access, managing different models, CMS (Content Management System), etc.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>104. </strong>Explain Django.</h4>
+    <p><strong>Ans. </strong>Django is web application framework which is  a free and open source. Django is written in Python. It is a server-side web framework that provides rapid development of secure and maintainable websites.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>105. </strong>What does Django mean?</h4>
+    <p><strong>Ans. </strong>Django Reinhardt, was a gypsy jazz guitarist from the 1930s to early 1950s who is known as one of the best guitarists of all time. The name was given Django after this person.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>106. </strong>Which architectural pattern does Django follow?</h4>
+    <p><strong>Ans. </strong>Django follows Model-View-Template (MVT) architectural pattern.</p>
+    <p>The graph below shows the MVT based control flow.</p>
+    <p><img class="aligncenter wp-image-21542 size-full" src="https://www.sevenmentor.com/wp-content/uploads/2019/11/1-1.png" srcset="//www.sevenmentor.com/wp-content/uploads/2019/11/1-1.png 571w, //www.sevenmentor.com/wp-content/uploads/2019/11/1-1-480x219.png 480w" alt="1" width="571" height="261" data-src="//www.sevenmentor.com/wp-content/uploads/2019/11/1-1.png" data-srcset="//www.sevenmentor.com/wp-content/uploads/2019/11/1-1.png 571w, //www.sevenmentor.com/wp-content/uploads/2019/11/1-1-480x219.png 480w" data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 571px, 100vw" data-style="" data-l="" /></p>
+    <p>Request is made by the user for a resource to the Django, Django works as a controller and check to the available resource in URL.</p>
+    <p>When the mapping of URL is found , a view is called that interact with model and template, it renders a template.</p>
+    <p>After that Django responds back to the user and sends a template as a response.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>107. </strong>Explain Django architecture.</h4>
+    <p><strong>Ans. </strong>Django follows MVT (Model View Template) pattern. It is slightly different from MVC.</p>
+    <p><strong>Model: </strong>It is the data access layer. It contains everything about the data, i.e., how to access it, how to validate it, its behaviors and the relationships between the data.</p>
+    <p>Let’s see an example. We are creating  Employee model who has two fields first_name and last_name.</p>
+    <p>from django.db import models</p>
+    <p>class Employee(models.Model):</p>
+    <p>first_name = models.CharField(max_length=30)</p>
+    <p>last_name = models.CharField(max_length=30)</p>
+    <p><strong>View: </strong>It is the business logic layer. This layer contains the logic that accesses the model and defers to the appropriate template. It is like a bridge between the model and the template.</p>
+    <p>import datetime</p>
+    <p># Create your views here.</p>
+    <p>from django.http import HttpResponse</p>
+    <p>def index(request):</p>
+    <p>now = datetime.datetime.now()</p>
+    <p>html = “&amp;lt;html&amp;gt;&amp;lt;body&gt;&lt;h3&gt;Now time is %s.&lt;/h3&gt;&amp;lt;/body&amp;gt;&amp;lt;/html&gt;” % now</p>
+    <p>return HttpResponse(html)    # rendering the template in HttpResponse</p>
+    <p><strong>Template: </strong>It is a presentation layer. This layer contains presentation-related decisions, i.e., how something should be displayed on a Web page or other type of document.</p>
+    <p>For the configuration of the templates, we have to provide some entries in settings.py file.</p>
+    <p>TEMPLATES = [</p>
+    <p>{</p>
+    <p>‘BACKEND’: ‘django.template.backends.django.DjangoTemplates’,</p>
+    <p>‘DIRS’: [os.path.join(BASE_DIR,’templates’)],</p>
+    <p>‘APP_DIRS’: True,</p>
+    <p>‘OPTIONS’: {</p>
+    <p>‘context_processors’: [</p>
+    <p>‘django.template.context_processors.debug’,</p>
+    <p>‘django.template.context_processors.request’,</p>
+    <p>‘django.contrib.auth.context_processors.auth’,</p>
+    <p>‘django.contrib.messages.context_processors.messages’,</p>
+    <p>],</p>
+    <p>},</p>
+    <p>},</p>
+    <p>]</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>108. </strong>Explain the working of Django?</h4>
+    <p><strong>Ans. </strong>Django can be broken into following components:</p>
+    <p><strong>Models.py </strong>: Models.py  file will define your data model by extending your single line of code into full database tables and add a pre-built administration section to manage content.</p>
+    <p><strong>Urls.py </strong>: Uses a regular expression to capture URL patterns for processing.</p>
+    <p><strong>Views.py : </strong>This is main part of Django. The presentation logic is defined in this.</p>
+    <p>When a visitor visits  Django page, first Django checks the URLs pattern you have created and use this information to retrieve the view. Then it is the responsibility of view to processes the request, querying your database if necessary, and passes the requested information to a template.</p>
+    <p>Then template renders the data in a layout you have created and displayed the page.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>109. </strong>Name the foundation that manages the Django web framework?</h4>
+    <p><strong>Ans. </strong>Django is managed and maintained by an independent and non-profit organization named . Goal of foundation  is to promote, support, and advance the Django Web framework.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>110. </strong>Comment about  Django’s stability?</h4>
+    <p><strong>Ans. </strong>Django is quite stable web development framework.There are  many companies like Disqus, Instagram, Pinterest, and Mozilla that are using Django for many years.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>111.  </strong>Specify the features available in Django web framework?</h4>
+    <p><strong>Ans. </strong>Features available in Django web framework are:</p>
+    <p>Admin Interface (CRUD)</p>
+    <p>Templating</p>
+    <p>Form handling</p>
+    <p>Internationalization</p>
+    <p>A Session, user management, role-based permissions</p>
+    <p>Object-relational mapping (ORM)</p>
+    <p>Testing Framework</p>
+    <p>Fantastic Documentation</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>112.  </strong>Explain the advantages of Django?</h4>
+    <p><strong>Ans. </strong>Advantages of Django:</p>
+    <p>Web development framework Django is a Python’s framework which is easy to learn.</p>
+    <p>It is clear and readable.</p>
+    <p>It is versatile.</p>
+    <p>It is fast to write.</p>
+    <p>No loopholes in design.</p>
+    <p>It is secure.</p>
+    <p>It is scalable.</p>
+    <p>It is versatile.</p>
+    <p>&nbsp;</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>113. </strong>What are the disadvantages of Django?</h4>
+    <p><strong>Ans. </strong>Following is the list of disadvantages of Django:</p>
+    <p>Django’ modules are bulky.</p>
+    <p>It is completely based on Django ORM.</p>
+    <p>Components are deployed together.</p>
+    <p>You must know the full system to work with it.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>114.  </strong>What are the inheritance styles in Django?</h4>
+    <p><strong>Ans. </strong>There are three possible inheritance styles in Django:</p>
+    <p>1) Abstract base class: In this only parent’s class to hold information that you don’t want to type out for each child model then this style is used.</p>
+    <p>2) Multi-table Inheritance: This inheritance style is used if you are sub-classing an existing model and need each model to have its database table.</p>
+    <p>3) Proxy models: Proxy models is used, if you only want to modify the Python level behavior of the model, without changing the model’s fields.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>115. </strong>Is Django a CMS i.e. content management system?</h4>
+    <p><strong>Ans. </strong>No, Django is not a CMS. But, it is a Web framework and a programming tool that makes you able to build websites.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>116. </strong>Can you set up static files in Django? How?</h4>
+    <p><strong>Ans. </strong>Yes we can. We need to set three main things to set up static files in Django:</p>
+    <p>1) Set STATIC_ROOT in settings.py</p>
+    <p>2) run manage.py collect static</p>
+    <p>3) Static Files entry on the PythonAnywhere web tab</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>117. </strong>What is some typical usage of middlewares in Django?</h4>
+    <p><strong>Ans. </strong>Some usage of middlewares in Django is:</p>
+    <p>Session management,</p>
+    <p>Use authentication</p>
+    <p>Cross-site request forgery protection</p>
+    <p>Content Gzipping</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>118. </strong>What is the use of Django field class type?</h4>
+    <p><strong>Ans. </strong>Django field class type specifies:</p>
+    <p>The database column type.</p>
+    <p>Default HTML widget used to avail while rendering a form field.</p>
+    <p>The minimal validation requirements used in Django admin.</p>
+    <p>Automatic generated forms.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>119. </strong>Explain the use of Django-admin.py and manage.py?</h4>
+    <p><strong>Ans. </strong>admin.py: This is Django’s command line utility for administrative tasks.</p>
+    <p>Manage.py: This file is created automatically in each Django project. It is a thin wrapper around the Django-admin.py. It has the following usage:</p>
+    <p>It puts your project’s package on sys.path.</p>
+    <p>DJANGO_SETTING_MODULE is the environment variable used to points to your project’s setting.py file.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>120. </strong>What are the signals in Django?</h4>
+    <p><strong>Ans. </strong>Signals in Django are pieces of code which contain information about what is happening. A dispatcher is used to sending the signals and listen for those signals.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>121. </strong>What are the two important parameters in signals?</h4>
+    <p><strong>Ans. </strong>Two important parameters in signals are:</p>
+    <p>Receiver: It specifies the callback function which connected to the signal.</p>
+    <p>Sender: It specifies a particular sender from where a signal is received.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>122. </strong>How to handle URLs in Django?</h4>
+    <p>In order to handle URL in Django, django.urls module is used by the Django framework.</p>
+    <p>Given below is the urls.py file of the project, lets see how it looks:</p>
+    <p>// urls.py</p>
+    <p>from django.contrib import admin</p>
+    <p>from django.urls import path</p>
+    <p>urlpatterns = [</p>
+    <p>path(‘admin/’, admin.site.urls),</p>
+    <p>]</p>
+    <p>We can see that,  Django  has already mentioned a URL here for the admin.  Function path takes the first argument as a route of string or regex type.</p>
+    <p>Argument view is a view function which is used to return a response (template) to the user.</p>
+    <p>Module django.urls contains various functions, path(route,view,kwargs,name) is one of those which is used to map the URL and call the specified view.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>123. </strong>What is Django Session?</h4>
+    <p><strong>Ans. </strong>In Django session is a mechanism to store information on the server side during the interaction with the web application. Session stores in the database and also allows file-based and cache based sessions,  by default,</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>124 </strong>Explainthe role of Cookie in Django?</h4>
+    <p><strong>Ans. </strong>Cookie is nothing but a small piece of information which is stored in the client browser. Cookies are used to store user’s data in a file permanently (or for the specified time). There is an  expiry date and time for each cookie and removes automatically when gets expire. There are built-in methods to set and fetch cookie provided by Django.</p>
+    <p>set_cookie() method is used to set a cookie and get() method is used to get the cookie.</p>
+    <p>request.COOKIES[‘key’] is an array which canbe used to get cookie values.</p>
+    <p>from django.shortcuts import render</p>
+    <p>from django.http import HttpResponse</p>
+    <p>def setcookie(request):</p>
+    <p>response = HttpResponse(“Cookie Set”)</p>
+    <p>response.set_cookie(‘java-tutorial’, ‘javatpoint.com’)</p>
+    <p>return response</p>
+    <p>def getcookie(request):</p>
+    <p>tutorial  = request.COOKIES[‘java-tutorial’]</p>
+    <p>return HttpResponse(“java tutorials @: “+  tutorial);</p>
+    <p>&nbsp;</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>125. What is the difference between Flask and Django?</strong></h4>
+    <table border="1">
+    <tbody>
+    <tr>
+    <td><strong>Comparison Factor</strong></td>
+    <td><strong>Django</strong></td>
+    <td><strong>Flask</strong></td>
+    </tr>
+    <tr>
+    <td>Project Type</td>
+    <td>Supports large projects</td>
+    <td>Built for smaller projects</td>
+    </tr>
+    <tr>
+    <td>Templates, Admin and ORM</td>
+    <td>Built-in</td>
+    <td>Requires installation</td>
+    </tr>
+    <tr>
+    <td>Ease of Learning</td>
+    <td>Requires more learning and practice</td>
+    <td>Easy to learn</td>
+    </tr>
+    <tr>
+    <td>Flexibility</td>
+    <td>Allows complete web development without the need for third-party tools</td>
+    <td>More flexible as the user can select any third-party tools according to their choice and requirements</td>
+    </tr>
+    <tr>
+    <td>Visual Debugging</td>
+    <td>Does not support Visual Debug</td>
+    <td>Supports Visual Debug</td>
+    </tr>
+    <tr>
+    <td>Type of framework</td>
+    <td>Batteries included</td>
+    <td>Simple, lightweight</td>
+    </tr>
+    <tr>
+    <td>Bootstrapping-tool</td>
+    <td>Built-it</td>
+    <td>Not available</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>126.</strong> <strong>How do you check for the version of Django installed on your system?</strong></h4>
+    <p><strong>Ans:  </strong></p>
+    <p>To check for the version of Django installed on your system, you can open the command prompt and enter the following command:</p>
+    <ul>
+    <li>python -m django –version</li>
+    </ul>
+    <p>You can also try to import Django and use the get_version() method as follows:</p>
+    <div></div>
+    <div>
+    <div id="highlighter_400663" class="syntaxhighlighter python">
+    <table border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+    <td class="gutter">
+    <div class="line number1 index0 alt2">1</div>
+    <div class="line number2 index1 alt1">2</div>
+    </td>
+    <td class="code">
+    <div class="container">
+    <div class="line number1 index0 alt2"><code class="python keyword"><strong>import</strong></code><strong><code class="python plain">django</code></strong></div>
+    <div class="line number2 index1 alt1"><strong><code class="python functions">print</code><code class="python plain">(django.get_version())</code></strong></div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <p>&nbsp;</p>
+    <hr />
+    </div>
+    <div></div>
+    <h4><strong>127. What is the usage of middlewares in Django?</strong></h4>
+    <p><strong>Ans:</strong> Middlewares are used  go to modify the request i.e. HttpRequest object which is sent to the view, to modify the HttpResponse object returned from the view and to perform an operation before the view executes.</p>
+    <hr />
+    <h4><strong>128. What are the roles of receiver and sender in signals?</strong></h4>
+    <ul>
+    <li>The receiver is the callback function which will be connected to a signal</li>
+    <li>The sender specifies a particular sender to receive signals from</li>
+    </ul>
+    <hr />
+    <h4><strong>129. What does Django templates contain ?</strong></h4>
+    <p><strong>Ans:</strong> Django templates contains the static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted.</p>
+    <hr />
+    <h4><strong>130. How to create super user in django ?</strong></h4>
+    <p>To create a super user,,</p>
+    <ul>
+    <li>Create project using the <strong>django-admin startproject</strong> command.</li>
+    <li>Move into the project location and run <strong>python <span class="skimlinks-unlinked">manage.py</span> makemigrations &amp;&amp; python <span class="skimlinks-unlinked">manage.py</span> migrate &amp;&amp; python <span class="skimlinks-unlinked">manage.py</span> createsuperuser</strong></li>
+    </ul>
+    <hr />
+    <h4></h4>
+    <h4><strong>131. How to create simple application in django ?</strong></h4>
+    <p>To create a simple application  use the command <strong>django-admin startproject </strong>followed by the application’s name.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>132. What is ORM ? Advantages of ORM ?</strong></h4>
+    <p>ORM (Object-relational mapping) is a programming technique for converting data between incompatible type systems using object-oriented programming languages.</p>
+    <p>Advantages include:</p>
+    <ul>
+    <li>Concurrency support</li>
+    <li>Cache management</li>
+    </ul>
+    <hr />
+    <h4></h4>
+    <h4><strong>133. How to create a model in django ?</strong></h4>
+    <p>Add the model object in the <strong><span class="skimlinks-unlinked">models.py</span> </strong>file, updated settings for the newly created app by adding it to the <strong>INSTALLED_APPS </strong>section in <strong><span class="skimlinks-unlinked">settings.py</span></strong>, make migrations, and verify the database schema.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>134. What is migration in django ?</strong></h4>
+    <p>Migrations are a way of propagating changes made in the model into the database schema (adding a field, deleting a model, etc.)</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>135. How to do migrations in django ?</strong></h4>
+    <p>To do migrations , create or update a model and in the app directory, run the command <strong>./<span class="skimlinks-unlinked">manage.py</span> makemigrations &lt;app name&gt; &amp;&amp; ./<span class="skimlinks-unlinked">manage.py</span> migrate &lt;app name&gt;</strong></p>
+    <hr />
+    <h4><strong>136. How to clear cache in django ?</strong></h4>
+    <p>To clear cache, run the <strong>clear() </strong>method from <strong><span class="skimlinks-unlinked">django.core.cache</span> </strong>in a python script.</p>
+    <hr />
+    <h4><strong>137. What is Rest API ?</strong></h4>
+    <p>A REST API is an application program interface that uses HTTP requests to GET, PUT, POST and DELETE data.</p>
+    <hr />
+    <p>&nbsp;</p>
+    <h4><strong>138. How to Create APIs in Django ?</strong></h4>
+    <p>Create a project directory,  create python virtual environment,   and activate it, install Django and <strong>djangorestframework</strong> using the <strong>pip install command</strong>. In the same project directory, create  project using the command <strong><span class="skimlinks-unlinked">django-admin.py</span> startproject api. </strong>Start the app. Add the <strong>rest_framework</strong> and the Djano app to INSTALLED_APPS to settings. Open the <strong>api/<span class="skimlinks-unlinked">urls.py</span> </strong>and add urls for the Django app. We can then create models and make migrations, create serializers, and finally wiring up the views.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>139. What is DRF of Django Rest Frame work ?</strong></h4>
+    <p>Django Rest Framework (DRF) is a powerful module for building web APIs. It’s very easy to build model-backed APIs that have authentication policies and are browsable.</p>
+    <hr />
+    <h4></h4>
+    <h4><strong>140. How to Fetch data from apis using Django ?</strong></h4>
+    <p>We use the Fetch API and <strong>SessionAuthentication </strong> by adding it to the <strong><span class="skimlinks-unlinked">settings.py</span> </strong>file on the server and on the client, include  the <strong>getCookie </strong>method. Finally, use the fetch method to call your endpoint.</p>
+    <hr />
+    <h4><strong>141. How to update the data from apis ?</strong></h4>
+    <p>We update data by sending <strong>PUT </strong>requests. Add a new path in the data model <strong>urlpatterns </strong>from which the update will be sent to. We then add an update method to the serializer that will do the update.</p>
+    <hr />
+    <h4><strong>142. What is Authentication ?</strong></h4>
+    <p>Authentication is the process or action of verifying the identity of a user or process.</p>
+    <hr />
+    <h4><strong>143. Types of Authentication in REST API ?</strong></h4>
+    <p>Token based authentication and Session based authentication.</p>
+    <hr />
+    <h4><strong>144. What is token based authentication system ?</strong></h4>
+    <p>A token based authentication system is a security system that authenticates the users who attempt to log in to a server, a network, or some other secure <strong>system</strong>, using a security <strong>token</strong> provided by the server</p>
+    <hr />
+    <h4><strong>145. Can i use django apis in mobile application development ?  </strong></h4>
+    <h4>Yes</h4>
+    <hr />
+    <h4><strong>146. Explain Mixins in Django ?</strong></h4>
+    <p>A mixin is a special kind of multiple inheritance. There are two main situations where mixins are used: to provide a lot of optional features for a class and to use one particular feature in a lot of different classes</p>
+    <hr />
+    <h4><strong>147. Different types caching strategies in django ?</strong></h4>
+    <p>Different types of  caching strategies  include Filesystem caching, in-memory caching, using memcached and database caching.</p>
+    <hr />
+    <h4><strong>148. How a request is process in Django ?</strong></h4>
+    <p>When the user makes a request of your application, a WSGI handler is instantiated, which:</p>
+    <ul>
+    <li>imports your <span class="skimlinks-unlinked">settings.py</span> file and Django’s exception classes.</li>
+    <li>loads all the middleware classes it finds in the MIDDLEWARE_CLASSES or MIDDLEWARES(depending on Django version) tuple located in <span class="skimlinks-unlinked">settings.py</span></li>
+    <li>builds four lists of methods which handle processing of request, view, response, and exception.</li>
+    <li>loops through the request methods, running them in order</li>
+    <li>resolves the requested URL</li>
+    <li>loops through each of the view processing methods</li>
+    <li>calls the view function (usually rendering a template)</li>
+    <li>processes any exception methods</li>
+    <li>loops through each of the response methods, (from the inside out, reverse order from request middlewares)</li>
+    <li>finally builds a return value and calls the callback function to the web server</li>
+    </ul>
+    <hr />
+    <h4><strong>149. When to use iterator in Django ORM ?</strong></h4>
+    <p>The iterator is used when  processing results that take up a large amount of available memory (lots of small objects or fewer large objects).</p>
+    <hr />
+    <h4><strong>150. What are signals in Django ?</strong></h4>
+    <p><strong><br />
+    </strong>Signals allow certain senders to notify a set of receivers that some action has taken place. They’re especially useful when many pieces of code may be interested in the same events.</p>
+    <hr />
+    <br><br><br><br><br><br><br>
+
+ </div>
+ </body>
+ {% endblock %}

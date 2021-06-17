@@ -1,0 +1,1050 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body style="background-color:cyan;">
+<div class="container" >    
+    
+    <h1 class="page-title text-white text-center" style="background-color:darkblue;">C Programming Interview Questions</h1><hr/>
+<h2><strong>Q1. What is C programming?</strong></h2>
+<p><strong>Ans.  <span style="font-weight: 400">C is one of the oldest programming languages and was developed in 1972 by Dennis Ritchie. It is a high-level, general-purpose, and structured programming language that is widely used in various tasks, such as developing system applications, desktop applications, operating </span><span style="font-weight: 400">system</span><span style="font-weight: 400">s</span><span style="font-weight: 400"> as well as IoT applications.</span></strong> It is the simple and flexible language used for a variety of scripting system applications, which form a significant part of Windows, UNIX, and Linux operating systems.</p>
+<h2><strong>Q2. Why is C dubbed as a mother language?</strong></h2>
+<p><strong>Ans.</strong> It is known as a mother language because most of the JVMs, compilers, and Kernels are written in C language. If you know C, then you can easily grasp other programming languages.</p>
+<h2><strong>Q3. Who is the founder of the C language? When was the C language developed?</strong></h2>
+<p><strong>Ans. </strong>C is developed by Dennis M. Ritchie in 1972 at bell laboratories of AT &amp; T.</p>
+<h2><strong>Q4. What are the key features of the C Programming language?</strong></h2>
+<p><strong>Ans.  </strong>The following are the major features of C:</p>
+<ul>
+<li>Machine Independent</li>
+<li>Mid-Level programming language</li>
+<li>Memory Management</li>
+<li>Structured programming language</li>
+<li>Simple and efficient</li>
+<li>Function rich libraries</li>
+<li>Case Sensitive</li>
+</ul>
+<h2><strong>Q5. Name some different storage class specifiers in C?</strong></h2>
+<p><strong>Ans.  </strong>Storage classes represent the storage of any variable. There are four storage classes in C:</p>
+<ul>
+<li>Auto</li>
+<li>Register</li>
+<li>Extern</li>
+<li>Static</li>
+</ul>
+<h2><strong>Q6. What are the data types supported in the C Programming language?</strong></h2>
+<p><strong>Ans. </strong> The data type specifies the type of data used in programming. C language has some predefined data types with different storage capacity:</p>
+<ul>
+<li><strong>Built-in data types:</strong> It includes int, char, double, float and void</li>
+<li><strong>Derived data types:</strong> It includes array, pointers, and references</li>
+<li><strong>User-defined data types: </strong>Union, structure, and Enumeration</li>
+</ul>
+<h2><strong>Q7. What do you mean by the scope and lifetime of a variable in C?</strong></h2>
+<p><strong>Ans. </strong>The scope and lifetime of any variable defined as the section of the code in which the variable is executable or visible. Variables that are described in the block are only accessible in the block. The lifetime of the variable defines the existence of the variable before it is destroyed.</p>
+<h2><strong>Q8. What do you mean by the pointer in C?</strong></h2>
+<p><strong>Ans. </strong>Pointers are the variables in C that store the address of another variable. It allocates the memory for the variable at the run time. The pointer might be of different data types such as int, char, float, double, etc.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int *ptr, q;</strong></p>
+<p><strong>   q = 50;</strong></p>
+<p><strong>   /* address of q is assigned to ptr */</strong></p>
+<p><strong>   ptr = &amp;q;</strong></p>
+<p><strong>   /* display q&#8217;s value using ptr variable */</strong></p>
+<p><strong>   printf(&#8220;%d&#8221;, *ptr);</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q9. Define Null pointer?</strong></h2>
+<p><strong>Ans. </strong>A null pointer represents the empty location in the computer’s memory. It is used in C for various purposes:</p>
+<ul>
+<li>It will assign the pointer variable to the variable with no assigned memory</li>
+<li>In pointer related code we can do error handling by checking null pointer before assigning any pointer variable</li>
+<li>Pass a null pointer to the variable if we don’t want to pass any valid memory address</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><strong>int fun(int *ptr)</strong></p>
+<p><strong>{</strong></p>
+<p><strong> /*Fun specific stuff is done with ptr here*/</strong></p>
+<p><strong> return 10;</strong></p>
+<p><strong>}</strong></p>
+<p><strong>fun(NULL);</strong></p>
+<h2><strong>Q10. What is Dangling Pointer?</strong></h2>
+<p><strong>Ans. </strong>Dangling pointers are the pointers pointing to the memory location that has been deleted or released. There are three different types of dangling pointers:</p>
+<h3><strong>Return local variable in a function call</strong></h3>
+<p><strong>#include&lt;stdio.h&gt;</strong></p>
+<p><strong> #include&lt;string.h&gt; </strong></p>
+<p><strong>char *getHello()</strong></p>
+<p><strong> { </strong></p>
+<p><strong>char str[10]; strcpy(str,&#8221;Hello!&#8221;);</strong></p>
+<p><strong> return(str);</strong></p>
+<p><strong> }</strong></p>
+<p><strong> int main() </strong></p>
+<p><strong>{ </strong></p>
+<p><strong>//str falls out of scope </strong></p>
+<p><strong>//function call char *getHello() is now a dangling pointer </strong></p>
+<p><strong>printf(&#8220;%s&#8221;, getHello());</strong></p>
+<p><strong> }</strong></p>
+<h3><strong>Variable goes out of scope</strong></h3>
+<p><strong>void main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int *p1;</strong></p>
+<p><strong>   &#8230;..</strong></p>
+<p><strong>   {</strong></p>
+<p><strong>       int ch;</strong></p>
+<p><strong>       p1 = &amp;ch;</strong></p>
+<p><strong>   } </strong></p>
+<p><strong>   &#8230;..   </strong></p>
+<p><strong>   // Here ptr is dangling pointer</strong></p>
+<p><strong>}</strong></p>
+<h3><strong>De allocation or free variable memory</strong></h3>
+<p><strong>#include&lt;stdio.h&gt; </strong></p>
+<p><strong>#include&lt;stdlib.h&gt; </strong></p>
+<p><strong>int main() </strong></p>
+<p><strong>{ </strong></p>
+<p><strong>char **strPtr; </strong></p>
+<p><strong>char *str = &#8220;Hello!&#8221;;       </strong></p>
+<p><strong> strPtr = &amp;str; free(str);</strong></p>
+<p><strong> //strPtr is now a dangling pointer           </strong></p>
+<p><strong> printf(&#8220;%s&#8221;, *strPtr);</strong></p>
+<p><strong> }</strong></p>
+<h2><strong>Q11. What is the use of function in C?</strong></h2>
+<p><strong>Ans. </strong>Functions are the basic building blocks of any programming language. All C programs are written using the function to maintain reusability and understandability.</p>
+<p>Uses of functions in C:</p>
+<ul>
+<li>Functions can be used multiple times in a program by calling them whenever required</li>
+<li>In C, functions are used to avoid rewriting of code</li>
+<li>It is easy to track any C program when it is divided into functions</li>
+</ul>
+<p><strong>Syntax of a function</strong></p>
+<p><strong>return_type function_name( parameter list )</strong></p>
+<p><strong>{</strong></p>
+<p><strong>body of the function</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q12. What happens when you compile a program in C?</strong></h2>
+<p><strong>Ans.  </strong>At the time of compilation, the compiler generates a file with the same name as the C program file with different extensions.</p>
+<p>Below is the image to show the compilation process:</p>
+<p><a href="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process.png"><picture><source srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process.png.webp 874w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process-300x96.png.webp 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process-768x246.png.webp 768w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process-440x141.png.webp 440w" sizes="(max-width: 874px) 100vw, 874px" type="image/webp"><img loading="lazy" class="alignright size-full wp-image-15201 webpexpress-processed" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process.png" alt="" width="874" height="280" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process.png 874w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process-300x96.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process-768x246.png 768w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2017/06/compiation-process-440x141.png 440w" sizes="(max-width: 874px) 100vw, 874px"></picture></a></p>
+<h2><strong>Q13. What are header files in C?</strong></h2>
+<p><strong>Ans. </strong>Header files are those which contain C function declaration and macro definitions that are to be shared between sourced files. Header files are generated with the extension <strong>.h</strong>.</p>
+<p>There are two types of header files:</p>
+<ul>
+<li>Programmer generated a header file</li>
+<li>Files that come with your compiler</li>
+</ul>
+<p><strong>Syntax: </strong><strong>#include &lt;file&gt;</strong></p>
+<h2><strong>Q14. How many types of operators are there in C Programming?</strong></h2>
+<p><strong>Ans.  </strong>An operator is a symbol used to operate the values of variables. There is a wide range of operators used in C programming, including &#8211;</p>
+<h3><strong>Arithmetic Operators:</strong></h3>
+<p>These are used to perform mathematical calculations such as addition, subtraction, multiplication, division, and modulus.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int a = 9,b = 4, c;</strong></p>
+<p><strong>  </strong></p>
+<p><strong>   c = a+b;</strong></p>
+<p><strong>   printf(&#8220;a+b = %d \n&#8221;,c);</strong></p>
+<p><strong>   c = a-b;</strong></p>
+<p><strong>   printf(&#8220;a-b = %d \n&#8221;,c);</strong></p>
+<p><strong>   c = a*b;</strong></p>
+<p><strong>   printf(&#8220;a*b = %d \n&#8221;,c);</strong></p>
+<p><strong>   c = a/b;</strong></p>
+<p><strong>   printf(&#8220;a/b = %d \n&#8221;,c);</strong></p>
+<p><strong>   c = a%b;</strong></p>
+<p><strong>   printf(&#8220;Remainder when a divided by b = %d \n&#8221;,c);</strong></p>
+<p><strong>  </strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h3><strong>Relational Operators: </strong></h3>
+<p>These are used to check relation between two operands. If the relation is TRUE, it returns 1; If the relation is FALSE, It returns 0.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int a = 2, b = 2, c = 6;</strong></p>
+<p><strong> </strong></p>
+<p><strong>   printf(&#8220;%d == %d is %d \n&#8221;, a, b, a == b);</strong></p>
+<p><strong>   printf(&#8220;%d == %d is %d \n&#8221;, a, c, a == c);</strong></p>
+<p><strong>   printf(&#8220;%d &gt; %d is %d \n&#8221;, a, b, a &gt; b);</strong></p>
+<p><strong>   printf(&#8220;%d &gt; %d is %d \n&#8221;, a, c, a &gt; c);</strong></p>
+<p><strong>   printf(&#8220;%d &lt; %d is %d \n&#8221;, a, b, a &lt; b);</strong></p>
+<p><strong>   printf(&#8220;%d &lt; %d is %d \n&#8221;, a, c, a &lt; c);</strong></p>
+<p><strong>   printf(&#8220;%d != %d is %d \n&#8221;, a, b, a != b);</strong></p>
+<p><strong>   printf(&#8220;%d != %d is %d \n&#8221;, a, c, a != c);</strong></p>
+<p><strong>   printf(&#8220;%d &gt;= %d is %d \n&#8221;, a, b, a &gt;= b);</strong></p>
+<p><strong>   printf(&#8220;%d &gt;= %d is %d \n&#8221;, a, c, a &gt;= c);</strong></p>
+<p><strong>   printf(&#8220;%d &lt;= %d is %d \n&#8221;, a, b, a &lt;= b);</strong></p>
+<p><strong>   printf(&#8220;%d &lt;= %d is %d \n&#8221;, a, c, a &lt;= c);</strong></p>
+<p><strong> </strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h3><strong>Logical Operators: </strong></h3>
+<p>These are used in decision-making operations. If the expression is TRUE, it returns 1; if the expression is FALSE, it returns 0.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int a = 2, b = 2, c = 6, result;</strong></p>
+<p><strong>   result = (a == b) &amp;&amp; (c &gt; b);</strong></p>
+<p><strong>   printf(&#8220;(a == b) &amp;&amp; (c &gt; b) is %d \n&#8221;, result);</strong></p>
+<p><strong>   result = (a == b) &amp;&amp; (c &lt; b);</strong></p>
+<p><strong>   printf(&#8220;(a == b) &amp;&amp; (c &lt; b) is %d \n&#8221;, result);</strong></p>
+<p><strong>   result = (a == b) || (c &lt; b);</strong></p>
+<p><strong>   printf(&#8220;(a == b) || (c &lt; b) is %d \n&#8221;, result);</strong></p>
+<p><strong>   result = (a != b) || (c &lt; b);</strong></p>
+<p><strong>   printf(&#8220;(a != b) || (c &lt; b) is %d \n&#8221;, result);</strong></p>
+<p><strong>   result = !(a != b);</strong></p>
+<p><strong>   printf(&#8220;!(a == b) is %d \n&#8221;, result);</strong></p>
+<p><strong>   result = !(a == b);</strong></p>
+<p><strong>   printf(&#8220;!(a == b) is %d \n&#8221;, result);</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h3><strong>Assignment Operators: </strong></h3>
+<p>These are used to assign value to a variable. The most used assignment operator is ‘=’.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int a = 5, c;</strong></p>
+<p><strong>   c = a;      // c is 5</strong></p>
+<p><strong>   printf(&#8220;c = %d\n&#8221;, c);</strong></p>
+<p><strong>   c += a;     // c is 10</strong></p>
+<p><strong>   printf(&#8220;c = %d\n&#8221;, c);</strong></p>
+<p><strong>   c -= a;     // c is 5</strong></p>
+<p><strong>   printf(&#8220;c = %d\n&#8221;, c);</strong></p>
+<p><strong>   c *= a;     // c is 25</strong></p>
+<p><strong>   printf(&#8220;c = %d\n&#8221;, c);</strong></p>
+<p><strong>   c /= a;     // c is 5</strong></p>
+<p><strong>   printf(&#8220;c = %d\n&#8221;, c);</strong></p>
+<p><strong>   c %= a;     // c = 0</strong></p>
+<p><strong>   printf(&#8220;c = %d\n&#8221;, c);</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h3><strong>Increment and Decrement Operators: </strong></h3>
+<p>These are used to change the value of an operand (constant or variable) by 1.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int a = 10, b = 100;</strong></p>
+<p><strong>   float c = 10.5, d = 100.5;</strong></p>
+<p><strong>   printf(&#8220;++a = %d \n&#8221;, ++a);</strong></p>
+<p><strong>   printf(&#8220;&#8211;b = %d \n&#8221;, &#8211;b);</strong></p>
+<p><strong>   printf(&#8220;++c = %f \n&#8221;, ++c);</strong></p>
+<p><strong>   printf(&#8220;&#8211;d = %f \n&#8221;, &#8211;d);</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h3><strong>Bitwise Operators: </strong></h3>
+<p>These are used to perform bit level operations between two variables.</p>
+<p>Example: Bitwise OR, Bitwise AND</p>
+<h3><strong>Conditional Operator: </strong></h3>
+<p>These are used in conditional expressions.</p>
+<p>Example: ‘?:’ Conditional operator</p>
+<h3><strong>Special Operators: </strong></h3>
+<p>There are some special operators in C used for:</p>
+<p><strong>            sizeof(): </strong>Returns the size of the memory location</p>
+<p><strong>            &amp;: </strong>Returns the address of a memory location</p>
+<p><strong>            *:</strong> Pointer of a variable</p>
+<h2><strong>Q15. Explain the process of creating increment and decrement operators in C.</strong></h2>
+<p><strong>Ans.</strong> If you want to perform increment operation, then use ‘i++,’ which will increase the value by 1. If you want to perform a decrement operation, then use ‘i&#8211;,’ it will decrease the value by 1.</p>
+<p>Example:</p>
+<p><strong>#include&lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>    int x = 10, y = 1; </strong></p>
+<p><strong>    printf(&#8220;Initial value of x = %d\n&#8221;, x);</strong></p>
+<p><strong>    printf(&#8220;Initial value of y = %d\n\n&#8221;, y); </strong></p>
+<p><strong>    y = ++x; </strong></p>
+<p><strong> </strong></p>
+<p><strong>    printf(&#8220;After incrementing by 1: x = %d\n&#8221;, x);</strong></p>
+<p><strong>    printf(&#8220;y = %d\n\n&#8221;, y); </strong></p>
+<p><strong>    y = &#8211;x; </strong></p>
+<p><strong>    printf(&#8220;After decrementing by 1: x = %d\n&#8221;, x);</strong></p>
+<p><strong>    printf(&#8220;y = %d\n\n&#8221;, y);</strong></p>
+<p><strong>    return 0;</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q16. Mention the difference between local variables and global variables in C?</strong></h2>
+<p><strong>Ans. </strong>Global variables are declared outside the function. That variable can be used anywhere in the program, whereas local variables declared inside the function, and there scope is only inside that function.</p>
+<p><strong>// Global variable</strong></p>
+<p><strong>float x = 1;</strong></p>
+<p><strong>void my_test() {</strong></p>
+<p><strong>  // Local variable called y. </strong></p>
+<p><strong>  // This variable can&#8217;t be accessed in other functions</strong></p>
+<p><strong>  float y = 77;</strong></p>
+<p><strong>  println(x);</strong></p>
+<p><strong>  println(y);</strong></p>
+<p><strong>}</strong></p>
+<p><strong>void setup() {</strong></p>
+<p><strong>  // Local variable called y. </strong></p>
+<p><strong>  // This variable can&#8217;t be accessed in other functions.</strong></p>
+<p><strong>  float y = 2;  </strong></p>
+<p><strong>  println(x);</strong></p>
+<p><strong>  println(y);</strong></p>
+<p><strong>  my_test();</strong></p>
+<p><strong>  println(y);</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q17. What is static memory allocation in C?</strong></h2>
+<p><strong>Ans.  </strong>Static memory allocation is defined as the allocation of a fixed amount of memory at the compile-time, and the operating system uses the data structure called stacks to manage memory allocation.</p>
+<p><strong>Example:</strong></p>
+<p><strong>void demo</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int x; </strong></p>
+<p><strong>}</strong></p>
+<p><strong>int main() </strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int y; </strong></p>
+<p><strong>   int c[10]; </strong></p>
+<p><strong>   return 1;</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q18. What is dynamic memory allocation in C?</strong></h2>
+<p><strong>Ans. </strong>Dynamic memory allocation is the process of memory allocation at the run time. There are a group of functions in C used to dynamic memory management i.e. calloc(), malloc(), realloc() and free().</p>
+<h2><strong>Q19. Explain the difference between calloc() and malloc().</strong></h2>
+<p><strong>Ans. </strong>The main difference between calloc() and malloc() is that calloc() takes two arguments while malloc() takes one argument. Secondly, calloc() initializes allocated memory to ZERO while malloc() does not initialize allocated memory.</p>
+<p><strong>Syntax of calloc()</strong></p>
+<p><strong>void *calloc(size_t n, size_t size);</strong></p>
+<p><strong>Syntax of malloc()</strong></p>
+<p><strong>void *malloc(size_t n);</strong></p>
+<h2><strong>Q20. What is the output of the following C code?</strong></h2>
+<p><strong>#include &lt;stdlib.h&gt;</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>enum {false, true};</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int i = 1;</strong></p>
+<p><strong>   do</strong></p>
+<p><strong>   {</strong></p>
+<p><strong>      printf(&#8220;%d\n&#8221;, i);</strong></p>
+<p><strong>      i++;</strong></p>
+<p><strong>      if (i &lt; 15)</strong></p>
+<p><strong>        continue;</strong></p>
+<p><strong>   } while (false);</strong></p>
+<p><strong>  </strong></p>
+<p><strong>   getchar();</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<p><strong>Ans. Output: </strong><strong>1</strong></p>
+<p>The do-while loop executes at every iteration. After the continue statement, it will come to the while (false) statement, and the condition shows false, and ‘i’ is printed only once.</p>
+<h2><strong>Q21. How can a negative integer stored in C?</strong></h2>
+<p><strong>Ans. </strong>If the number is with a negative sign, then at the time of memory allocation, the number (ignoring minus sign) is converted into the binary equivalent. Then the two’s complement of the number is calculated.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong> int main()</strong></p>
+<p><strong> {</strong></p>
+<p><strong> int a = -4;</strong></p>
+<p><strong> int b = -3;</strong></p>
+<p><strong> unsigned int c = -4; </strong></p>
+<p><strong>unsigned int d = -3;</strong></p>
+<p><strong> printf(&#8220;%f\n%f\n%f\n%f\n&#8221;, 1.0 * a/b, 1.0 * c/d, 1.0*a/d, 1.*c/b);</strong></p>
+<p><strong> }</strong></p>
+<p><strong>Output:</strong></p>
+<p><strong>1.333333 </strong></p>
+<p><strong>1.000000 </strong></p>
+<p><strong>-0.000000 </strong></p>
+<p><strong>-1431655764.000000</strong></p>
+<h2><strong>Q22. What is the use of nested structure in C?</strong></h2>
+<p><strong>Ans. </strong>A nested structure is used to make the complicated code easy. If we want to add the address of employees with other more details, then we have to create a nested structure for it.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include&lt;stdio.h&gt;  </strong></p>
+<p><strong>struct address   </strong></p>
+<p><strong>{  </strong></p>
+<p><strong>    char city[20];  </strong></p>
+<p><strong>    int pin;  </strong></p>
+<p><strong>    char phone[14];  </strong></p>
+<p><strong>};  </strong></p>
+<p><strong>struct employee  </strong></p>
+<p><strong>{  </strong></p>
+<p><strong>    char name[20];  </strong></p>
+<p><strong>    struct address add;  </strong></p>
+<p><strong>};  </strong></p>
+<p><strong>void main ()  </strong></p>
+<p><strong>{  </strong></p>
+<p><strong>    struct employee emp;  </strong></p>
+<p><strong>    printf(&#8220;Enter employee information?\n&#8221;);  </strong></p>
+<p><strong>    scanf(&#8220;%s %s %d %s&#8221;,emp.name,emp.add.city, &amp;emp.add.pin, emp.add.phone);  </strong></p>
+<p><strong>    printf(&#8220;Printing employee information&#8230;\n&#8221;);  </strong></p>
+<p><strong>printf(&#8220;name:%s\nCity:%s\nPincode:%d\nPhone: %s&#8221;,emp.name,emp.add.city,emp.add.pin,emp.add.phone);  </strong></p>
+<p><strong>}</strong></p>
+<p><strong>Output:</strong></p>
+<p>Enter employee information?</p>
+<p>Joe</p>
+<p>Delhi</p>
+<p>110001</p>
+<p>1234567890</p>
+<p>Printing employee information&#8230;</p>
+<p>name: Joe</p>
+<p>City: Delhi</p>
+<p>Pincode: 110001</p>
+<p>Phone: 123456789</p>
+<h2><strong>Q23. How to write a program in C for swapping two numbers without the use of the third variable?</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int x, y;  </strong></p>
+<p><strong>   printf(&#8220;Input two integers (x &amp; y) to swap\n&#8221;);</strong></p>
+<p><strong>   scanf(&#8220;%d%d&#8221;, &amp;x, &amp;y); </strong></p>
+<p><strong>   x = x + y;</strong></p>
+<p><strong>   y = x &#8211; y;</strong></p>
+<p><strong>   x = x &#8211; y;</strong></p>
+<p><strong>   printf(&#8220;x = %d\ny = %d\n&#8221;,x,y);</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q24. Write a C program for Fibonacci series.</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include&lt;stdio.h&gt;    </strong></p>
+<p><strong>int main()    </strong></p>
+<p><strong>{    </strong></p>
+<p><strong> int n1=0,n2=1,n3,i,number;    </strong></p>
+<p><strong> printf(&#8220;Enter the number of elements:&#8221;);    </strong></p>
+<p><strong> scanf(&#8220;%d&#8221;,&amp;number);    </strong></p>
+<p><strong> printf(&#8220;\n%d %d&#8221;,n1,n2);//printing 0 and 1    </strong></p>
+<p><strong> for(i=2;i&lt;number;++i)//loop starts from 2 because 0 and 1 are already printed    </strong></p>
+<p><strong> {    </strong></p>
+<p><strong>  n3=n1+n2;    </strong></p>
+<p><strong>  printf(&#8221; %d&#8221;,n3);    </strong></p>
+<p><strong>  n1=n2;    </strong></p>
+<p><strong>  n2=n3;    </strong></p>
+<p><strong> }  </strong></p>
+<p><strong>  return 0;  </strong></p>
+<p><strong> }</strong></p>
+<h2><strong>Q25. Explain the difference between = and == symbols in C programming?</strong></h2>
+<p><strong>Ans. The assignment operator (=): </strong>It is a binary operator used to operate two operands. It is used to assign the value to the variable.</p>
+<p><strong>Example:</strong> <strong>x=(a+b);</strong></p>
+<p><strong>  y=x;</strong></p>
+<p><strong>Equal to operator (==): </strong>It is also a binary operator used to compare the left-hand side and right-hand side value, if it is the same, it returns 1 else 0.</p>
+<p><strong>int x,y;</strong></p>
+<p><strong>x=10;</strong></p>
+<p><strong>y=10;</strong></p>
+<p><strong>if(x==y)</strong></p>
+<p><strong>printf(&#8220;True&#8221;);</strong></p>
+<p><strong>else</strong></p>
+<p><strong>printf(&#8220;False&#8221;);</strong></p>
+<p>When the expression x==y evaluates, it will return 1</p>
+<h2><strong>Q26. What is the use of extern storage specifier?</strong></h2>
+<p><strong>Ans.</strong> It enables you to declare a variable without bringing it into existence. The value is assigned to it in a different block, and it can be changed in the various blocks as well. So extern storage specifier is a global variable that can be used anywhere in the code.</p>
+<h2><strong>Q27. Difference between rvalue and Ivalue in C</strong><strong>?</strong></h2>
+<p><strong>Ans.</strong> The term rvalue refers to objects that appear on the right side, while an Ivalue is an expression that appears on the left side.</p>
+<h2><strong>Q28. Can a program be compiled with the main function?</strong></h2>
+<p><strong>Ans. </strong>Yes.</p>
+<h2><strong>Q29. Define stack? </strong></h2>
+<p><strong>Ans.</strong> It is a data structure that is used to store data in a particular order in which operations are performed.  There are two types of storing orders, i.e. LIFO (last in first out) and FIFO (first in last out).</p>
+<p>Basic operations performed in the stack:</p>
+<ul>
+<li>Push</li>
+<li>Pop</li>
+<li>Peek or Top</li>
+<li>isEmpty</li>
+</ul>
+<h2><strong>Q30. When is the arrow operator used?</strong></h2>
+<p><strong>Ans.</strong> Arrow operator is used to accessing elements in structure and union. It is used with a pointer variable. Arrow operator is formed by using a minus sign followed by a greater than a symbol.</p>
+<p>Syntax:</p>
+<p><strong>(pointer_name)-&gt;(variable_name)</strong></p>
+<h2><strong>Q31. Can two operators be combined in a single line of program code?</strong></h2>
+<p><strong> </strong><strong>Ans. </strong> Yes.</p>
+<h2><strong>Q32. Write a program to find the factorial of a number using functions?</strong></h2>
+<p><strong>Ans: </strong> Program to find the factorial of a number</p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int factorial_of_a_number(int n)</strong></p>
+<p><strong>{</strong></p>
+<p><strong>int fact = 1, i;</strong></p>
+<p><strong>if(n == 0)</strong></p>
+<p><strong>return 1;</strong></p>
+<p><strong>else</strong></p>
+<p><strong>for(i = 1; i &lt;= n; i++)</strong></p>
+<p><strong>{</strong></p>
+<p><strong>fact = fact * i;</strong></p>
+<p><strong>}</strong></p>
+<p><strong>return fact;</strong></p>
+<p><strong>}</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>int n;</strong></p>
+<p><strong>printf(&#8220;Enter the number : &#8220;);</strong></p>
+<p><strong>scanf(&#8220;%d&#8221;,&amp;n);</strong></p>
+<p><strong>if(n &lt; 0)</strong></p>
+<p><strong>printf(&#8220;Invalid output&#8221;);</strong></p>
+<p><strong>else</strong></p>
+<p><strong>printf(&#8220;Factorial of the number %d is %d&#8221; ,n, factorial_of_a_number(n));</strong></p>
+<p><strong>return 0;</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q33. What is a token in C?</strong></h2>
+<p><strong>Ans. </strong>The smallest individual unit in a C program is known as a token. Tokens can be classified as:</p>
+<ul>
+<li>Keywords</li>
+<li>Constants</li>
+<li>Identifiers</li>
+<li>Strings</li>
+<li>Operators</li>
+<li>Special symbols</li>
+</ul><h2><strong>Q34. Name the keyword used to perform unconditional branching.</strong></h2>
+<p><strong>Ans.</strong> A go-to statement is used to perform unconditional branching.</p>
+<h2><strong>Q35. What is the use of the comma operator?</strong></h2>
+<p><strong>Ans. </strong>It is used to separate two or more expressions.</p>
+<p>E.g. printf (“hello”);</p>
+<h2><strong>Q36. Write a program to find a sum of first N natural numbers.</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include &lt;stdio.h&gt; </strong></p>
+<p><strong>void main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int i, num, sum = 0;</strong></p>
+<p><strong> </strong></p>
+<p><strong>   printf(&#8220;Enter an integer number \n&#8221;);</strong></p>
+<p><strong>   scanf (&#8220;%d&#8221;, &amp;num);</strong></p>
+<p><strong>   for (i = 1; i &lt;= num; i++)</strong></p>
+<p><strong>   {</strong></p>
+<p><strong>       sum = sum + i;</strong></p>
+<p><strong>   }</strong></p>
+<p><strong>   printf (&#8220;Sum of first %d natural numbers = %d\n&#8221;, num, sum);</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q37. What is the length of an identifier? </strong></h2>
+<p><strong>Ans.</strong> Its length is 32 characters in C.</p>
+<h2><strong>Q38. What is typecasting in C?</strong></h2>
+<p><strong>Ans.</strong> It is a way to convert constant from one type to another type. If there is a value of float data type then you can typecast it into other data types.</p>
+<p>There are two types of typecasting in C:</p>
+<ul>
+<li>Implicit conversion</li>
+<li>Explicit conversion</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>main() {</strong></p>
+<p><strong>   int sum = 17, count = 5;</strong></p>
+<p><strong>   double mean;</strong></p>
+<p><strong>   mean = (double) sum / count;</strong></p>
+<p><strong>   printf(&#8220;Value of mean : %f\n&#8221;, mean );</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q39. How are random numbers generated?</strong></h2>
+<p><strong>Ans.</strong> Random numbers are generated by using the rand () command.</p>
+<p><strong>Example:</strong></p>
+<p><strong>#include &lt;time.h&gt;</strong></p>
+<p><strong>#include &lt;stdlib.h&gt;</strong></p>
+<p><strong>Srand (time (NULL));</strong></p>
+<p><strong>Int r = rand ();</strong></p>
+<h2><strong>Q40. What are the disadvantages of void pointer?</strong></h2>
+<p><strong>Ans</strong>. Disadvantages of a void pointer:</p>
+<ul>
+<li>Pointer arithmetic is not defined for void pointer</li>
+<li>Void pointers can’t be dereferenced</li>
+</ul>
+<h2><strong>Q41. Define compound statements. </strong></h2>
+<p><strong>Ans. </strong>These are made up of two or more program statements that are executed together.</p>
+<h2><strong> Q42. Write a program to print numbers from 1 to 100 without using a loop.</strong></h2>
+<p><strong>Ans. </strong>Program to print numbers from 1 to 100</p>
+<p><strong>/* Prints numbers from 1 to n */</strong></p>
+<p><strong>void printNos(unsigned int n)</strong></p>
+<p><strong>{</strong></p>
+<p><strong>  if(n &gt; 0)</strong></p>
+<p><strong>  {</strong></p>
+<p><strong>    printNos(n-1);</strong></p>
+<p><strong>    printf(&#8220;%d &#8220;,  n);</strong></p>
+<p><strong>  } </strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q43. What is FIFO? </strong></h2>
+<p><strong>Ans. </strong>FIFO means first in first out. It is a cost flow assumption, which is used to remove costs from the inventory account.</p>
+<h2><strong>Q44. What is the use of a built-in stricmp() function?</strong></h2>
+<p><strong>Ans.</strong> It takes two strings and returns an integer.</p>
+<h2><strong>Q45. What is the name of the function used to close the file stream?</strong></h2>
+<p><strong>Ans. </strong>Fclose().</p>
+<h2><strong>Q46. What is the structure?</strong></h2>
+<p><strong>Ans.</strong> A user-defined data type that enables to combine different data types to store a particular type of record, is known as a structure.</p>
+<p>Example:</p>
+<p><strong>struct Point</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int x, y;</strong></p>
+<p><strong>} p1;  // The variable p1 is declared with &#8216;Point&#8217;</strong></p>
+<p><strong>struct Point</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   int x, y;</strong></p>
+<p><strong>}; </strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>   struct Point p1;  // The variable p1 is declared like a normal variable</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q47. Write a program to reverse a number.</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>int n, rev = 0, rem;</strong></p>
+<p><strong>printf(“\nEnter a number : “);</strong></p>
+<p><strong>scanf(“%d”, &amp;n);</strong></p>
+<p><strong>printf(“\nReversed Number : “);</strong></p>
+<p><strong>while(n != 0)</strong></p>
+<p><strong>{</strong></p>
+<p><strong>rem = n%10;</strong></p>
+<p><strong>rev = rev*10 + rem;</strong></p>
+<p><strong>n /= 10;</strong></p>
+<p><strong>}</strong></p>
+<p><strong>printf(“%d\n”, rev);</strong></p>
+<p><strong>return 0;</strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q48. Write a program to check the prime number in C.</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include&lt;stdio.h&gt;      </strong></p>
+<p><strong>#include&lt;conio.h&gt;      </strong></p>
+<p><strong>void main()      </strong></p>
+<p><strong>{      </strong></p>
+<p><strong>int n,i,m=0,flag=0;    //declaration of variables.  </strong></p>
+<p><strong>clrscr();    //It clears the screen.  </strong></p>
+<p><strong>printf(&#8220;Enter the number to check prime:&#8221;);      </strong></p>
+<p><strong>scanf(&#8220;%d&#8221;,&amp;n);      </strong></p>
+<p><strong>m=n/2;      </strong></p>
+<p><strong>for(i=2;i&lt;=m;i++)      </strong></p>
+<p><strong>{      </strong></p>
+<p><strong>if(n%i==0)      </strong></p>
+<p><strong>{      </strong></p>
+<p><strong>printf(&#8220;Number is not prime&#8221;);      </strong></p>
+<p><strong>flag=1;      </strong></p>
+<p><strong>break;    //break keyword used to terminate from the loop.  </strong></p>
+<p><strong>}      </strong></p>
+<p><strong>}      </strong></p>
+<p><strong>if(flag==0)      </strong></p>
+<p><strong>printf(&#8220;Number is prime&#8221;);      </strong></p>
+<p><strong>getch();    //It reads a character from the keyword.  </strong></p>
+<p><strong>}</strong></p>
+<h2><strong>Q49. Write a program to check Armstrong number in C.</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include&lt;stdio.h&gt;      </strong></p>
+<p><strong>#include&lt;conio.h&gt;      </strong></p>
+<p><strong>main()      </strong></p>
+<p><strong>{      </strong></p>
+<p><strong>int n,r,sum=0,temp;    //declaration of variables.  </strong></p>
+<p><strong>clrscr(); //It clears the screen.     </strong></p>
+<p><strong>printf(&#8220;enter the number=&#8221;);      </strong></p>
+<p><strong>scanf(&#8220;%d&#8221;,&amp;n);      </strong></p>
+<p><strong>temp=n;      </strong></p>
+<p><strong>while(n&gt;0)      </strong></p>
+<p><strong>{      </strong></p>
+<p><strong>r=n%10;      </strong></p>
+<p><strong>sum=sum+(r*r*r);      </strong></p>
+<p><strong>n=n/10;      </strong></p>
+<p><strong>}      </strong></p>
+<p><strong>if(temp==sum)      </strong></p>
+<p><strong>printf(&#8220;armstrong  number &#8220;);      </strong></p>
+<p><strong>else      </strong></p>
+<p><strong>printf(&#8220;not armstrong number&#8221;);      </strong></p>
+<p><strong>getch();  //It reads a character from the keyword.  </strong></p>
+<p><strong>}</strong><strong>  </strong></p>
+<h2><strong>Q50. Write a program to check the palindrome number in C.</strong></h2>
+<p><strong>Ans.</strong></p>
+<p><strong>#include&lt;stdio.h&gt;    </strong></p>
+<p><strong>#include&lt;conio.h&gt;    </strong></p>
+<p><strong>main()    </strong></p>
+<p><strong>{    </strong></p>
+<p><strong>int n,r,sum=0,temp;    </strong></p>
+<p><strong>clrscr();    </strong></p>
+<p><strong>printf(&#8220;enter the number=&#8221;);    </strong></p>
+<p><strong>scanf(&#8220;%d&#8221;,&amp;n);    </strong></p>
+<p><strong>temp=n;    </strong></p>
+<p><strong>while(n&gt;0)    </strong></p>
+<p><strong>{    </strong></p>
+<p><strong>r=n%10;    </strong></p>
+<p><strong>sum=(sum*10)+r;    </strong></p>
+<p><strong>n=n/10;    </strong></p>
+<p><strong>}    </strong></p>
+<p><strong>if(temp==sum)    </strong></p>
+<p><strong>printf(&#8220;palindrome number &#8220;);    </strong></p>
+<p><strong>else    </strong></p>
+<p><strong>printf(&#8220;not palindrome&#8221;);    </strong></p>
+<p><strong>getch();    </strong></p>
+<p><strong>} </strong><strong>  </strong></p>
+<h2><b>Q51. What are reserved keywords? How many reserved keywords are there in C?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> Reserved keywords are those keywords that have predefined meanings and cannot be used as a variable name. Such keywords are restricted for general use while writing a program. There are 32 reserved keywords in C programming language: </span></p>
+<table>
+<tbody>
+<tr>
+<td colspan="4"><b>Reserved Keywords</b></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">auto</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">break</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">case</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">char</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">const</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">continue</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">default</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">do</span></td>
+<td><span style="font-weight: 400">double</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">else</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">enum</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">extern</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">float</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">for</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">goto</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">if</span></td>
+<td><span style="font-weight: 400">int</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">long</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">register</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">return</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">short</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">signed</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">sizeof</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">static</span></td>
+<td><span style="font-weight: 400">struct</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">switch</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">typedef</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">union</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">unsigned</span><span style="font-weight: 400"><br />
+</span><span style="font-weight: 400">void</span><span style="font-weight: 400">volatile</span><span style="font-weight: 400">while</span></td>
+</tr>
+</tbody>
+</table>
+<h2><b>Q52. What is a union?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> A union is a user-defined data type that enables you to store multiple types of data in a single unit or the same memory location. While you can define a union with different members, only one member can hold a value at any given time. Also, it does not hold the sum of the memory of all members and holds the memory of the largest member only.</span></p>
+<h2><b>Q53. What happens if a header file is included twice? </b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> If a header file is included twice, the compiler will process its contents twice, resulting in an error. You can use a guard(#) to prevent a header file from being included multiple times during the compilation process. Thus, even if a header file with proper syntax is included twice, the second one will get ignored.</span></p>
+<h2><b>Q54. Can a C program compile without the main() function? </b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> Yes, a C program can be compiled without the main() function. However, it will not execute without the main() function.</span></p>
+<h2><b>Q55. What is the difference between static memory allocation and dynamic memory allocation?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> The differences between static memory allocation and dynamic memory allocation are:</span></p>
+<table>
+<tbody>
+<tr>
+<td><strong>Static Memory Allocation </strong></td>
+<td><strong>Dynamic Memory Allocation </strong></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">It is done before the program execution.</span></td>
+<td><span style="font-weight: 400">It takes place during program execution.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Variables get allocated permanently.</span></td>
+<td><span style="font-weight: 400">Variables get allocated when the program unit gets active.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Less efficient.</span></td>
+<td><span style="font-weight: 400">More efficient.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">It uses a stack for managing the static allocation of memory.</span></td>
+<td><span style="font-weight: 400">It uses heap for managing the dynamic allocation of memory.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">No memory re-usability.</span></td>
+<td><span style="font-weight: 400">It allows memory re-usability. </span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Execution is faster.</span></td>
+<td><span style="font-weight: 400">Execution is slower.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Memory is allocated at compile time.</span></td>
+<td><span style="font-weight: 400">The allocation of memory is done at run time. </span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Memory size can not be modified while execution. Example: Array</span></td>
+<td><span style="font-weight: 400">Memory size can be modified while execution. Example: Linked List</span></td>
+</tr>
+</tbody>
+</table>
+<h2><strong> </strong><b>Q56. What do you mean by a memory leak in C? </b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> A memory leak is a kind of resource leak that happens when programmers create a memory in heap and forget to delete it. Thus, the memory which is no longer needed remains undeleted. It may also occur when an object is inaccessible by running code but it is still stored in memory. A memory leak can result in additional memory usage and can affect the performance of a program.</span></p>
+<h2><b>Q57. What do you understand by while(0) and while(1)?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> In while(1) and while(0), 1 means TRUE or ON and 0 means FALSE or OFF. </span></p>
+<p><span style="font-weight: 400">while(0) means that the looping conditions will always be false and the code inside the while loop will not be executed. On the other hand, while(1) is an infinite loop. It runs continuously until it comes across a break statement mentioned explicitly.</span></p>
+<h2><b>Q58. Explain is the difference between prefix increment and postfix increment.</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> Both prefix increment and postfix increment do what their syntax implies, i.e. increment the variable by 1.</span></p>
+<p><span style="font-weight: 400">The prefix increment increments the value of the variable before the program execution and returns the value of a variable after it has been incremented. The postfix increment, on the other hand, increments the value of the variable after the program execution and returns the value of a variable before it has been incremented.</span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">++a &lt;- Prefix increment</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">a++ &lt;- Postfix increment</span></li>
+</ul>
+<h2><b>Q59. What is the difference between a null pointer and a void pointer?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> A null pointer is the one that does not point to any valid location and its value isn’t known at the time of declaration.</span></p>
+<p><span style="font-weight: 400">Syntax: &lt;data type&gt; *&lt;variable name&gt; = NULL;</span></p>
+<p><span style="font-weight: 400">On the other hand, void pointers are generic pointers that do not have any data type associated with them. They can contain the address of any type of variable. Void pointers can point to any data type.</span></p>
+<p><span style="font-weight: 400">Syntax: void *&lt;data type&gt;;</span></p>
+<h2><b>Q60. Explain the difference between Call by Value and Call by Reference?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> Call by Value sends the value of a variable as a parameter to a function. Moreover, the value in the parameter is not affected by the operation that takes place. </span></p>
+<p><span style="font-weight: 400"> Call by Reference, on the other hand, passes the address of the variable, instead of passing the values of variables. In this, values can be affected by the process within the function.</span></p>
+<h2><b>Q61. How can the scope of a global symbol be resolved in C?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> The scope of a global symbol can be resolved by using the extern storage, which extends the visibility or scope of variables and functions. Since C functions are visible throughout the program by default, you don’t need to use it with function declaration or definition.</span></p>
+<h2><b>Q62. What is the difference between actual parameters and formal parameters?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> The differences between actual parameters and formal parameters are:</span></p>
+<table>
+<tbody>
+<tr>
+<td><strong>Actual Parameters</strong></td>
+<td><strong>Formal Parameters</strong></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">They are included at the time of function call.</span></td>
+<td><span style="font-weight: 400">They are included at the time of the definition of the function.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Actual Parameters do not require data type but the data type should match with the corresponding data type of formal parameters.</span></td>
+<td><span style="font-weight: 400">Data types need to be mentioned.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">These can be variables, expressions, and constant without data types.</span></td>
+<td><span style="font-weight: 400">These are variables with their data type.</span></td>
+</tr>
+</tbody>
+</table>
+<h2><b>Q63. Explain modular programming. </b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> Modular programming is an approach that focuses on dividing an entire program into independent and interchangeable modules or sub-programs, such as functions and modules for achieving the desired functionality. It separates the functionality in such a manner that each sub-program contains everything necessary to execute just one aspect of the desired functionality.</span></p>
+<h2><b>Q64. What is a sequential access file?</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> As the name suggests, a sequential access file is used to store files sequentially, i.e. one data is placed into the file after another. It means that if you have to access files you will have to check each file sequentially (reading one data at a time) until your desired file is reached. It is more limitations as access time will be very high and storage cost is high</span></p>
+<h2><b>Q65. Explain the # pragma directive in C.</b></h2>
+<p><span style="font-weight: 400"><strong>Ans.</strong> # pragma is a special purpose directive that is used to turn on or off certain features. Some of the #pragma directives are:</span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">#pragma startup: It is used to specify the functions that are needed to run before the program starts.</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">#pragma exit: It is used to specify the functions that are needed to run just before program exit.</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">#pragma warn: It is used to hide the warning messages which are displayed during compilation. </span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">#pragma GCC poison: This directive is used to remove an identifier completely from the program. </span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">#pragma GCC dependency: This directive allows you to check the relative dates of the current file and another file.</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">#pragma once: It allows the current source file to be included only once in a single compilation.</span></li>
+</ul>
+<h2><b>Q66. What is variable initialization in C Programming?</b></h2>
+<p><b>Ans.</b><span style="font-weight: 400"> Variable initialization refers to the process of assigning a value to the variable before it is used in the program. Using variables without initialization can result in unexpected outputs. There are two types of variable initialization:</span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">Static Initialization: variable is assigned a value in advance and it acts as a constant.</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">Dynamic Initialization: variable is assigned a value at run time and can be altered every time the program is being run.</span></li>
+</ul>
+<p><b>Syntax of the variable initialization:</b></p>
+<p><i><span style="font-weight: 400">data_type variable_name=constant/literal/expression;</span></i></p>
+<p><span style="font-weight: 400">or</span></p>
+<p><i><span style="font-weight: 400">variable_name=constant/literal/expression;</span></i></p>
+<h2><b>Q67. What is the difference between Source Code and Object Code?</b></h2>
+<p><b>Ans.</b><span style="font-weight: 400"> The differences between source code and object code are: </span></p>
+<table>
+<tbody>
+<tr>
+<td><b>Source Code</b></td>
+<td><b>Object Code</b></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">It is created by a programmer.</span></td>
+<td><span style="font-weight: 400">Object code refers to the output,  which is produced when the Source Code is compiled with a C compiler.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Source code is high-level code.</span></td>
+<td><span style="font-weight: 400">It is a low-level code.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Source code is written in plain text by using some high-level programming language like C, C++, Java, or Python.</span></td>
+<td><span style="font-weight: 400">It is written in machine language.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">It is understandable by humans but not directly understandable by machines.</span></td>
+<td><span style="font-weight: 400">Object code is machine-understandable but not human-understandable.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Source code is the input to the compiler or any other translator.</span></td>
+<td><span style="font-weight: 400">It is the output of the compiler or any other translator.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">It can be easily modified.</span></td>
+<td><span style="font-weight: 400">Object code can not be modified.</span></td>
+</tr>
+</tbody>
+</table>
+<h2><b>Q68. In C programming, how can you determine if a number is odd or even?</b></h2>
+<p><b>Ans.</b><span style="font-weight: 400"> In C programming, we can determine if a number is even or odd by dividing it by 2. If the number is exactly divisible by 2 (the remainder is 0) then it is an even number else it is odd.</span></p>
+<p><b>Program to check if a number is even or odd using Bitwise Operator:</b></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main() {</strong></p>
+<p><strong>    int num;</strong></p>
+<p><strong>    printf(&#8220;Enter an integer: &#8220;);</strong></p>
+<p><strong>    scanf(&#8220;%d&#8221;, &amp;num);</strong></p>
+<p><strong>    // true if num is perfectly divisible by 2</strong></p>
+<p><strong>    if(num % 2 == 0)</strong></p>
+<p><strong>        printf(&#8220;%d is even.&#8221;, num);</strong></p>
+<p><strong>    else</strong></p>
+<p><strong>        printf(&#8220;%d is odd.&#8221;, num);</strong></p>
+<p><strong>    return 0;</strong></p>
+<p><strong>}</strong></p>
+<p><b>Output:</b></p>
+<p><b>Enter an integer: </b>77</p>
+<p>77 is odd.</p>
+<h2><b>Q69. Write a program to swap two numbers without the use of the third variable.</b></h2>
+<p><b>Ans.</b><span style="font-weight: 400"> We can swap two numbers without the use of the third variable by two methods:</span></p>
+<h3><b>Method 1: Using sum and subtraction </b></h3>
+<p><strong>#include&lt;stdio.h&gt;  </strong></p>
+<p><strong> int main()    </strong></p>
+<p><strong>{    </strong></p>
+<p><strong>int a=10, b=20;      </strong></p>
+<p><strong>printf(&#8220;Before swap a=%d b=%d&#8221;,a,b);      </strong></p>
+<p><strong>a=a+b;//a=30 (10+20)    </strong></p>
+<p><strong>b=a-b;//b=10 (30-20)    </strong></p>
+<p><strong>a=a-b;//a=20 (30-10)    </strong></p>
+<p><strong>printf(&#8220;\nAfter swap a=%d b=%d&#8221;,a,b);    </strong></p>
+<p><strong>return 0;  </strong></p>
+<p><strong>}   </strong></p>
+<p>&nbsp;</p>
+<h3><b> Method 2: Using multiplication and division</b></h3>
+<p><strong>#include&lt;stdio.h&gt;  </strong></p>
+<p><strong>#include&lt;stdlib.h&gt;  </strong></p>
+<p><strong> int main()    </strong></p>
+<p><strong>{    </strong></p>
+<p><strong>int a=10, b=20;      </strong></p>
+<p><strong>printf(&#8220;Before swap a=%d b=%d&#8221;,a,b);       </strong></p>
+<p><strong>a=a*b;//a=200 (10*20)    </strong></p>
+<p><strong>b=a/b;//b=10 (200/20)    </strong></p>
+<p><strong>a=a/b;//a=20 (200/10)    </strong></p>
+<p><strong> system(&#8220;cls&#8221;);  </strong></p>
+<p><strong>printf(&#8220;\nAfter swap a=%d b=%d&#8221;,a,b);       </strong></p>
+<p><strong>return 0;  </strong></p>
+<p><strong>}   </strong></p>
+<p>&nbsp;</p>
+<p><b>Output:</b></p>
+<p><span style="font-weight: 400">For both methods, the output will be:</span></p>
+<p><span style="font-weight: 400">Before swap a=10 b=20</span></p>
+<p><span style="font-weight: 400">After swap a=20 b=10</span></p>
+<h2><b>Q70. What is recursion in C? Write a program to find the factorial of a number using recursion</b></h2>
+<p><b>Ans.</b><span style="font-weight: 400"> Recursion refers to the process in which a function calls itself directly or indirectly. The function that calls itself is known as a recursive function. </span></p>
+<p><b>Program to find the factorial of a number using recursion</b></p>
+<p><strong>#include &lt;stdio.h&gt;  </strong></p>
+<p><strong>int fact (int);  </strong></p>
+<p><strong>int main()  </strong></p>
+<p><strong>{  </strong></p>
+<p><strong>    int n,f;  </strong></p>
+<p><strong>    printf(&#8220;Enter a positive integer: &#8220;);  </strong></p>
+<p><strong>    scanf(&#8220;%d&#8221;,&amp;n);  </strong></p>
+<p><strong>    f = fact(n);  </strong></p>
+<p><strong>    printf(&#8220;Factorial = %d&#8221;,f);  </strong></p>
+<p><strong>}  </strong></p>
+<p><strong>int fact(int n)  </strong></p>
+<p><strong>{  </strong></p>
+<p><strong>    if (n==0)  </strong></p>
+<p><strong>    {  </strong></p>
+<p><strong>        return 0;  </strong></p>
+<p><strong>    }  </strong></p>
+<p><strong>    else if ( n == 1)  </strong></p>
+<p><strong>    {  </strong></p>
+<p><strong>        return 1;  </strong></p>
+<p><strong>    }  </strong></p>
+<p><strong>    else   </strong></p>
+<p><strong>    {  </strong></p>
+<p><strong>        return n*fact(n-1);  </strong></p>
+<p><strong>    }  </strong></p>
+<p><strong>}  </strong></p>
+<p><b>Output</b></p>
+<p><span style="font-weight: 400">Enter a positive integer: 5</span></p>
+<p><span style="font-weight: 400">Factorial = 120</span></p>
+<h2><b>Q71. What is the difference between macros and functions?</b></h2>
+<p><b>Ans:</b><span style="font-weight: 400"> The differences between macros and functions are:</span></p>
+<table>
+<tbody>
+<tr>
+<td><b>Macros</b></td>
+<td><b>Functions</b></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Macros are pre-processed. It means that all the macros will be processed before the program compiles.</span></td>
+<td><span style="font-weight: 400">Functions are not preprocessed but compiled.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Macros do not check for compilation errors which leads to unexpected output.</span></td>
+<td><span style="font-weight: 400">Function checks for compilation errors. Chances of unpredictable output are less.  </span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">It increases the code length.</span></td>
+<td><span style="font-weight: 400">Code length remains the same.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Macros are useful when small code is repeated many times.</span></td>
+<td><span style="font-weight: 400">Functions are useful in large codes.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Before Compilation, the macro name is replaced by macro value.</span></td>
+<td><span style="font-weight: 400">During function call, transfer of control takes place.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">Faster in execution.</span></td>
+<td><span style="font-weight: 400">A bit slower in execution than Macros.</span></td>
+</tr>
+<tr>
+<td><span style="font-weight: 400">They do not check any Compile-Time errors.</span></td>
+<td><span style="font-weight: 400">Functions check Compile-Time errors.</span></td>
+</tr>
+</tbody>
+</table>
+<h2><b>Q72. Explain pointer to pointer in C.</b></h2>
+<p><b>Ans.</b><span style="font-weight: 400"> Pointer to pointer is a concept in which one pointer refers to the address of another pointer. It is a form of multiple indirections or a chain of pointers. The first pointer stores the address of a variable whereas the second pointer stores the address of the first pointer. </span></p>
+<p><b>Example: </b></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main () {</strong></p>
+<p><strong>   int  var;</strong></p>
+<p><strong>   int  *ptr;</strong></p>
+<p><strong>   int  **pptr;</strong></p>
+<p><strong>   var = 2000;</strong></p>
+<p><strong>   /* take the address of var */</strong></p>
+<p><strong>   ptr = &amp;var;</strong></p>
+<p><strong>   /* take the address of ptr using address of operator &amp; */</strong></p>
+<p><strong>   pptr = &amp;ptr;</strong></p>
+<p><strong>   /* take the value using pptr */</strong></p>
+<p><strong>   printf(&#8220;Value of var = %d\n&#8221;, var );</strong></p>
+<p><strong>   printf(&#8220;Value available at *ptr = %d\n&#8221;, *ptr );</strong></p>
+<p><strong>   printf(&#8220;Value available at **pptr = %d\n&#8221;, **pptr);</strong></p>
+<p><strong>   return 0;</strong></p>
+<p><strong>}</strong></p>
+<p><b>Output:</b></p>
+<p><span style="font-weight: 400">Value of var = 2000</span></p>
+<p><span style="font-weight: 400">Value available at *ptr = 2000</span></p>
+<p><span style="font-weight: 400">Value available at **pptr = 2000</span></p>
+<h2><b>Q73. Write a program to print the following:</b></h2>
+<p><b>1</b></p>
+<p><b>12</b></p>
+<p><b>123</b></p>
+<p><b>1234</b></p>
+<p><b>12345</b></p>
+<p><b>Ans:</b><span style="font-weight: 400"> Program to print the above pattern is:</span></p>
+<p><strong>#include&amp;lt;stdio.h&amp;gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>      for(i=1;i&amp;lt;=5;1++)</strong></p>
+<p><strong>      {</strong></p>
+<p><strong>           for(j=1;j&amp;lt;=5;j++)</strong></p>
+<p><strong>           {</strong></p>
+<p><strong>                print(&#8220;%d&#8221;,j);</strong></p>
+<p><strong>           }</strong></p>
+<p><strong>           printf(&#8220;n&#8221;);</strong></p>
+<p><strong>      }</strong></p>
+<p><strong>      return 0;</strong></p>
+<p><strong>}</strong></p>
+<h2><b>Q74. Explain Bubble Sort Algorithm with the help of a program.</b></h2>
+<p><b>And.</b><span style="font-weight: 400"> Bubble Sort Algorithm is a simple sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. Swapping is repeated until the list is sorted.</span></p>
+<p><b>Program to execute Bubble Sort:</b></p>
+<p><strong>#include &lt;stdio.h&gt;</strong></p>
+<p><strong>int main()</strong></p>
+<p><strong>{</strong></p>
+<p><strong>    int a[100], number, i, j, temp;</strong></p>
+<p><strong>    printf(&#8220;\n Enter the total Number of Elements:  &#8220;);</strong></p>
+<p><strong>    scanf(&#8220;%d&#8221;, &amp;number);</strong></p>
+<p><strong>    printf(&#8220;\n Enter the Array Elements:  &#8220;);</strong></p>
+<p><strong>    for(i = 0; i &lt; number; i++)</strong></p>
+<p><strong>        scanf(&#8220;%d&#8221;, &amp;a[i]);</strong></p>
+<p><strong>    for(i = 0; i &lt; number &#8211; 1; i++)</strong></p>
+<p><strong>    {</strong></p>
+<p><strong>        for(j = 0; j &lt; number &#8211; i &#8211; 1; j++)</strong></p>
+<p><strong>        {</strong></p>
+<p><strong>            if(a[j] &gt; a[j + 1])</strong></p>
+<p><strong>            {</strong></p>
+<p><strong>                temp = a[j];</strong></p>
+<p><strong>                a[j] = a[j + 1];</strong></p>
+<p><strong>                a[j + 1] = temp;</strong></p>
+<p><strong>            }</strong></p>
+<p><strong>        }</strong></p>
+<p><strong>    }</strong></p>
+<p><strong>    printf(&#8220;\n List Sorted in Ascending Order: &#8220;);</strong></p>
+<p><strong>    for(i = 0; i &lt; number; i++)</strong></p>
+<p><strong>    {</strong></p>
+<p><strong>        printf(&#8221; %d \t&#8221;, a[i]);</strong></p>
+<p><strong>    }</strong></p>
+<p><strong>    printf(&#8220;\n&#8221;);</strong></p>
+<p><strong>    return 0;</strong></p>
+<p><strong>}</strong></p>
+<p>&nbsp;</p>
+<p><b>Output: </b></p>
+<p><span style="font-weight: 400">Enter the total Number of Elements:  6</span></p>
+<p><span style="font-weight: 400">Enter the Array Elements:   2    9     7    7     1     -3</span></p>
+<p><span style="font-weight: 400">List Sorted in Ascending Order:   -3    1     2     7    7    9</span></p>
+<br><br><br>
+</div>
+</body>
+{% endblock %}

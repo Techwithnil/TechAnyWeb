@@ -1,0 +1,1822 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body style="background-color:yellow;">
+<div class="container" >         
+</div>
+
+<article class="post-medium post-4597 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-interview-questions">
+
+    <div class="row">
+                    <div class="col-lg-12">
+<div class="post-content">
+<h2 class="entry-title text-white text-center" style="background-color:black;">Java Interview Questions</h2>              
+<div class="entry-content">
+<h3 style="margin-top: 14.45pt;">What is Java?</h3>
+<ul>
+<li>Java is a distributed application software</li>
+<li>Java is the high-level, object-oriented programming</li>
+<li>Java is API Document.</li>
+</ul>
+<hr/>
+<h3>What are differences between C, C++ and Java?</h3>
+<h5 style="margin-top: 14.45pt;"><img loading="lazy" class="aligncenter wp-image-4599" src="https://nareshit.com/wp-content/uploads/2019/03/615x585xDiirence-Between-Java-and-C.jpg.pagespeed.ic.XUFT_81XL4.webp" alt="Diirence Between Java and C" width="615" height="585" srcset="https://nareshit.com/wp-content/uploads/2019/03/Diirence-Between-Java-and-C.jpg 508w, https://nareshit.com/wp-content/uploads/2019/03/Diirence-Between-Java-and-C-300x285.jpg 300w, https://nareshit.com/wp-content/uploads/2019/03/Diirence-Between-Java-and-C-125x119.jpg 125w, https://nareshit.com/wp-content/uploads/2019/03/Diirence-Between-Java-and-C-75x71.jpg 75w, https://nareshit.com/wp-content/uploads/2019/03/Diirence-Between-Java-and-C-367x349.jpg 367w" sizes="(max-width: 615px) 100vw, 615px" pagespeed_url_hash="2191085216" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></h5>
+<hr/>
+<h3>Why java or What are the features in JAVA?</h3>
+<p><strong>Features of Java:</strong></p>
+<ol>
+<li><strong>Oops concepts</strong>
+<ul>
+<li>Class</li>
+<li>object</li>
+<li>Inheritance</li>
+<li>Encapsulation</li>
+<li>Polymorphism</li>
+<li>Abstraction</li>
+</ul>
+</li>
+<li><strong>Platform independent:</strong> Java is System independent as well as Platform independent because it works with diff System hw as well as Diff Platforms(diff operating Systems)</li>
+<li><strong>High Performance:</strong> JIT (Just In Time compiler) enables high performance in Java. JIT converts the bytecode into machine language and then JVM starts the</li>
+<li><strong>Multi-threaded:</strong> A flow of execution is known as a Thread. JVM creates a thread which is called main thread. The user can create multiple threads by extending the thread class or by implementing Runnable</li>
+<li><strong>Simple:</strong> Java having simple Syntax rules. easy to learn. Complicated things like pointers and multiple inheritance is not</li>
+<li><strong>Portable:</strong> Java supports write-once-run-anywhere approach. We can execute the Java program on every machine. Java program (.java) is converted to bytecode (.class) which can be easily run on every machine.</li>
+<li><strong>Secured:</strong> Java is secured because it doesn&#8217;t use explicit Java also provides the concept of ByteCode and Exception handling which makes it more secured.</li>
+<li><strong>Robust:</strong> Java is a strong programming language as it uses strong memory management. The concepts like Automatic garbage collection, Exception handling, etc. make it more</li>
+<li><strong>Architecture Neutral:</strong> Java is architectural neutral as it is not dependent on the architecture. In C, the size of data types may vary according to the architecture (32 bit or 64 bit) which doesn&#8217;t exist in Java.</li>
+<li><strong>Interpreted:</strong> Java uses the Just-in-time (JIT) interpreter along with the compiler for the program</li>
+<li>Distributed: Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the</li>
+<li><strong>Dynamic:</strong> Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.</li>
+</ol>
+<hr/>
+<h3>What is difference between compiler and interpreter ?</h3>
+<p><strong><img loading="lazy" class="size-full wp-image-4607 aligncenter" src="https://nareshit.com/wp-content/uploads/2019/03/746x336xwhat-is-difference-between-compiler-and-interpreter.-1.jpg.pagespeed.ic.OAwNgd51yU.webp" alt="what is difference between compiler and interpreter." width="746" height="336" srcset="https://nareshit.com/wp-content/uploads/2019/03/what-is-difference-between-compiler-and-interpreter.-1.jpg 746w, https://nareshit.com/wp-content/uploads/2019/03/what-is-difference-between-compiler-and-interpreter.-1-300x135.jpg 300w, https://nareshit.com/wp-content/uploads/2019/03/what-is-difference-between-compiler-and-interpreter.-1-125x56.jpg 125w, https://nareshit.com/wp-content/uploads/2019/03/what-is-difference-between-compiler-and-interpreter.-1-75x34.jpg 75w, https://nareshit.com/wp-content/uploads/2019/03/what-is-difference-between-compiler-and-interpreter.-1-367x165.jpg 367w, https://nareshit.com/wp-content/uploads/2019/03/what-is-difference-between-compiler-and-interpreter.-1-600x270.jpg 600w" sizes="(max-width: 746px) 100vw, 746px" pagespeed_url_hash="3468129894" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></strong></p>
+<hr/>
+<h3>Why java not support pointer?</h3>
+<p>A pointer is a variable which can hold the address of another variable or object.</p>
+<p>But, Java does not support pointer due to security reason, because if you get the address of any variable you could access it anywhere from the program without any restriction even variable is private.</p>
+<p>&nbsp;</p>
+<hr/>
+
+<h3>What is java comments ?</h3>
+<p>The java comments are statements that are not executed by the compiler and interpreter. The comments can be used to provide information or explanation about the variable, method, class or any statement. It can also be used to hide program code for specific time.</p>
+<p>Comments are not consider as java code used build communication between programmers and end users?</p>
+<hr/>
+<h3>What are Types of Java Comments?</h3>
+<p>There are 3 types of comments in java.<br/>
+1.<strong> Single Line Comment</strong></p>
+<p>The single line comment is used to comment only one line. EX:<br/>
+// this is Our application</p>
+<p>2. <strong>Multi Line Comment</strong><br/>
+The multi line comment is used to comment several lines of code.</p>
+<p>EX:<br/>
+/*<br/>
+This is multiline comment<br/>
+User for give big description purpose Give n no line etc<br/>
+*/</p>
+<p>3. Documentation Comment<br/>
+/**<br/>
+This is doc comment<br/>
+User for give big description purpose Give n no line etc<br/>
+*/</p>
+<hr/>
+<h3>Difference Between Multiline and Document Type Comments in java?</h3>
+<p>Multiline Comments are used build communication between programmers Document Type Comments are used build communication between programmer and end users. Javadoc tool generates html description for Document Type Comments</p>
+<hr/>
+<h3>What is a package?</h3>
+<p>Package is a collection class And Interfaces those are collection of methods they can perform some action.</p>
+<hr/>
+<h3>What is the difference between #include and import?</h3>
+<p>#include is used in C or C++ programing witch is used to go to standard library and copy the entire header file code in to a C/C++ programs. So the program size increases unnecessarily wasting memory &amp; processor time.</p>
+<p>Import statement used in java programming uses to pass Ref for particular package .package is saved once used for N no of times. Witch avoids memory wastage problems.</p>
+<hr/>
+<h3>What Is The Super Class Of All Classes?</h3>
+<p><strong>J</strong>ava.lang.Object is a Super class for classes</p>
+<hr/>
+<h3>What are the advantages of java package?</h3>
+<ul>
+<li>Packages hide classes &amp; interfaces. Thus they provide protection for them.</li>
+<li>The classes of one Package are isolated from the classes of another Package. So it is possible to use same names for the classes into different packages.</li>
+<li>Using package concept we can create our own Packages &amp; also we can extend already available Packages.</li>
+<li>Packages provide re usability of code.</li>
+<li>Package is used to categorize the classes and interfaces so that they can be easily maintained</li>
+<li>Application development time is less, because reuse the code</li>
+<li>Application memory space is less (main memory)</li>
+<li>Application execution time is less</li>
+<li>Application performance is enhance (improve)</li>
+<li>Redundancy (repetition) of code is minimized</li>
+<li>Package provides access</li>
+<li>Package removes naming</li>
+</ul>
+<hr/>
+<h3>Can we import same package/class twice? Will the JVM load the package twice at runtime?</h3>
+<p>Yes even though programmer whitens same package class twice in the program Jvm loads it once only</p>
+<hr/>
+<h3>Can u Explain Rules to create user defined package?</h3>
+<ul>
+<li>package statement should be the first statement of any package program.</li>
+<li>Choose an appropriate class name or interface name and whose modifier must be public.</li>
+<li>Any package program can contain only one public class or only one public interface but it can contain any number of normal classes.</li>
+<li>Package program should not contain any main class (that means it should not contain any main())</li>
+<li>modifier of constructor of the class which is present in the package must be public. (This is not applicable in case of interface because interface have no constructor.)</li>
+<li>The modifier of method of class or interface which is present in the package must be public (This rule is optional in case of interface because interface methods by default public)</li>
+</ul>
+<ul>
+<li>Every package program should be save either with public class name or public Interface name</li>
+</ul>
+<p>&nbsp;</p>
+<hr/>
+<h3>Which package is always imported by default?</h3>
+<p>By default java.lang package imported</p>
+<p>How many ways we can use packages classes</p>
+<hr/>
+<h4>Method-I By passing complete address: Java.util.Scanner sc=new java.util.Scanner(System.in);</h4>
+<p>Method-II: By using import stmt: import java.util.*;</p>
+<p>Scanner sc=new Scanner(System.in);</p>
+<hr/>
+<h2 style="text-align: center;">Java Main Method Interview Questions</h2>
+<hr/>
+<h3>Can we execute java program without main method?</h3>
+<p>No, you can’t run java class without main method.</p>
+<p>Before Java 7, you can run java class by using static initializers. But, from Java 7 it is not possible.</p>
+<hr/>
+<h3>Can we change return type of main() method?</h3>
+<p>No, the return type of main() method must be void only. Any other type is not acceptable.</p>
+<hr/>
+<h3>Can we declare main() method as private or protected or with no access modifier?</h3>
+<ul>
+<li>No, main() method must be public. You can’t define main() method as private or protected or with no access</li>
+<li>This is because to make the main() method accessible to JVM. If you define main() method other than public, compilation will be successful but you will get run time error as no main method</li>
+</ul>
+<hr/>
+<h3>Can We Overload main() method?</h3>
+<p>Can java class Suports more Than One Main Method</p>
+<p>Yes, We can overload main() method. A Java class can have any number of main() methods. But to run the java class, class should have main()</p>
+<ul>
+<li>method with signature as “public static void main(String[] args)”. If you do any modification to this signature, compilation will be successful.</li>
+</ul>
+<ul>
+<li>But, you can’t run the java program. You will get run time error as main method not</li>
+</ul>
+<hr/>
+<h3>Can main() method take an argument other than string array?</h3>
+<p>No, argument of main() method must be string array.</p>
+<ul>
+<li>But, from the introduction of var args you can pass var args of string type as an argument to main() method. Again, var args are nothing but the arrays.</li>
+</ul>
+<hr/>
+<h2 style="text-align: center;">Java Data type Interview Questions</h2>
+<hr/>
+<h3>What are the primitive data types in Java ?</h3>
+<p>There are eight primitive data types.</p>
+<ul>
+<li>byte</li>
+<li>short</li>
+<li>int</li>
+<li>long</li>
+<li>float</li>
+<li>double</li>
+<li>boolean</li>
+<li>char</li>
+</ul>
+<hr/>
+<h3>What is the default value of  variables in Java?</h3>
+<p><strong><img loading="lazy" class="wp-image-4605 aligncenter" src="https://nareshit.com/wp-content/uploads/2019/03/791x374xWhat-is-the-default-value-of-variables-in-Java.jpg.pagespeed.ic.6pRlK9vPeF.webp" alt="What is the default value of variables in Java" width="791" height="374" srcset="https://nareshit.com/wp-content/uploads/2019/03/What-is-the-default-value-of-variables-in-Java.jpg 725w, https://nareshit.com/wp-content/uploads/2019/03/What-is-the-default-value-of-variables-in-Java-300x142.jpg 300w, https://nareshit.com/wp-content/uploads/2019/03/What-is-the-default-value-of-variables-in-Java-125x59.jpg 125w, https://nareshit.com/wp-content/uploads/2019/03/What-is-the-default-value-of-variables-in-Java-75x35.jpg 75w, https://nareshit.com/wp-content/uploads/2019/03/What-is-the-default-value-of-variables-in-Java-367x174.jpg 367w, https://nareshit.com/wp-content/uploads/2019/03/What-is-the-default-value-of-variables-in-Java-600x284.jpg 600w" sizes="(max-width: 791px) 100vw, 791px" pagespeed_url_hash="2695365013" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></strong></p>
+<hr/>
+<h3>What is uni code?</h3>
+<p>Uni code is a standard to include the alphabet from all human languages in java. Uni code system uses 2 bytes to represent a character</p>
+<hr/>
+<h3>What is the default value of local variables in Java?</h3>
+<ul>
+<li> There is no default value for local variables</li>
+</ul>
+<hr/>
+<h3>What is Widening?</h3>
+<ul>
+<li>Is process of conversion lower data types into higher data types</li>
+</ul>
+<p><img loading="lazy" class="alignnone size-full wp-image-4600" src="https://nareshit.com/wp-content/uploads/2019/03/711x120xWhat-is-Widening.jpg.pagespeed.ic.pQBgoUf7ht.webp" alt="What is Widening" width="711" height="120" srcset="https://nareshit.com/wp-content/uploads/2019/03/What-is-Widening.jpg 711w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Widening-300x51.jpg 300w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Widening-125x21.jpg 125w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Widening-75x13.jpg 75w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Widening-367x62.jpg 367w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Widening-600x101.jpg 600w" sizes="(max-width: 711px) 100vw, 711px" pagespeed_url_hash="202860306" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></p>
+<hr/>
+<h3><strong>W</strong>hat is Narrowing ?</h3>
+<ul>
+<li> Is process of conversion Higher data types into Lower data types</li>
+</ul>
+<p><img loading="lazy" class="alignnone size-full wp-image-4601" src="https://nareshit.com/wp-content/uploads/2019/03/693x113xWhat-is-Narrowing.jpg.pagespeed.ic.6J1a1VGNff.webp" alt="What is Narrowing" width="693" height="113" srcset="https://nareshit.com/wp-content/uploads/2019/03/What-is-Narrowing.jpg 693w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Narrowing-300x49.jpg 300w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Narrowing-125x20.jpg 125w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Narrowing-75x12.jpg 75w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Narrowing-367x60.jpg 367w, https://nareshit.com/wp-content/uploads/2019/03/What-is-Narrowing-600x98.jpg 600w" sizes="(max-width: 693px) 100vw, 693px" pagespeed_url_hash="800566222" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></p>
+<hr/>
+<h3>What is ASCII?</h3>
+<p>American Standard Code for Information Interchange. It is a standard numarical value asigened to every key in keybord.its range is 0 to 255.</p>
+<p><strong>EX: A value=65</strong></p>
+<hr/>
+<h3>What are the Types of Variables in JAVA ?</h3>
+<ul>
+<li>Java has 3 kinds of variables. They are Local variables, Instance variables (fields) and  Static variables (class variables)</li>
+</ul>
+<p><strong>1.LOCAL VARIABLES</strong></p>
+<ul>
+<li>A local variable is defined inside a method block. A block begins with an opening curly brace and ends with a closing curly brace.</li>
+<li>The scope of the variable is limited within the block. In other words, local variables are visible only in the block (method) in which they are declared.</li>
+</ul>
+<p><strong>2.INSTANCE VARIABLES</strong></p>
+<ul>
+<li>Instance variables are declared inside a class, but outside of any method / constructor / any block. They are also referred to as fields.</li>
+<li>Objects store their individual states in these fields. Their values are unique to each object (instance of class) and hence they are called as instance variables.</li>
+</ul>
+<p><strong>Example –</strong> The ‘employeeId’ field of the Employee class will have a unique value for each of its object. (Consider Emp1, Emp2… as objects of the class Employee, then each object will have unique value for the property ‘employee-id’).</p>
+<p><strong>3.STATIC VARIABLES (CLASS VARIABLES)</strong></p>
+<p>Static variables belong to the class rather than objects in which they are declared. The keyword ‘static’ is prefixed before the variable to represent static variables. Only one copy of this variable is maintained for all the objects.</p>
+<hr/>
+<h3>What is this key word in java?</h3>
+<p>&#8220;this&#8221;is a predefined instance variable to hold current object reference</p>
+<p>&nbsp;</p>
+<hr/>
+<h3>Can we use this in static methods?</h3>
+<p>No we cannot use this in static methods. if we try to use compile time error will come :Cannot use this in a static context</p>
+<hr/>
+<h3>What are all the differences between this and super keyword?</h3>
+<ul>
+<li>This refers to current class object where as super refers to super class object</li>
+<li>Using this we can access all non static methods and variables. Using super we can access super class variable and methods from sub class.</li>
+<li>Using this(); call we can call other constructor in same class. Using super we can call super class constructor from sub class constructor.</li>
+</ul>
+<hr/>
+<h3>Is it possible to use this in static blocks?</h3>
+<ul>
+<li>No its not possible to use this keyword in static block.</li>
+</ul>
+<hr/>
+<h3>Can we use this to refer static members?</h3>
+<ul>
+<li> Yes its possible to access static variable of a class using this but its discouraged and as per best practices this should be used on non static reference</li>
+</ul>
+<hr/>
+<h3>Can we pass this as parameter of method?</h3>
+<ul>
+<li>Yes we can pass this as parameter in a method</li>
+</ul>
+<hr/>
+<h3>Can we return this from a method?</h3>
+<p>Yes We can return this as current class object. public class B{<br/>
+int a;<br/>
+public int getA() { return a;<br/>
+}<br/>
+public void setA(int a) { this.a = a;<br/>
+}</p>
+<p>B show(){ return this;<br/>
+}</p>
+<p>public static void main(String[] args) { B obj = new B();<br/>
+obj.setA(10); System.out.println(obj.getA()); B obj2= obj.show(); System.out.println(obj2.getA());</p>
+<p>}<br/>
+}</p>
+<hr/>
+<h3>Can we call method on this keyword from constructor?</h3>
+<ul>
+<li>Yes we can call non static methods from constructor using this keyword.</li>
+</ul>
+<hr/>
+<h3>What is the use of final keyword in java?</h3>
+<ul>
+<li>By using final keyword we can make</li>
+<li>Final class</li>
+<li>Final method</li>
+<li>Final variables</li>
+<li>If we declare any class as final we can not extend that class</li>
+<li>If we declare any method as final it can not be overridden in sub class</li>
+<li>If we declare any variable as final its value unchangeable once assigned.</li>
+</ul>
+<hr/>
+<h3>What is the main difference between abstract method and final method?</h3>
+<ul>
+<li>Abstract methods must be overridden in sub class where as final methods can not be overridden in sub class</li>
+</ul>
+<hr/>
+<h3>What is the actual use of final class in java?</h3>
+<ul>
+<li> If a class needs some security and it should not participate in inheritance in this scenario we need to use final class.</li>
+<li>We can not extend final class.</li>
+</ul>
+<hr/>
+<h3>Can we declare interface as final?</h3>
+<ul>
+<li>No We can not declare interface as final because interface should be implemented by some class so its not possible to declare interface as final.</li>
+</ul>
+<hr/>
+<h3>Is it possible to declare final variables without initialization?</h3>
+<ul>
+<li>No. Its not possible to declare a final variable without initial value assigned.</li>
+<li>While declaring itself we need to initialize some value and that value can not be change at any time.</li>
+</ul>
+<hr/>
+<h3>Can we declare constructor as final?</h3>
+<ul>
+<li> No . Constructors can not be final.</li>
+</ul>
+<hr/>
+<h3>What will happen if we try to override final methods in sub classes?</h3>
+<ul>
+<li>Compile time error will come :Cannot override the final method from Super Class</li>
+</ul>
+<hr/>
+<h3>Can we create object for final class?</h3>
+<ul>
+<li> Yes we can create object for final class</li>
+</ul>
+<hr/>
+<h3>What is java static import?</h3>
+<ul>
+<li>In Java, static import concept is introduced in 1.5 version access the static members of a class directly without class name or any object</li>
+<li>For example, System class &amp; Math class has static method: import static java.lang.System.*;<br/>
+import static java.lang.Math.*; public class MyStaticImportTest { public static void main(String[] a) {<br/>
+System.out.println(sqrt(625));<br/>
+}<br/>
+}<br/>
+}</li>
+</ul>
+<hr/>
+<h3>What is Drawback of Static Import in Java?</h3>
+<ul>
+<li>If two static members of the same name are imported from multiple different classes, the compiler will throw an error, as it will not be able to determine which member to use in the absence of class name qualification.</li>
+</ul>
+<p><strong>EX:</strong><br/>
+import static java.lang.System.*; import static java.lang.Integer.*; import static java.lang.Byte.*; class Demo<br/>
+{<br/>
+public static void main(String[] args)<br/>
+{<br/>
+out.println(MAX_VALUE);<br/>
+}<br/>
+}<br/>
+<strong>Output:</strong><br/>
+Error:Reference to MAX_VALUE is ambigious</p>
+<hr/>
+<h3>What is the Difference between import and static import?</h3>
+<p><strong><img loading="lazy" class="wp-image-4608 aligncenter" src="https://nareshit.com/wp-content/uploads/2019/03/797x221xDifference-between-import-and-static-import.jpg.pagespeed.ic.LgT9jtc1-X.webp" alt="Difference between import and static import" width="797" height="221" srcset="https://nareshit.com/wp-content/uploads/2019/03/Difference-between-import-and-static-import.jpg 718w, https://nareshit.com/wp-content/uploads/2019/03/Difference-between-import-and-static-import-300x83.jpg 300w, https://nareshit.com/wp-content/uploads/2019/03/Difference-between-import-and-static-import-125x35.jpg 125w, https://nareshit.com/wp-content/uploads/2019/03/Difference-between-import-and-static-import-75x21.jpg 75w, https://nareshit.com/wp-content/uploads/2019/03/Difference-between-import-and-static-import-367x102.jpg 367w, https://nareshit.com/wp-content/uploads/2019/03/Difference-between-import-and-static-import-600x166.jpg 600w" sizes="(max-width: 797px) 100vw, 797px" pagespeed_url_hash="1820697700" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></strong></p>
+<hr/>
+<h3>Is Java platform independent?</h3>
+<p>Yes. Java is a platform independent language. We can write java code on one platform and run it on another platform. For e.g. we can write and compile the code on windows and can run the generated bytecode on Linux or any other supported platform. This is one of the main features of java.</p>
+<hr/>
+<h3> What all memory areas are allocated by JVM?</h3>
+<ul>
+<li>Classloader, Class area, Heap, Stack, Program Counter Register and Native Method Stack</li>
+</ul>
+<hr/>
+<h3>What is javac ?</h3>
+<ul>
+<li>The javac is a compiler that compiles the source code of your program and generates bytecode. In simple words javac produces the java byte code from the source code written *.java file. JVM executes the bytecode to run the program.</li>
+</ul>
+<hr/>
+<h3>What is class?</h3>
+<ul>
+<li>A class is a blueprint or template or prototype from which you can create the object of that class. A class has set of properties and methods that are common to its objects.</li>
+</ul>
+<hr/>
+<h3>What is a wrapper class in Java?</h3>
+<ul>
+<li>A wrapper class converts the primitive data type such as int, byte, char, boolean etc. to the objects of their respective classes such as Integer, Byte, Character, Boolean etc.</li>
+</ul>
+<hr/>
+<h3>What is a path and classPath in Java?</h3>
+<ul>
+<li>Path specifies the location of .exe files. Classpath specifies the location of bytecode (.class files).</li>
+</ul>
+<hr/>
+
+<h4 style="text-align: left;">1. Can we write static block within the method?</h4>
+<p><em><strong>Answer:</strong></em></p>
+<p style="margin: 0.5pt 0in; text-align: left;">No. Compiler will give error.<br/>
+public class Test{<br/>
+public static void main(String[] args) {<br/>
+static{<br/>
+}<br/>
+}<br/>
+}<br/>
+Compiletime Error: Illegal start of expression.</p>
+<hr/>
+<h4 style="text-align: left;">2. Can we write return statement without value in constructors?</h4>
+<p><em><strong>Answer: </strong></em>Yes.</p>
+<p style="margin: .5pt 0in .5pt 0in;">public class Test{</p>
+<p style="margin: .5pt 0in .5pt 0in;">        Test(){</p>
+<p style="margin: .5pt 0in .5pt 0in;">                return;</p>
+<p style="margin: .5pt 0in .5pt 0in;">        }</p>
+<p style="margin: .5pt 0in .5pt 0in;">        public static void main(String[] args) {</p>
+<p style="margin: .5pt 0in .5pt 0in;">                {</p>
+<p style="margin: .5pt 0in .5pt 0in;">                        System.<em>out</em>.println(&#8220;non static block&#8221;);</p>
+<p style="margin: .5pt 0in .5pt 0in;">                }</p>
+<p style="margin: .5pt 0in .5pt 0in;">        }</p>
+<p style="margin: .5pt 0in .5pt 0in;">}</p>
+<hr/>
+<h4>3.What is the difference between static and new keyword?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>New keyword is useful for providing memory for non-static data, it is individual, where as static keyword is useful for providing memory static data by default by JVM, it is common for all.</p>
+<hr/>
+<h4>4.Is bellow code valid?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>public class Test{</p>
+<p>public static void main(String[] args) {</p>
+<p>final int a = 100;</p>
+<p>a = 200;</p>
+<p>}</p>
+<p>}</p>
+<p>No.</p>
+<p>Once we initialize the final variable, we can’t reinitialize the variable again either with same value or different value.</p>
+<hr/>
+<h4>5.What is the use of constructor?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>Constructor is useful for initialize the non-static variables meanwhile of object creation.</p>
+<hr/>
+<h4>6.What is the use of preparer?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>Preparer is useful for providing default values for static variables in static loading phase.</p>
+<hr/>
+<h4>7.What is the use of initializer?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>Initializer is useful for replacing default values with original values of static variables in static initialization phase.</p>
+<hr/>
+<h4>8.What is the use of copy constructor?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>Mean while of creating object, if we want to copy the data from existed object to new creating object within the different memory location then we should use copy constructor.</p>
+<hr/>
+<h4>9.Why should we go for constructor overloading?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>If we want perform different operations in different object creations mode then we should prefer constructor overloading.</p>
+<hr/>
+<h4>10.What is use of this () in java?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>This () method is useful for making communication between one constructor to another constructor within the same class.</p>
+<hr/>
+<h4>11.What is use of super () in java?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>Super () method is useful for making communication between one constructor to another constructor between super and sub classes.</p>
+<hr/>
+<h4>12.What is singleton?</h4>
+<p><em><strong>Answer:</strong></em></p>
+<p>A class which is allows to programmer to create only one object.</p>
+<hr/>
+<h4>13.What is use of non-static block?</h4>
+<p><em><strong>Answer:</strong></em></p>
+<p>To make our logic/functionalities to common for all objects, mean while of object creation then we should use non-static block.</p>
+<hr/>
+<h4>14.What is the difference between constructor and non-static block?</h4>
+<p><em><strong>Answer:</strong></em></p>
+<p>To make our logic/functionalities to common for all we should use non-static block, whereas constructor is useful for providing different functionalities for different object.</p>
+<hr/>
+<h4>15.Can we this and super keywords in static context?</h4>
+<p><em><strong>Answer:</strong></em></p>
+<p>No, we are unable to use, the reason are by default non-static final reference variables.</p>
+<hr/>
+<h4>16.What is use of static methods?</h4>
+<p><em><strong>Answer:</strong></em></p>
+<p>If we are unable to create object for a class, but still if we want to execute some logic and if we are not giving to subclasses to change our logic then we should prefer static methods.</p>
+<hr/>
+<h4>17.Can we write return statement without value in void method?</h4>
+<p><em><strong>Answer:  </strong></em>Yes.</p>
+<hr/>
+<h4>18.What the difference between void and non-void method?</h4>
+<p><em><strong>Answer:  </strong></em>The method which is unable to carry information from called area to calling area is called void method the method which is able to carry the information from called area to calling area is called non-void method.</p>
+<hr/>
+<h4>19.What is factory method?</h4>
+<p><em><strong>Answer:  </strong></em>A method which is returns either same class memory other class memory is called factory method.</p>
+<hr/>
+<h4>20.What is factory class?</h4>
+<p><em><strong>Answer:  </strong></em>A class which is ready to returns memory for other classes is called factory class.</p>
+<hr/>
+<h4>21.What is the use of abstract methods and concrete methods?</h4>
+<p><em><strong>Answer:  </strong></em>To providing rules or specifications to third party vendors we should use abstract methods, where as if we want provides implementations for specifications we should prefer concrete methods.</p>
+<hr/>
+<h4>22.What is the use of default methods in java?</h4>
+<p><em><strong>Answer:  </strong></em>Without doing modifications to implementation classes if we want write logic to interface then we should use default methods. These are introduced in java 8.</p>
+<hr/>
+<h4>23.How many interfaces do we have from java 1.7?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<ul>
+<li>We have three interfaces from java 1.7.</li>
+<li>Normal interface/non-functional interface</li>
+<li>Functional interfaces</li>
+<li>Marker interfaces.</li>
+</ul>
+<hr/>
+<h4>24.Can we write default methods in functional interface?</h4>
+<p><em><strong>Answer:  </strong></em></p>
+<p>Yes, we can write multiple default methods and java.lang.Object class methods also (abstract format only).</p>
+<hr/>
+<h4>25.Can we override static, final, private methods?</h4>
+<p><em><strong>Answer:  </strong></em>No</p>
+<hr/>
+<h4>26.What are required things to call methods?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<p>The following things are very much mandatory for calling any method. Those are</p>
+<ul>
+<li>Access modifier</li>
+<li>Modifier (static/non-static)</li>
+<li>Return type</li>
+<li>Method name</li>
+<li>Parameters(number of, type of , place of parameters)</li>
+<li>Throws keyword(Exceptions)</li>
+</ul>
+<hr/>
+<h4>27.What is encapsulation?</h4>
+<p><em><strong>Answer:  </strong></em>The process of providing security for our data, if the end user is authorized then we should provides permissions to security data is called encapsuaiton.</p>
+<hr/>
+<h4>28.What is marker interface and it usage?</h4>
+<p><em><strong>Answer:  </strong></em>The interface which contains zero abstract method is called marker interface, which is useful for making our object as specialized object to participated in special operations like serialization, cloning and etc…</p>
+<hr/>
+<h4>29.How can we call abstract class constructor?</h4>
+<p><em><strong>Answer:  </strong></em>By creating object for its sub class.</p>
+<hr/>
+<h4>30.Are interface talks about state of an object?</h4>
+<p><em><strong>Answer:  </strong></em>No. The reason is by default interface variables are public static final.</p>
+<hr/>
+<h4>31.Is java supports multiple inheritance?</h4>
+<p><em><strong>Answer:  </strong></em>Yes. Java supports multiple inheritance only through interfaces but not through classes.</p>
+<hr/>
+<h4>32.What is method overloading?</h4>
+<p><em><strong>Answer:  </strong></em>The process of writing same method multiple times with different parameters is called method overloading.</p>
+<hr/>
+<h4>33.What is method overriding?</h4>
+<p><em><strong>Answer: </strong></em>The logic which is given by the java software or already existed, if that logic is not suitable for project requirement then we should write same method with different logic within the super and sub classes is called method overriding.</p>
+<hr/>
+<h4>34.How many memories are given by the JVM meanwhile of subclass object creation?</h4>
+<p><em><strong>Answer:  </strong></em>JVM will provide only one memory for subclass but super class non-static data will come stored in sub class memory.</p>
+<hr/>
+<h4>35.What is upcasting and its usage?</h4>
+<p><em><strong>Answer:  </strong></em>The process of placing sub class memory into super class reference variable is called upcasting.</p>
+<p>If we are not aware about type of value and memory but still if we want hold then we should prefer upcasting.</p>
+<hr/>
+<h4>36.What is downcasting and its usage?</h4>
+<p><em><strong>Answer:  </strong></em>The process of placing super class reference into sub class reference by using cast operator, but super class memory should contains sub class memory. With the support of upcasting reference variable we can able to communicating with super class data but not sub class data, if we want to communicating with sub class data then we should prefer downcasting.</p>
+<hr/>
+<h4>37.What is the output of bellow code?</h4>
+<p>public class Test{<br/>
+void m1(float x){<br/>
+System.out.println(&#8220;m1-float: &#8220;+x);<br/>
+}<br/>
+void m1(int x){<br/>
+System.out.println(&#8220;m1-int: &#8220;+x);<br/>
+}<br/>
+public static void main(String[] args) {<br/>
+Test t = new Test();<br/>
+t.m1(100);<br/>
+}<br/>
+}<br/>
+<strong>Output:</strong> m1-int: 100</p>
+<hr/>
+<h4>38.What is output of bellow code?</h4>
+<p><em><strong>Answer: </strong></em>public class Test{<br/>
+void m1(Object x){<br/>
+System.out.println(&#8220;m1-Object: &#8220;+x);<br/>
+}<br/>
+void m1(String x){<br/>
+System.out.println(&#8220;m1-String: &#8220;+x);<br/>
+}<br/>
+public static void main(String[] args) {<br/>
+Test t = new Test();<br/>
+t.m1(&#8220;ram&#8221;);<br/>
+}<br/>
+}<br/>
+<strong>Output:</strong> m1-Sstring: ram</p>
+<hr/>
+<h4>39.What is static and dynamic polymorphism?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<ul>
+<li>The process of executing the method by JVM at runtime, which is binds by the compiler at compilation time, is called dynamic polymorphism.</li>
+<li>The process of executing the method from subclass by JVM at runtime, which is not binds by the compiler at compilation time, is called dynamic polymorphism.</li>
+</ul>
+<hr/>
+<h4>40.What is immutable object and examples?</h4>
+<p><em><strong>Answer:  </strong></em>The process of unable to change the state of the object is called immutable object.</p>
+<p><strong>Ex:</strong> String and Wrapper classes.</p>
+<hr/>
+<h4></h4>
+<h4>41.What is difference between StringBuffer and StringBuilder?</h4>
+<p><em><strong>Answer:  </strong></em>StringBuffer is thread-safe (synchronized), multiple threads are unable to processing the StringBuffer object at time, so it will gives less performance, where as StringBuilder is not a thread-safe so multiple objects can processing the object, which gives more performance.</p>
+<hr/>
+<h4>42.How convert StringBuffer object to String object?</h4>
+<p><em><strong>Answer:  </strong></em>StringBuffer object we can convert into String object using toString().</p>
+<hr/>
+<h4>43.What is difference between the following code?</h4>
+<p><em><strong>Answer:  </strong></em>String s = “ram”;</p>
+<p>String s1 = new String(“ram”);</p>
+<p>In the first statement, JVM only creates one object in String constant pool.</p>
+<p>In the second statement, JVM will create two objects, one is in heap area and another one is in String constant pool area.</p>
+<hr/>
+<h4>44.What is use of intern() in String class?</h4>
+<p><em><strong>Answer:  </strong></em>The intern () will go to memory of a String object and read the data later it will pointing to same data in string constant pool area.</p>
+<hr/>
+<h4>45.What type of data holding by method area and heap area?</h4>
+<p><em><strong>Answer:  </strong></em>Method are always hold static type data where as heap area always holds objects, in that object non-static data will store.</p>
+<hr/>
+<h4>46.Are String and wrapper classes participated in inheritance?</h4>
+<p><em><strong>Answer:  </strong></em>No, the reason is final classes are not participated in inheritance.</p>
+<hr/>
+<h4>47.What are the rules followed to create java bean?</h4>
+<p><em><strong>Answer:  </strong></em>The java standard edition class which maintain the following rules.</p>
+<ul>
+<li>Class should implements either java.io.Serializable or Externalizable</li>
+<li>Variables should be private</li>
+<li>Public zero or default constructor.</li>
+<li>Public setters and getters</li>
+<li>Class should be public.</li>
+</ul>
+<hr/>
+<h4>48.What is wrapper class?</h4>
+<p><em><strong>Answer:  </strong></em>The class which is representing the data in the form object is called wrapper class.</p>
+<hr/>
+<h4>49.What is auto boxing and unboxing?</h4>
+<p><em><strong>Answer:  </strong></em>The process of converting primitive data to object type is called auto boxing where as converting object type data to primitive is called auto unboxing.</p>
+<hr/>
+<h4></h4>
+<h4>50.What is package?</h4>
+<p><em><strong>Answer:  </strong></em>The process of encapsulating the similar type of classes, interfaces and enum in a single unit is called package.</p>
+<hr/>
+<h4>51.What is use of static import statement?</h4>
+<p><em><strong>Answer:  </strong></em>Static import statement is useful for loading only static type data.</p>
+<hr/>
+<h4>52.How to compile and execute package program?</h4>
+<p><strong><em>Answer:  </em></strong></p>
+<p><strong>Compilation:</strong> javac –d path filename.java</p>
+<p><strong>Execution:</strong>      java packagename.classname</p>
+<hr/>
+<h4>53.What is the use of throw keyword?</h4>
+<p><em><strong>Answer:  </strong></em>Throw keyword is useful for forward the exception object from one area to another area.</p>
+<hr/>
+<h4>54.What is the use of throws keyword?</h4>
+<p><em><strong>Answer:  </strong></em>throws keyword is useful forward the checked exception from our program to JVM and giving information to compiler there may be chance of raising the exception in our program.</p>
+<hr/>
+<h4>55.How many ways can able print exception message?</h4>
+<p><em><strong>Answer:  </strong></em>There are three ways to print exception messages.</p>
+<ul>
+<li>printStackTrace()</li>
+<li>toString()</li>
+<li>getMessage()</li>
+</ul>
+<hr/>
+<h4>56.What is the difference between initCause(-) and getCause() method?</h4>
+<p><em><strong>Answer:  </strong></em>InitCause(-) will provides root cause or more meaningful information of the exception whereas getCause() will read exception information which added in the initCause(-) method.</p>
+<hr/>
+<h4>57.What is different between byte streams and character streams?</h4>
+<p><em><strong>Answer:  </strong></em>Byte streams are sending and writing at a time one byte of data whereas character streams are sending and writing two byte of data at time. Byte streams are use full for working image related information whereas character streams are useful for working with textual file.</p>
+<hr/>
+<h4>58.What is serialization?</h4>
+<p><em><strong>Answer:  </strong></em>The process of sending data from java application to file in the form of entire object is called serialization.</p>
+<hr/>
+<h4>59.What is externalization?</h4>
+<p><em><strong>Answer:  </strong></em>The process of sending the data from java application to file in the form of some part of object is called externalization.</p>
+<hr/>
+<h4></h4>
+<h4>60.What is internal functionalities of JVM meanwhile of object creation?</h4>
+<p><em><strong>Answer:  </strong></em>JVM mainly follows five steps meanwhile of exception.</p>
+<ul>
+<li>Jvm checks the problem.</li>
+<li>Jvm will select predefine exception class</li>
+<li>Jvm will create object for selected exception class</li>
+<li>Jvm will add reason of the exception if required</li>
+<li>Finally that exception object handover to catch block if not existed then handover to console.</li>
+</ul>
+<hr/>
+<h4>61.Why can’t we write Object type parameter in catch block?</h4>
+<p><em><strong>Answer: </strong></em></p>
+<ul>
+<li> Catch block always executing meanwhile of exception raise in the try block.</li>
+<li>Try block always throwing exception objects, which are directly or indirectly subclass of Throwable class.</li>
+<li>So catch block parameter type required both Object class functionalities and Throwable class functionalities.</li>
+</ul>
+<p>If we are writing</p>
+<p>catch(Object o){</p>
+<p>}</p>
+<ul>
+<li>Parameter ‘o’ only have Object class functionalities but does not Throwable functionalities.</li>
+<li>That’s why we can’t write Object type parameter in catch block.</li>
+</ul>
+<hr/>
+<h4>62.Can we stop of finally block execution?</h4>
+<p><strong><em>Answer:  </em></strong>Yes<strong>.</strong> We can by writing the following statement.</p>
+<p>Syatem.exit(0)</p>
+<hr/>
+<h4>63.What is cloning?</h4>
+<p><em><strong>Answer:  </strong></em>The process of creating new object with the support of existed object data is called cloning.</p>
+<h4>64.What is use of hashCode(), equals(-) of Object class?</h4>
+<p><em><strong>Answer:  </strong></em>To get memory identification number which is given by the jvm without checking we should use hashCode(-). To check whether objects are same or not by using memory identification which is given by the JVM then we should use equals(-).</p>
+<hr/>
+<h4>65.What are the difference between comparator and comparable interfaces?</h4>
+<p><em><strong>Answer:  </strong></em>Comparable interface to check whether the homogenous object are same or not where as comparator will check whether the heterogeneous objects are same or not.</p>
+<p>Comparable having only one method like compareTo(Object).<br/>
+Comparator having two method like compare(Object,Object) and equals(Object)</p>
+<hr/>
+<h4>66.What is collection?</h4>
+<p><em><strong>Answer:  </strong></em>It is one well define mechanism, to group homogeneous, heterogeneous, duplicate and unique objects into a single container is called collection.</p>
+<hr/>
+<h4>67.What is the difference between Vector and ArrayList?</h4>
+<p><em><strong>Answer:  </strong></em>By default vector is synchronized class, so its object never allows to multiple threads to processing, whereas ArrayList will allows to multiple thread to processing its object. The load factor of Vector is current capacity*2, whereas ArrayList load factor is current capacity * 3/2.</p>
+<hr/>
+<h4>68.What is generic collection?</h4>
+<p><em><strong>Answer:  </strong></em>The process of providing type safety on collection object is called generic.</p>
+<hr/>
+<h4>69.What is fail-fast and fail-safe?</h4>
+<p><em><strong>Answer:  </strong></em>Whenever we reading the data from ArrayList by using one thread, if we are doing modification on ArrayList by using another thread we will get exception that is fail-fast, to overcome this problem we have concurrent collection, that means meanwhile of reading the data from ArrayList by using one thread object, we can able to do modifications by using another thread object on same object is called fail-safe.</p>
+<hr/>
+<h4>70.What are functionalities of TreeSet?</h4>
+<p><em><strong>Answer:  </strong></em>TreeSet not allows heterogenous, null objects, it will provide sorting technique.</p>
+<hr/>
+<h4>71.What is the difference between new and newInstance()?</h4>
+<p><em><strong>Answer:  </strong></em>Meanwhile of creating a class if we are aware about for which class we are going to creating object then we should use new keyword, if we want to create an object for a class which is loading at runtime by using byte code then we should use newInstance().</p>
+<hr/>
+<h4>72.Can we write compile and execute the program without class?</h4>
+<p><em><strong>Answer:  </strong></em>Yes. From java 1.5 onwards by using enum and from java 1.8 onwards by using interface we can able to compile and execute the program.</p>
+<hr/>
+<h4>73.Why is String immutable?</h4>
+<p><em><strong>Answer:  </strong></em>While working with Hashtable, if our String object state changes then we should faces the problem like null or NullPointerExceptions, to avoiding this problem Java community people make String as immutable and also to maintain proper memory management in string constant pool area.</p>
+<hr/>
+<h4>74.What is lambda expression?</h4>
+<p><em><strong>Answer:  </strong></em>It is one anonymous expression or function to provide implementation for functional interface in a concise and clear manner and within the less time.</p>
+<p>With the help of lambda we can develop functional programming in java.</p>
+<hr/>
+<h4>75.What is functional programming?</h4>
+<p><em><strong>Answer:  </strong></em>The process of sending functional as method argument is called functional programming.</p>
+<hr/>
+<h4>76.Can we use peek() and pop() on empty stack and what is the difference between them?</h4>
+<p><em><strong>Answer:  </strong></em>Pop() will give top most element with deletion from Stack whereas peek() will give top most element without deletion from Stack.</p>
+<p>Both the methods will throw exception like java.util.EmptyStackException if elements are not existed.</p>
+<p>import java.util.Stack;<br/>
+class A{<br/>
+public static void main(String[] ss){<br/>
+Stack s = new Stack();<br/>
+//System.out.println(s.pop());<br/>
+System.out.println(s.peek());<br/>
+}<br/>
+}</p>
+<hr/>
+<h4>78.What is the advantage and disadvantage of ArrayList?</h4>
+<p><em><strong>Answer:  </strong></em>The advantage of ArrayList is we can able to read any index element within the same time. The drawback is whenever we insert elements in the middle of ArrayList the next position elements are going to shifted to right side, it will reduce performance.</p>
+<hr/>
+<h4>79.What is synchronization in java?</h4>
+<p><em><strong>Answer:  </strong></em>The process of allowing only one thread at a time to execute entire work is called synchronization.</p>
+<hr/>
+<h4>80.What is race condition?</h4>
+<p><em><strong>Answer:  </strong></em>The process of allowing multiple threads at a time to execute the task simultaneously is called race condition, it will give unreliable result.</p>
+<hr/>
+<h4>81.What is dead lock?</h4>
+<p><em><strong>Answer:  </strong></em>Placing the thread into wait mode up to life time is called deadlock.</p>
+<hr/>
+<h4>82.What is loosely coupling?</h4>
+<p><em><strong>Answer:  </strong></em>The process of holding multiple subclass type of objects with the single reference variable is called loosely coupling, but at a time reference variable can hold only one sub class object.</p>
+<hr/>
+<h4>1) What is Java?</h4>
+<p>Java is a simple, high-level, secure, platform-independent, multithreaded, and object oriented programming language. It was developed by <strong>James Gosling</strong> in June 1991. It can also be known as the platform as it provides its own runtime environment as JRE and API.</p>
+<hr/>
+<h4>2) What is the difference between JDK, JRE, and JVM?</h4>
+<p><strong>JVM</strong></p>
+<p>JVM is an acronym for Java Virtual Machine; it is an abstract machine which provides the runtime environment in which Java byte code can be executed. It is a specification which specifies the working of Java Virtual Machine. Its implementation has been provided by Oracle and other companies. Its implementation is known as JRE.</p>
+<p>JVMs are available for many hardware and software platforms (so JVM is platform dependent). It is a runtime instance which is created when we run the Java class. There are three notions of the JVM: specification, implementation, and instance.</p>
+<p><strong>JRE</strong></p>
+<p>JRE stands for Java Runtime Environment. It is the implementation of JVM. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.</p>
+<p><strong>JDK</strong></p>
+<p>The Java Development Kit (<strong>JDK</strong>) is a software development environment <strong>used</strong> for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (javadoc) and other tools <strong>needed</strong> in Java development.</p>
+<hr/>
+<h4>Q3. What is the difference between Encapsulation and Abstraction?</h4>
+<p>Ans. 1.Abstraction solves the problem at design level while encapsulation solves the problem at implementation level</p>
+<p>2.Abstraction is used for hiding the unwanted data and giving relevant data. while Encapsulation means hiding the code and data into a single unit to protect the data from outside world.</p>
+<p>3. Abstraction lets you focus on what the object does instead of how it does it while Encapsulation means hiding the internal details or mechanics of how an object does something.</p>
+<p>4.For example: Outer Look of a Television, like it has a display screen and channel buttons to change channel it explains Abstraction but Inner Implementation detail of a Television how CRT and Display Screen are connect with each other using different circuits , it explains Encapsulation.</p>
+<hr/>
+<h4>Q4. What is Polymorphism in Java ?</h4>
+<p>Ans. Polymorphism means the condition of occurring in several different forms.</p>
+<p>Polymorphism in Java is achieved in two manners</p>
+<p>1. Static polymorphism is the polymorphic resolution identified at compile time and is achieved through function overloading whereas</p>
+<p>2. Dynamic polymorphism is the polymorphic resolution identified at runtime and is achieved through method overriding.</p>
+<hr/>
+<h4></h4>
+<h4>Q5. What is a final method ?</h4>
+<p>Ans. It’s a method which cannot be overridden. Compiler throws an error if we try to override a method which has been declared final in the parent class.</p>
+<hr/>
+<h4>Q6. What is the difference between StringBuffer and String class ?</h4>
+<p>Ans. A string buffer implements a mutable sequence of characters. A string buffer is like a String, but can be modified. At any point in time it contains some particular sequence of characters, but the length and content of the sequence can be changed through certain method calls.</p>
+<p>The String class represents character strings. All string literals in Java programs, such as &#8220;abc&#8221; are constant and implemented as instances of this class; their values cannot be changed after they are created.</p>
+<hr/>
+<h4>Q7. What are Default Methods?</h4>
+<p>Ans. With Java 8, We can provide method definitions in the Interfaces that gets carried down the classes implementing that interface in case they are not overridden by the Class. Keyword &#8220;default&#8221; is used to mark the default method.</p>
+<hr/>
+<h4>Q8. What is garbage collection ?</h4>
+<p>Ans. The garbage collection is a facility wherein a program runs on the Java Virtual Machine which gets rid of objects, which are not being used by a Java application anymore. It is a form of automatic memory management and recollection.</p>
+<hr/>
+<h4>Q9. What is abstract class or abstract method?</h4>
+<p>Ans.We cannot create instance for an abstract class. We can create instance for its subclass only. By specifying abstract keyword just before class, we can make a class as abstract class.</p>
+<p>public abstract class MyAbstractClass{</p>
+<p>}</p>
+<p>Abstract class may or may not contains abstract methods. Abstract method is just method signature, it does not containes any implementation. Its subclass must provide implementation for abstract methods. Abstract methods are looks like as given below:</p>
+<p>public abstract int getLength();</p>
+<hr/>
+<h4>Q10. When to use LinkedList or ArrayList?</h4>
+<p>Ans. Accessing elements are faster with ArrayList, because it is index based. But accessing is difficult with LinkedList. It is slow access. This is to access any element, you need to navigate through the elements one by one. But insertion and deletion is much faster with LinkedList, because if you know the node, just change the pointers before or after nodes. Insertion and deletion is slow with ArrayList, this is because, during these operations ArrayList need to adjust the indexes according to deletion or insertion if you are performing on middle indexes. Means, an ArrayList having 10 elements, if you are inserting at index 5, then you need to shift the indexes above 5 to one more.</p>
+<hr/>
+<h4>Q11. Can we override static method?</h4>
+<p>Ans.We cannot override static methods. Static methods are belongs to class, not belongs</p>
+<p>to object. Inheritance will not be applicable for class members</p>
+<hr/>
+<h4>Q12. What is the difference between super() and this()?</h4>
+<p>Ans.super() is used to call super class constructor, whereas this() used to call constructors in the same class.</p>
+<hr/>
+<h4>Q13. What is the purpose of garbage collection?</h4>
+<p>Ans.The garbage collection process is to identify the objects which are no longer referenced or needed by a program so that their resources can be reclaimed and reused. These identified objects will be discarded.</p>
+<hr/>
+<h4>Q14. Explain public static void main(String args[])</h4>
+<p>Ans.Here <strong>public</strong> is an access modifier, which means that this method is accessible by any class.</p>
+<p><strong>static</strong> – static keyword tells that this method can be accessed without creating the instance of the class.</p>
+<p><strong>void</strong> – this main method returns no value.</p>
+<p><strong>main</strong> – It is the name of the method.</p>
+<p><strong>String args[]</strong> – The args is an array of String type. This contains the command line arguments that we can pass while running the program.</p>
+<hr/>
+<h4>Q15. What is the base class of all classes?</h4>
+<p>Ans.java.lang.Object is the base class (super class) of all classes in java.</p>
+<hr/>
+<h4>Q16. What is a path and classPath in Java?</h4>
+<p>Ans.Path specifies the location of .exe files. Classpath specifies the location of bytecode (.class files).</p>
+<hr/>
+<h4>Q17. What is Type casting in Java?</h4>
+<p>Ans.When we assign a value of one data type to the different data type then these two data types may not be compatible and needs a conversion. If the data types are compatible (for example assigning int value to long) then java does automatic conversion and does not require casting. However if the data types are not compatible then they need to be casted for conversion.</p>
+<p>For example:</p>
+<p>//here in the brackets we have mentioned long keyword, this is casting</p>
+<p>double num = 10001.99;</p>
+<p>long num2 = (long)num;</p>
+<hr/>
+<h4>Q18. What is an Array?</h4>
+<p>Ans.An array is a collection (group) of fixed number of items. Array is a homogeneous data structure which means we can store multiple values of same type in an array but it can’t contain multiple values of different types. For example an array of int type can only hold integer values.</p>
+<hr/>
+<h4>Q19. Four main principles of OOPS Concepts?</h4>
+<p>Ans.</p>
+<ul>
+<li>Inheritance</li>
+<li>Polymorphism</li>
+<li>Data Encapsulation</li>
+<li>Abstraction</li>
+</ul>
+<hr/>
+<h4>Q20. Can we overload a method by just changing the return type and without changing the signature of method?</h4>
+<p>Ans.No, We cannot do this. To overload a method, the method signature must be different, return type doesn’t play any role in method overloading.</p>
+<hr/>
+<h4>Q21. What is static and dynamic binding in Java?</h4>
+<p>Ans.Binding refers to the linking of method call to its body. A binding that happens at compile time is known as static binding while binding at runtime is known as dynamic binding.</p>
+<hr/>
+<h4>Q22. What is the difference between abstract class and interface?</h4>
+<p>Ans.</p>
+<p>1) abstract class can have abstract and non-abstract methods. An interface can only have abstract methods.<br/>
+2) An abstract class can have static methods but an interface cannot have static methods.<br/>
+3) abstract class can have constructors but an interface cannot have constructors.</p>
+<hr/>
+<h4>Q23. What is static block?</h4>
+<p>Ans.A static block gets executed at the time of class loading. They are used for initializing static variables.</p>
+<hr/>
+<h4>Q24. Explain super keyword in Java?</h4>
+<p>Ans.super keyword references to the parent class. There are several uses of super keyword:</p>
+<ul>
+<li>It can be used to call the superclass(Parent class) constructor.</li>
+<li>It can be used to access a method of the superclass that has been hidden by subclass (Calling parent class version, In case of method overriding).</li>
+<li>To call the constructor of parent class.</li>
+</ul>
+<hr/>
+<h4>Q25. Use of final keyword in Java?</h4>
+<p>Ans.</p>
+<p><strong>Final methods</strong> – These methods cannot be overridden by any other method.<br/>
+<strong>Final variable</strong> – Constants, the value of these variable can’t be changed, its fixed.<br/>
+<strong>Final class</strong> – Such classes cannot be inherited by other classes. These type of classes will be used when application required security.</p>
+<hr/>
+<h4>Q26. What are Packages in Java?</h4>
+<p>Ans. A Package can be defined as a grouping of related types (classes, interfaces, enumerations and annotations).</p>
+<hr/>
+<h4>Q27. What are the types of exceptions?</h4>
+<p>Ans.There are two types of exceptions: checked and unchecked exceptions.<br/>
+<strong>Checked exceptions:</strong> These exceptions must be handled by programmer otherwise the program would throw a compilation error.<br/>
+<strong>Unchecked exceptions:</strong> It is up to the programmer to write the code in such a way to avoid unchecked exceptions. You would not get a compilation error if you do not handle these exceptions. These exceptions occur at runtime.</p>
+<hr/>
+<h4>Q28. What is throw keyword in exception handling?</h4>
+<p>Ans.The throw keyword is used for throwing user defined or pre-defined exception.</p>
+<hr/>
+<h4>Q29. What is throws keyword?</h4>
+<p>Ans.If a method does not handle a checked exception, the method must declare it using the throws keyword. The throws keyword appears at the end of a method’s signature.</p>
+<hr/>
+<h4>Q30. Can we have a try block without catch or finally block?</h4>
+<p>Ans.No, we cannot have a try block without catch or finally block. We must have either one of them or both.</p>
+<hr/>
+<h4>Q31. Can we have multiple catch blocks following a single try block?</h4>
+<p>Ans.Yes we can have multiple catch blocks in order to handle more than one exception.</p>
+<hr/>
+<h4>Q32. Is it possible to have finally block without catch block?</h4>
+<p>Ans.Yes, we can have try block followed by finally block without even using catch blocks in between.</p>
+<hr/>
+<h4>Q33. Can we handle more than one exception in a single catch block?</h4>
+<p>Ans.Yes we can do that using if-else statement but it is not considered as a good practice. We should have one catch block for one exception.</p>
+<hr/>
+<h4>Q34. When a finally block does not get executed?</h4>
+<p>Ans.The only time finally won’t be called is if you call System.exit() or if the JVM crashes.</p>
+<hr/>
+<h4>Q35. What is Multithreading?</h4>
+<p>Ans.Executing several tasks at a time, where each task is a separate independent part of a same process. Each separate independent part of a program is called as a Thread. In short the process of executing multiple threads simultaneously is known as multithreading.</p>
+<hr/>
+<h4>Q36. How can we create a thread in java and which is the recommended way?</h4>
+<p>Ans.There are following two ways of creating a thread:<br/>
+1)  By Implementing Runnable interface.<br/>
+2)  By Extending Thread class.</p>
+<p>Implementing Runnable interface is the recommended way to create a Thread.</p>
+<hr/>
+<h4>Q37. What is difference between wait and sleep methods in java?</h4>
+<p>Ans.sleep():It is a static method on Thread class. It makes the current thread into the &#8220;Not Runnable&#8221; state for specified amount of time. During this time, the thread keeps the lock (monitors) it has acquired.</p>
+<p>wait():  It is a method on Object class. It makes the current thread into the &#8220;Not Runnable&#8221;state. Wait is called on a object, not a thread. Before calling wait() method, the object should be synchronized, means the object should be inside synchronized block. The call to wait() releases the acquired lock.</p>
+<hr/>
+<h4>Q38.  What is difference between yield and sleep?</h4>
+<p>Ans. yield() – It causes the currently executing thread object to temporarily pause and allow other threads to execute.</p>
+<p>sleep() – It causes the current thread to suspend execution for a specified period. When a thread goes into sleep state it doesn’t release the lock.</p>
+<hr/>
+<h4>Q39. What is Serialization and de-serialization?</h4>
+<p>Ans. Serialization is a process of converting an object and its attributes to the stream of bytes. De-serialization is recreating the object from stream of bytes; it is just a reverse process of serialization.</p>
+<hr/>
+<h4>Q40.What is a transient variable?</h4>
+<p>Ans.</p>
+<p>1) transient variables are not included in the process of serialization.<br/>
+2) They are not the part of the object’s serialized state.<br/>
+3) Variables which we don’t want to include in serialization are declared as transient.</p>
+<hr/>
+<h4>Q41. What is the difference between Iterator and Enumeration?</h4>
+<p>Ans.</p>
+<p>1) Iterator allows to remove elements from the underlying collection during the iteration using its remove() method. We cannot add/remove elements from a collection when using enumerator.<br/>
+2) Iterator has improved method names.<br/>
+Enumeration.hasMoreElement() -&gt; Iterator.hasNext()<br/>
+Enumeration.nextElement() -&gt; Iterator.next().</p>
+<hr/>
+<h4>Q42. What are the restrictions that are applied to the Java static methods?</h4>
+<p>Ans. Two main restrictions are applied to the static methods.</p>
+<ul>
+<li>The static method can not use non-static data member or call the non-static method directly.</li>
+<li>this and super cannot be used in static context as they are non-static.</li>
+</ul>
+<hr/>
+<h4>Q43. What are the advantages of passing this into a method instead of the current class object itself?</h4>
+<p>Ans. As we know, that this refers to the current class object, therefore, it must be similar to the current class object. However, there can be two main advantages of passing this into a method instead of the current class object.</p>
+<ul>
+<li>“this” is a final variable. Therefore, this cannot be assigned to any new value whereas the current class object might not be final and can be changed.</li>
+<li>“this” can be used in the synchronized block.</li>
+</ul>
+<hr/>
+<h4>Q44. Can we modify the throws clause of the super class method while overriding it in the subclass?</h4>
+<p>Ans. Yes, we can modify the throws clause of the super class method while overriding it in the subclass. However, there are some rules which are to be followed while overriding in case of exception handling.</p>
+<ul>
+<li>If the super class method does not declare an exception, subclass overridden method cannot declare the checked exception, but it can declare the unchecked exception.</li>
+<li>If the super class method declares an exception, subclass overridden method can declare same, subclass exception or no exception but cannot declare parent exception.</li>
+</ul>
+<hr/>
+<h4>Q45. What are the states in the lifecycle of a Thread?</h4>
+<p>Ans. A thread can have one of the following states during its lifetime:</p>
+<ul>
+<li>New: In this state, a Thread class object is created using a new operator, but the thread is not alive. Thread doesn&#8217;t start until we call the start() method.</li>
+<li>Runnable: In this state, the thread is ready to run after calling the start() method. However, the thread is not yet selected by the thread scheduler.</li>
+<li>Running: In this state, the thread scheduler picks the thread from the ready state, and the thread is running.</li>
+<li>Waiting/Blocked: In this state, a thread is not running but still alive, or it is waiting for the other thread to finish.</li>
+<li>Dead/Terminated: A thread is in terminated or dead state when the run() method exits.</li>
+</ul>
+<hr/>
+<h4>Q46. What is the difference between List and Set?</h4>
+<p>Ans. The List and Set both extend the collection interface. However, there are some differences between the both which are listed below.</p>
+<ul>
+<li>The List can contain duplicate elements whereas Set includes unique items.</li>
+<li>The List is an ordered collection which maintains the insertion order whereas Set is an unordered collection which does not preserve the insertion order.</li>
+<li>The List interface contains a single legacy class which is Vector class whereas Set interface does not have any legacy class.</li>
+<li>The List interface can allow n number of null values whereas Set interface only allows a single null value.</li>
+</ul>
+<hr/>
+<h4>Q47. What is the difference between Set and Map?</h4>
+<p>Ans. The differences between the Set and Map are given below.</p>
+<ul>
+<li>Set contains values only whereas Map contains key and values both.</li>
+<li>Set contains unique values whereas Map can contain unique Keys with duplicate values.</li>
+<li>Set holds a single number of null value whereas Map can include a single null key with n number of null values.</li>
+</ul>
+<hr/>
+<h4>Q48. What is the difference between Collection and Collections?</h4>
+<p>Ans. The differences between the Collection and Collections are given below.</p>
+<ul>
+<li>The Collection is an interface whereas Collections is a class.</li>
+<li>The Collection interface provides the standard functionality of data structure to List, Set, and Queue. However, Collections class is to sort and synchronize the collection elements.</li>
+<li>The Collection interface provides the methods that can be used for data structure whereas Collections class provides the static methods which can be used for various operation on a collection.</li>
+</ul>
+<hr/>
+<h4>Q49. What is the advantage of the generic collection?</h4>
+<p>There are three main advantages of using the generic collection.</p>
+<ul>
+<li>If we use the generic class, we don&#8217;t need typecasting.</li>
+<li>It is type-safe and checked at compile time.</li>
+<li>Generic confirms the stability of the code by making it bug detectable at compile time.</li>
+</ul>
+<hr/>
+<h4>Q50.  How to remove duplicates from ArrayList?</h4>
+<p>There are two ways to remove duplicates from the ArrayList.</p>
+<ul>
+<li><strong>Using HashSet:</strong>By using HashSet we can remove the duplicate element from the ArrayList, but it will not then preserve the insertion order.</li>
+<li><strong>Using LinkedHashSet:</strong>We can also maintain the insertion order by using LinkedHashSet instead of HashSet.</li>
+</ul>
+<p>The Process to remove duplicate elements from ArrayList using the LinkedHashSet:</p>
+<ul>
+<li>Copy all the elements of ArrayList to LinkedHashSet.</li>
+<li>Empty the ArrayList using clear() method, which will remove all the elements from the list.</li>
+<li>Now copy all the elements of LinkedHashset to ArrayList.</li>
+</ul>
+<hr/>
+<h4>Q1. What is the difference between an Inner Class and a Sub-Class?</h4>
+<p>Ans: An Inner class is a class which is nested within another class. An Inner class has access rights for the class which is nesting it and it can access all variables and methods defined in the outer class.</p>
+<p>A sub-class is a class which inherits from another class called super class. Sub-class can access all public and protected methods and fields of its super class.</p>
+<hr/>
+<h4>Q2. What are the various access specifiers for Java classes?</h4>
+<p>Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope. The types of access specifiers for classes are:</p>
+<ol>
+<li>Public : Class,Method,Field is accessible from anywhere.</li>
+<li>Protected:Method,Field can be accessed from the same class to which they belong or from the sub-classes,and from the class of same package,but not from outside.</li>
+<li>Default: Method,Field,class can be accessed only from the same package and not from outside of it&#8217;s native package.</li>
+<li>Private: Method,Field can be accessed from the same class to which they belong.</li>
+</ol>
+<hr/>
+<h4>Q3. What&#8217;s the purpose of Static methods and static variables?</h4>
+<p>Ans: When there is a requirement to share a method or a variable between multiple objects of a class instead of creating separate copies for each object, we use static keyword to make a method or variable shared for all objects.</p>
+<hr/>
+<h4>Q4. What is data encapsulation and what&#8217;s its significance?</h4>
+<p>Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit.</p>
+<p>Encapsulation helps programmers to follow a modular approach for software development as each object has its own set of methods and variables and serves its functions independent of other objects. Encapsulation also serves data hiding purpose.</p>
+<hr/>
+<h4>Q5. What is a singleton class? Give a practical example of its usage.</h4>
+<p>A singleton class in java can have only one instance and hence all its methods and variables belong to just one instance. Singleton class concept is useful for the situations when there is a need to limit the number of objects for a class.</p>
+<p>The best example of singleton usage scenario is when there is a limit of having only one connection to a database due to some driver limitations or because of any licensing issues.</p>
+<hr/>
+<h4>Q6. What are Loops in Java? What are three types of loops?</h4>
+<p>Ans: Looping is used in programming to execute a statement or a block of statement repeatedly. There are three types of loops in Java:</p>
+<p>1) For Loops</p>
+<p>For loops are used in java to execute statements repeatedly for a given number of times. For loops are used when number of times to execute the statements is known to programmer.</p>
+<p>2) While Loops</p>
+<p>While loop is used when certain statements need to be executed repeatedly until a condition is fulfilled. In while loops, condition is checked first before execution of statements.</p>
+<p>3) Do While Loops</p>
+<p>Do While Loop is same as While loop with only difference that condition is checked after execution of block of statements. Hence in case of do while loop, statements are executed at least once.</p>
+<hr/>
+<h4>Q7: What is an infinite Loop? How infinite loop is declared?</h4>
+<p>Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by defining any breaking logic in the body of the statement blocks.</p>
+<p>Infinite loop is declared as follows:</p>
+<p>for (;;)</p>
+<p>{</p>
+<p>// Statements to execute</p>
+<p>// Add any loop breaking logic</p>
+<p>}</p>
+<hr/>
+<h4>Q8. What is the difference between continue and break statement?</h4>
+<p>Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop, loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.</p>
+<p>In below example, Loop is broken when counter reaches 4.</p>
+<p>for (counter = 0; counter &amp; lt; 10; counter++)    system.out.println(counter); if (counter == 4) {     break;} }</p>
+<p>In the below example when counter reaches 4, loop jumps to next iteration and any statements after the continue keyword are skipped for current iteration.</p>
+<p>for (counter = 0; counter &lt; 10; counter++)    system.out.println(counter); if (counter == 4) {     continue;}system.out.println(&#8220;This will not get printed when counter is 4&#8221;);}</p>
+<hr/>
+<h4>Q9. What is the difference between double and float variables in Java?</h4>
+<p>Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision floating point decimal number while Double is double precision decimal number.</p>
+<hr/>
+<h4>Q10. What is Final Keyword in Java? Give an example.</h4>
+<p>Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after assignment, value of a constant can&#8217;t be changed.</p>
+<p>In below example, a constant with the name const_val is declared and assigned avalue:</p>
+<p>Private Final int const_val=100</p>
+<p>When a method is declared as final,it can NOT be overridden by the subclasses.This method are faster than any other method,because they are resolved at complied time.</p>
+<p>When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.</p>
+<hr/>
+<h4>Q11. What is ternary operator? Give an example.</h4>
+<p>Ans: Ternary operator , also called conditional operator is used to decide which value to assign to a variable based on a Boolean value evaluation. It&#8217;s denoted as ?</p>
+<p>In the below example, if rank is 1, status is assigned a value of &#8220;Done&#8221; else &#8220;Pending&#8221;.</p>
+<p>public class conditionTest {    public static void main(String args[]) {        String status;        int rank = 3;        status = (rank == 1) ? &#8220;Done&#8221; : &#8220;Pending&#8221;;        System.out.println(status);    }}</p>
+<hr/>
+<h4>Q12: How can you generate random numbers in Java?</h4>
+<p>Ans:</p>
+<ul>
+<li>Using Math.random() you can generate random numbers in the range greater than or equal to 0.1 and less than 1.0</li>
+<li>Using Random class in package java.util</li>
+</ul>
+<hr/>
+
+<h4>Q13. What is default switch case? Give example.</h4>
+<p>Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is an optional case .It can be declared only once all other switch cases have been coded.</p>
+<p>In the below example, when score is not 1 or 2, default case is used.</p>
+<p>public class switchExample {    int score = 4;    public static void main(String args[]) {        switch (score) {            case 1:                system.out.println(&#8220;Score is 1&#8221;);                break;            case 2:                system.out.println(&#8220;Score is 2&#8221;);                break;            default:                system.out.println(&#8220;Default Case&#8221;);        }    }}</p>
+<hr/>
+<h4>Q14. What&#8217;s the base class in Java from which all classes are derived?</h4>
+<p>Ans: java.lang.object</p>
+<hr/>
+<h4>Q15. Can main() method in Java can return any data?</h4>
+<p>Ans: In java, main() method can&#8217;t return any data and hence, it&#8217;s always declared with a void return type.</p>
+<hr/>
+<h4>Q16. What are Java Packages? What&#8217;s the significance of packages?</h4>
+<p>Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are related to each other. Use of packages helps developers to modularize the code and group the code for proper re-use. Once code has been packaged in Packages, it can be imported in other classes and used.</p>
+<hr/>
+<h4>Q17. Can we declare a class as Abstract without having any abstract method?</h4>
+<p>Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn&#8217;t have any abstract method. However, if a class has even one abstract method, it must be declared as abstract otherwise it will give an error.</p>
+<hr/>
+<h4>Q18. What&#8217;s the difference between an Abstract Class and Interface in Java?</h4>
+<p>Ans: The primary difference between an abstract class and interface is that an interface can only possess declaration of public static methods with no concrete implementation while an abstract class can have members with any access specifiers (public, private etc) with or without concrete implementation.</p>
+<p>Another key difference in the use of abstract classes and interfaces is that a class which implements an interface must implement all the methods of the interface while a class which inherits from an abstract class doesn&#8217;t require implementation of all the methods of its super class.</p>
+<p>A class can implement multiple interfaces but it can extend only one abstract class.</p>
+<hr/>
+<h4>Q19. What are the performance implications of Interfaces over abstract classes?</h4>
+<p>Ans: Interfaces are slower in performance as compared to abstract classes as extra indirections are required for interfaces. Another key factor for developers to take into consideration is that any class can extend only one abstract class while a class can implement many interfaces.</p>
+<p>Use of interfaces also puts an extra burden on the developers as any time an interface is implemented in a class; developer is forced to implement each and every method of interface.</p>
+<hr/>
+<h4>Q20. Does Importing a package imports its sub-packages as well in Java?</h4>
+<p>Ans: In java, when a package is imported, its sub-packages aren&#8217;t imported and developer needs to import them separately if required.</p>
+<p>For example, if a developer imports a package university.*, all classes in the package named university are loaded but no classes from the sub-package are loaded. To load the classes from its sub-package ( say department), developer has to import it explicitly as follows:</p>
+<p>import university.department.*</p>
+<hr/>
+<h4>Q21. Can we declare the main method of our class as private?</h4>
+<p>Ans: In java, main method must be public static in order to run any application correctly. If main method is declared as private, developer won&#8217;t get any compilation error however, it will not get executed and will give a runtime error.</p>
+<hr/>
+<h4>Q22. How can we pass argument to a function by reference instead of pass by value?</h4>
+<p>Ans: In java, we can pass argument to a function only by value and not by reference.</p>
+<hr/>
+<h4>Q23. How an object is serialized in java?</h4>
+<p>Ans: In java, to convert an object into byte stream by serialization, an interface with the name Serializable is implemented by the class. All objects of a class implementing serializable interface get serialized and their state is saved in byte stream.</p>
+<hr/>
+<h4>Q24. When we should use serialization?</h4>
+<p>Ans: Serialization is used when data needs to be transmitted over the network. Using serialization, object&#8217;s state is saved and converted into byte stream .The byte stream is transferred over the network and the object is re-created at destination.</p>
+<hr/>
+<h4>Q25. Is it compulsory for a Try Block to be followed by a Catch Block in Java for Exception handling?</h4>
+<p>Ans: Try block needs to be followed by either Catch block or Finally block or both. Any exception thrown from try block needs to be either caught in the catch block or else any specific tasks to be performed before code abortion are put in the Finally block.</p>
+<hr/>
+<h4>Q26. Is there any way to skip Finally block of exception even if some exception occurs in the exception block?</h4>
+<p>Ans: If an exception is raised in Try block, control passes to catch block if it exists otherwise to finally block. Finally block is always executed when an exception occurs and the only way to avoid execution of any statements in Finally block is by aborting the code forcibly by writing following line of code at the end of try block:</p>
+<p>System.exit(0);</p>
+<hr/>
+<h4>Q27. When the constructor of a class is invoked?</h4>
+<p>Ans: The constructor of a class is invoked every time an object is created with new keyword.</p>
+<p>For example, in the following class two objects are created using new keyword and hence, constructor is invoked two times.</p>
+<p>public class const_example {</p>
+<p>const_example() {</p>
+<p>system.out.println(&#8220;Inside constructor&#8221;);</p>
+<p>}</p>
+<p>public static void main(String args[]) {</p>
+<p>const_example c1 = new const_example();</p>
+<p>const_example c2 = new const_example();</p>
+<p>}</p>
+<p>}</p>
+<hr/>
+<h4>Q28. Can a class have multiple constructors?</h4>
+<p>Ans: Yes, a class can have multiple constructors with different parameters. Which constructor gets used for object creation depends on the arguments passed while creating the objects.</p>
+<hr/>
+<h4>Q29. Can we override static methods of a class?</h4>
+<p>Ans: We cannot override static methods. Static methods belong to a class and not to individual objects and are resolved at the time of compilation (not at runtime).Even if we try to override static method,we will not get an complitaion error,nor the impact of overriding when running the code.</p>
+<hr/>
+<h4>Q30. In the below example, what will be the output?</h4>
+<p>public class superclass {</p>
+<p>public void displayResult() {</p>
+<p>system.out.println(&#8220;Printing from superclass&#8221;);</p>
+<p>}</p>
+<p>}</p>
+<p>public class subclass extends superclass {</p>
+<p>public void displayResult() {</p>
+<p>system.out.println(&#8220;Displaying from subClass&#8221;);</p>
+<p>super.displayResult();</p>
+<p>}</p>
+<p>public static void main(String args[]) {</p>
+<p>subclass obj = new subclass();</p>
+<p>obj.displayResult();</p>
+<p>}</p>
+<p>}</p>
+<p><strong>Ans</strong>: Output will be:</p>
+<p>Displaying from subclass</p>
+<p>Displaying from superclass</p>
+<hr/>
+<h4>Q31. Is String a data type in java?</h4>
+<p>Ans: String is not a primitive data type in java. When a string is created in java, it&#8217;s actually an object of Java.Lang.String class that gets created. After creation of this string object, all built-in methods of String class can be used on the string object.</p>
+<hr/>
+<h4>Q32. In the below example, how many String Objects are created?</h4>
+<p>String s1=&#8221;I am Java Expert&#8221;;</p>
+<p>String s2=&#8221;I am C Expert&#8221;;</p>
+<p>String s3=&#8221;I am Java Expert&#8221;;</p>
+<p>Ans: In the above example, two objects of java.lang.String class are created. s1 and s3 are references to same object.</p>
+<hr/>
+<h4>Q33. Why Strings in Java are called as Immutable?</h4>
+<p>Ans: In java, string objects are called immutable as once value has been assigned to a string, it can&#8217;t be changed and if changed, a new object is created.</p>
+<p>In below example, reference str refers to a string object having value &#8220;Value one&#8221;.</p>
+<p>String str=&#8221;Value One&#8221;;</p>
+<p>When a new value is assigned to it, a new String object gets created and the reference is moved to the new object.</p>
+<p>str=&#8221;New Value&#8221;;</p>
+<hr/>
+<h4>Q34. What&#8217;s the difference between an array and Vector?</h4>
+<p>Ans: An array groups data of same primitive type and is static in nature while vectors are dynamic in nature and can hold data of different data types.</p>
+<hr/>
+<h4>Q35. What is multi-threading?</h4>
+<p>Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single program. Threads share same process stack and running in parallel. It helps in performance improvement of any program.</p>
+<hr/>
+<h4>Q36. Why Runnable Interface is used in Java?</h4>
+<p>Ans: Runnable interface is used in java for implementing multi threaded applications. Java.Lang.Runnable interface is implemented by a class to support multi threading.</p>
+<hr/>
+<h4>Q37. What are the two ways of implementing multi-threading in Java?</h4>
+<p>Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:</p>
+<ol>
+<li>By using Java.Lang.Runnable Interface. Classes implement this interface to enable multi threading. There is a Run() method in this interface which is implemented.</li>
+<li>By writing a class that extend Java.Lang.Thread class.</li>
+</ol>
+<hr/>
+<h4>Q38. When a lot of changes are required in data, which one should be a preference to be used? String or StringBuffer?</h4>
+<p>Ans: Since StringBuffers are dynamic in nature and we can change the values of StringBuffer objects unlike String which is immutable, it&#8217;s always a good choice to use StringBuffer when data is being changed too much. If we use String in such a case, for every data change a new String object will be created which will be an extra overhead.</p>
+<hr/>
+<h4>Q39. What&#8217;s the purpose of using Break in each case of Switch Statement?</h4>
+<p>Ans: Break is used after each case (except the last one) in a switch so that code breaks after the valid case and doesn&#8217;t flow in the proceeding cases too.</p>
+<p>If break isn&#8217;t used after each case, all cases after the valid case also get executed resulting in wrong results.</p>
+<hr/>
+<h4>Q40. How garbage collection is done in Java?</h4>
+<p>Ans: In java, when an object is not referenced any more, garbage collection takes place and the object is destroyed automatically. For automatic garbage collection java calls either System.gc() method or Runtime.gc() method.</p>
+<hr/>
+<h4>Q41. How we can execute any code even before main method?</h4>
+<p>Ans: If we want to execute any statements before even creation of objects at load time of class, we can use a static block of code in the class. Any statements inside this static block of code will get executed once at the time of loading the class even before creation of objects in the main method.</p>
+<hr/>
+<h4>Q42. Can a class be a super class and a sub-class at the same time? Give example.</h4>
+<p>Ans: If there is a hierarchy of inheritance used, a class can be a super class for another class and a sub-class for another one at the same time.</p>
+<p>In the example below, continent class is sub-class of world class and it&#8217;s super class of country class.</p>
+<p>public class world {</p>
+<p>&#8230;&#8230;&#8230;.</p>
+<p>}</p>
+<p>public class continenet extends world {</p>
+<p>&#8230;&#8230;&#8230;..</p>
+<p>}</p>
+<p>public class country extends continent {</p>
+<p>&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.</p>
+<p>}</p>
+<hr/>
+<h4>Q43. How objects of a class are created if no constructor is defined in the class?</h4>
+<p>Ans: Even if no explicit constructor is defined in a java class, objects get created successfully as a default constructor is implicitly used for object creation. This constructor has no parameters.</p>
+<hr/>
+<h4>Q44. In multi-threading how can we ensure that a resource isn&#8217;t used by multiple threads simultaneously?</h4>
+<p>Ans: In multi-threading, access to the resources which are shared among multiple threads can be controlled by using the concept of synchronization. Using synchronized keyword, we can ensure that only one thread can use shared resource at a time and others can get control of the resource only once it has become free from the other one using it.</p>
+<hr/>
+<h4>Q45. Can we call the constructor of a class more than once for an object?</h4>
+<p>Ans: Constructor is called automatically when we create an object using new keyword. It&#8217;s called only once for an object at the time of object creation and hence, we can&#8217;t invoke the constructor again for an object after its creation.</p>
+<hr/>
+<h4>Q46. There are two classes named classA and classB. Both classes are in the same package. Can a private member of classA can be accessed by an object of classB?</h4>
+<p>Ans: Private members of a class aren&#8217;t accessible outside the scope of that class and any other class even in the same package can&#8217;t access them.</p>
+<hr/>
+<h4>Q47. Can we have two methods in a class with the same name?</h4>
+<p>Ans: We can define two methods in a class with the same name but with different number/type of parameters. Which method is to get invoked will depend upon the parameters passed.</p>
+<p>For example in the class below we have two print methods with same name but different parameters. Depending upon the parameters, appropriate one will be called:</p>
+<p>public class methodExample {</p>
+<p>public void print() {</p>
+<p>system.out.println(&#8220;Print method without parameters.&#8221;);</p>
+<p>}</p>
+<p>public void print(String name) {</p>
+<p>system.out.println(&#8220;Print method with parameter&#8221;);</p>
+<p>}</p>
+<p>public static void main(String args[]) {</p>
+<p>methodExample obj1 = new methodExample();</p>
+<p>obj1.print();</p>
+<p>obj1.print(&#8220;xx&#8221;);</p>
+<p>}</p>
+<p>}</p>
+<hr/>
+<h4>Q48. How can we make copy of a java object?</h4>
+<p>Ans: We can use the concept of cloning to create copy of an object. Using clone, we create copies with the actual state of an object.</p>
+<p>Clone() is a method of Cloneable interface and hence, Cloneable interface needs to be implemented for making object copies.</p>
+<hr/>
+<h4>Q49. What&#8217;s the benefit of using inheritance?</h4>
+<p>Ans: Key benefit of using inheritance is reusability of code as inheritance enables sub-classes to reuse the code of its super class. Polymorphism (Extensibility ) is another great benefit which allow new functionality to be introduced without effecting existing derived classes.</p>
+<hr/>
+<h4>Q50. What&#8217;s the default access specifier for variables and methods of a class?</h4>
+<p>Ans: Default access specifier for variables and method is package protected i.e variables and class is available to any other class but in the same package,not outside the package.</p>
+<hr/>
+<h4>Q51. Give an example of use of Pointers in Java class.</h4>
+<p>Ans: There are no pointers in Java. So we can&#8217;t use concept of pointers in Java.</p>
+<hr/>
+<h4>Q52. How can we restrict inheritance for a class so that no class can be inherited from it?</h4>
+<p>Ans: If we want a class not to be extended further by any class, we can use the keyword <strong>Final</strong> with the class name.</p>
+<p>In the following example, Stone class is Final and can&#8217;t be extend</p>
+<p>public Final Class Stone {</p>
+<p>// Class methods and Variables</p>
+<p>}</p>
+<hr/>
+<h4>Q53. What&#8217;s the access scope of Protected Access specifier?</h4>
+<p>Ans: When a method or a variable is declared with Protected access specifier, it becomes accessible in the same class,any other class of the same package as well as a sub-class.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p style="text-align: center;"><strong>Modifier</strong></p>
+</td>
+<td><strong>Class</strong></td>
+<td><strong>Package</strong></td>
+<td><strong>Subclass</strong></td>
+<td><strong>World</strong></td>
+</tr>
+<tr>
+<td>public</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>no modifier</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>private</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h4 style="text-align: left;">Q54. What&#8217;s difference between Stack and Queue?</h4>
+<p style="text-align: left;">Ans: Stack and Queue both are used as placeholder for a collection of data. The primary difference between a stack and a queue is that stack is based on Last in First out (LIFO) principle while a queue is based on FIFO (First In First Out) principle.</p>
+<hr/>
+<h4 style="text-align: left;">Q55. In java, how we can disallow serialization of variables?</h4>
+<p style="text-align: left;">Ans: If we want certain variables of a class not to be serialized, we can use the keyword <strong>transient </strong>while declaring them. For example, the variable trans_var below is a transient variable and can&#8217;t be serialized:</p>
+<p style="text-align: left;">public class transientExample {</p>
+<p style="text-align: left;">        private transient trans_var;</p>
+<p style="text-align: left;">    // rest of the code</p>
+<p style="text-align: left;">}</p>
+<hr/>
+<h4 style="text-align: left;">Q56. How can we use primitive data types as objects?</h4>
+<p style="text-align: left;">Ans: Primitive data types like int can be handled as objects by the use of their respective wrapper classes. For example, Integer is a wrapper class for primitive data type int. We can apply different methods to a wrapper class, just like any other object.</p>
+<hr/>
+<h4 style="text-align: left;">Q57. Which types of exceptions are caught at compile time?</h4>
+<p style="text-align: left;">Ans: Checked exceptions can be caught at the time of program compilation. Checked exceptions must be handled by using try catch block in the code in order to successfully compile the code.</p>
+<hr/>
+<h4 style="text-align: left;">Q58. Describe different states of a thread.</h4>
+<p style="text-align: left;">Ans: A thread in Java can be in either of the following states:</p>
+<ul style="text-align: left;">
+<li>Ready: When a thread is created, it&#8217;s in Ready state.</li>
+<li>Running: A thread currently being executed is in running state.</li>
+<li>Waiting: A thread waiting for another thread to free certain resources is in waiting state.</li>
+<li>Dead: A thread which has gone dead after execution is in dead state.</li>
+</ul>
+<hr/>
+<h4 style="text-align: left;">Q59. Can we use a default constructor of a class even if an explicit constructor is defined?</h4>
+<p style="text-align: left;">Ans: Java provides a default no argument constructor if no explicit constructor is defined in a Java class. But if an explicit constructor has been defined, default constructor can&#8217;t be invoked and developer can use only those constructors which are defined in the class.</p>
+<hr/>
+<h4 style="text-align: left;">Q60. Can we override a method by using same method name and arguments but different return types?</h4>
+<p style="text-align: left;">Ans: The basic condition of method overriding is that method name, arguments as well as return type must be exactly same as is that of the method being overridden. Hence using a different return type doesn&#8217;t override a method.</p>
+<hr/>
+<h4 style="text-align: left;">Q61.What will be the output of following piece of code?</h4>
+<p style="text-align: left;">public class operatorExample {</p>
+<p style="text-align: left;">    public static void main(String args[]) {</p>
+<p style="text-align: left;">        int x = 4;</p>
+<p style="text-align: left;">        system.out.println(x++);</p>
+<p style="text-align: left;">        }</p>
+<p style="text-align: left;">}</p>
+<p style="text-align: left;">Ans: In this case postfix ++ operator is used which first returns the value and then increments. Hence it&#8217;s output will be 4.</p>
+<hr/>
+<h4 style="text-align: left;">Q61. A person says that he compiled a java class successfully without even having a main method in it? Is it possible?</h4>
+<p style="text-align: left;">Ans: main method is an entry point of Java class and is required for execution of the program however; a class gets compiled successfully even if it doesn&#8217;t have a main method. It can&#8217;t be run though.</p>
+<hr/>
+<h4 style="text-align: left;">Q62. Can we call a non-static method from inside a static method?</h4>
+<p style="text-align: left;">Ans: Non-Static methods are owned by objects of a class and have object level scope and in order to call the non-Static methods from a static block (like from a static main method), an object of the class needs to be created first. Then using object reference, these methods can be invoked.</p>
+<hr/>
+<h4 style="text-align: left;">Q63. What are the two environment variables that must be set in order to run any Java programs?</h4>
+<p style="text-align: left;">Ans: Java programs can be executed in a machine only once following two environment variables have been properly set:</p>
+<ol style="text-align: left;">
+<li>PATH variable</li>
+<li>CLASSPATH variable</li>
+</ol>
+<hr/>
+<h4 style="text-align: left;">Q64. Can variables be used in Java without initialization?</h4>
+<p style="text-align: left;">Ans: In Java, if a variable is used in a code without prior initialization by a valid value, program doesn&#8217;t compile and gives an error as no default value is assigned to variables in Java.</p>
+<hr/>
+<h4 style="text-align: left;">Q65. Can a class in Java be inherited from more than one class?</h4>
+<p style="text-align: left;">Ans: In Java, a class can be derived from only one class and not from multiple classes. Multiple inheritances is not supported by Java.</p>
+<hr/>
+<h4 style="text-align: left;">Q66. Can a constructor have different name than a Class name in Java?</h4>
+<p style="text-align: left;">Ans: Constructor in Java must have same name as the class name and if the name is different, it doesn&#8217;t act as a constructor and compiler thinks of it as a normal method.</p>
+<hr/>
+<h4 style="text-align: left;">Q67. What will be the output of Round(3.7) and Ceil(3.7)?</h4>
+<p style="text-align: left;">Ans: Round(3.7) returns 4 and Ceil(3.7) returns 4.</p>
+<hr/>
+<h4 style="text-align: left;">Q68: Can we use goto in Java to go to a particular line?</h4>
+<p style="text-align: left;">Ans: In Java, there is not goto keyword and java doesn&#8217;t support this feature of going to a particular labeled line.</p>
+<hr/>
+<h4 style="text-align: left;">Q69. Can a dead thread be started again?</h4>
+<p style="text-align: left;">Ans: In java, a thread which is in dead state can&#8217;t be started again. There is no way to restart a dead thread.</p>
+<hr/>
+<h4 style="text-align: left;">Q70. Is the following class declaration correct?</h4>
+<p style="text-align: left;"><strong>Ans:</strong></p>
+<p style="text-align: left;">public abstract final class testClass {</p>
+<p style="text-align: left;">        // Class methods and variables</p>
+<p style="text-align: left;">}</p>
+<p style="text-align: left;">Ans: The above class declaration is incorrect as an abstract class can&#8217;t be declared as Final.</p>
+<hr/>
+<h4 style="text-align: left;">Q71. Is JDK required on each machine to run a Java program?</h4>
+<p style="text-align: left;">Ans: JDK is development Kit of Java and is required for development only and to run a Java program on a machine, JDK isn&#8217;t required. Only JRE is required.</p>
+<hr/>
+<h4 style="text-align: left;">Q72. What&#8217;s the difference between comparison done by equals method and == operator?</h4>
+<p style="text-align: left;">Ans: In Java, equals() method is used to compare the contents of two string objects and returns true if the two have same value while == operator compares the references of two string objects.</p>
+<p style="text-align: left;">In the following example, equals() returns true as the two string objects have same values. However == operator returns false as both string objects are referencing to different objects:</p>
+<p style="text-align: left;">public class equalsTest {</p>
+<p style="text-align: left;">    public static void main(String args[]) {</p>
+<p style="text-align: left;">        String str1 = new String(&#8220;Hello World&#8221;);</p>
+<p style="text-align: left;">        String str2 = new String(&#8220;Hello World&#8221;);</p>
+<p style="text-align: left;">        if (str1.equals(str2))</p>
+<p style="text-align: left;">        { // this condition is true</p>
+<p style="text-align: left;">            System.out.println(&#8220;str1 and str2 are equal in terms of values&#8221;);</p>
+<p style="text-align: left;">        }</p>
+<p style="text-align: left;">        if (str1 == str2) {</p>
+<p style="text-align: left;">            //This condition is true</p>
+<p style="text-align: left;">            System.out.println(&#8220;Both strings are referencing same object&#8221;);</p>
+<p style="text-align: left;">        } else</p>
+<p style="text-align: left;">        {</p>
+<p style="text-align: left;">            // This condition is NOT true</p>
+<p style="text-align: left;">            System.out.println(&#8220;Both strings are referencing different objects&#8221;);</p>
+<p style="text-align: left;">        }</p>
+<p style="text-align: left;">    }</p>
+<p style="text-align: left;">}</p>
+<hr/>
+<h4 style="text-align: left;">Q73. Is it possible to define a method in Java class but provide it&#8217;s implementation in the code of another language like C?</h4>
+<p style="text-align: left;">Ans: Yes, we can do this by use of native methods. In case of native method based development, we define public static methods in our Java class without its implementation and then implementation is done in another language like C separately.</p>
+<hr/>
+<h4 style="text-align: left;">Q74. How are destructors defined in Java?</h4>
+<p style="text-align: left;">Ans: In Java, there are no destructors defined in the class as there is no need to do so. Java has its own garbage collection mechanism which does the job automatically by destroying the objects when no longer referenced.</p>
+<hr/>
+<h4 style="text-align: left;">Q75. Can a variable be local and static at the same time?</h4>
+<p style="text-align: left;">Ans: No a variable can&#8217;t be static as well as local at the same time. Defining a local variable as static gives compilation error.</p>
+<hr/>
+<h4 style="text-align: left;">Q76. Can we have static methods in an Interface?</h4>
+<p style="text-align: left;">Ans: Static methods can&#8217;t be overridden in any class while any methods in an interface are by default abstract and are supposed to be implemented in the classes being implementing the interface. So it makes no sense to have static methods in an interface in Java.</p>
+<hr/>
+<h4 style="text-align: left;">Q77. In a class implementing an interface, can we change the value of any variable defined in the interface?</h4>
+<p style="text-align: left;">Ans: No, we can&#8217;t change the value of any variable of an interface in the implementing class as all variables defined in the interface are by default public, static and Final and final variables are like constants which can&#8217;t be changed later.</p>
+<hr/>
+<h4 style="text-align: left;">Q78. Is it correct to say that due to garbage collection feature in Java, a java program never goes out of memory?</h4>
+<p style="text-align: left;">Ans: Even though automatic garbage collection is provided by Java, it doesn&#8217;t ensure that a Java program will not go out of memory as there is a possibility that creation of Java objects is being done at a faster pace compared to garbage collection resulting in filling of all the available memory resources.</p>
+<p style="text-align: left;">So, garbage collection helps in reducing the chances of a program going out of memory but it doesn&#8217;t ensure that.</p>
+<hr/>
+<h4 style="text-align: left;">Q79. Can we have any other return type than void for main method?</h4>
+<p style="text-align: left;">Ans: No, Java class main method can have only void return type for the program to get successfully executed.</p>
+<p style="text-align: left;">Nonetheless , if you absolutely must return a value to at the completion of main method , you can use System.exit(int status)</p>
+<hr/>
+<h4 style="text-align: left;">Q80. I want to re-reach and use an object once it has been garbage collected. How it&#8217;s possible?</h4>
+<p style="text-align: left;">Ans: Once an object has been destroyed by garbage collector, it no longer exists on the heap and it can&#8217;t be accessed again. There is no way to reference it again.</p>
+<hr/>
+<h4 style="text-align: left;">Q81. In Java thread programming, which method is a must implementation for all threads?</h4>
+<p style="text-align: left;">Ans: Run() is a method of Runnable interface that must be implemented by all threads.</p>
+<hr/>
+<h4 style="text-align: left;">Q82. I want to control database connections in my program and want that only one thread should be able to make database connection at a time. How can I implement this logic?</h4>
+<p style="text-align: left;">Ans: This can be implemented by use of the concept of synchronization. Database related code can be placed in a method which hs <strong>synchronized </strong>keyword so that only one thread can access it at a time.</p>
+<hr/>
+<h4 style="text-align: left;">Q83. How can an exception be thrown manually by a programmer?</h4>
+<p style="text-align: left;">Ans: In order to throw an exception in a block of code manually, <strong>throw</strong> keyword is used. Then this exception is caught and handled in the catch block.</p>
+<p style="text-align: left;">public void topMethod() {</p>
+<p style="text-align: left;">    try {</p>
+<p style="text-align: left;">        excMethod();</p>
+<p style="text-align: left;">    } catch (ManualException e) {}</p>
+<p style="text-align: left;">}</p>
+<p style="text-align: left;">public void excMethod {</p>
+<p style="text-align: left;">    String name = null;</p>
+<p style="text-align: left;">    if (name == null) {</p>
+<p style="text-align: left;">        throw (new ManualException(&#8220;Exception thrown manually &#8220;);</p>
+<p style="text-align: left;">        }</p>
+<p style="text-align: left;">    }</p>
+<hr/>
+<h4 style="text-align: left;">Q84. I want my class to be developed in such a way that no other class (even derived class) can create its objects. How can I do so?</h4>
+<p style="text-align: left;">Ans: If we declare the constructor of a class as private, it will not be accessible by any other class and hence, no other class will be able to instantiate it and formation of its object will be limited to itself only.</p>
+<hr/>
+<h4 style="text-align: left;">Q85. How objects are stored in Java?</h4>
+<p style="text-align: left;">Ans: In java, each object when created gets a memory space from a heap. When an object is destroyed by a garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes available for any new objects.</p>
+<hr/>
+<h4 style="text-align: left;">Q86. How can we find the actual size of an object on the heap?</h4>
+<p style="text-align: left;">Ans: In java, there is no way to find out the exact size of an object on the heap.</p>
+<hr/>
+<h4 style="text-align: left;">Q87. Which of the following classes will have more memory allocated?</h4>
+<p style="text-align: left;"><strong>Class A: Three methods, four variables, no object</strong></p>
+<p style="text-align: left;"><strong>Class B: Five methods, three variables, no object</strong></p>
+<p style="text-align: left;">Ans: Memory isn&#8217;t allocated before creation of objects. Since for both classes, there are no objects created so no memory is allocated on heap for any class.</p>
+<hr/>
+<h4 style="text-align: left;">Q88. What happens if an exception is not handled in a program?</h4>
+<p style="text-align: left;">Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.</p>
+<hr/>
+<h4 style="text-align: left;">Q89. I have multiple constructors defined in a class. Is it possible to call a constructor from another constructor&#8217;s body?</h4>
+<p style="text-align: left;">Ans: If a class has multiple constructors, it&#8217;s possible to call one constructor from the body of another one using <strong>this()</strong>.</p>
+<hr/>
+<h4 style="text-align: left;">Q90. What&#8217;s meant by anonymous class?</h4>
+<p style="text-align: left;">Ans: An anonymous class is a class defined without any name in a single line of code using new keyword.</p>
+<p style="text-align: left;">For example, in below code we have defined an anonymous class in one line of code:</p>
+<p style="text-align: left;">public java.util.Enumeration testMethod()</p>
+<p style="text-align: left;">{</p>
+<p style="text-align: left;">    return new java.util.Enumeration()</p>
+<p style="text-align: left;">    {</p>
+<p style="text-align: left;">        @Override</p>
+<p style="text-align: left;">        public boolean hasMoreElements()</p>
+<p style="text-align: left;">        {</p>
+<p style="text-align: left;">            // TODO Auto-generated method stub</p>
+<p style="text-align: left;">            return false;</p>
+<p style="text-align: left;">        }</p>
+<p style="text-align: left;">        @Override</p>
+<p style="text-align: left;">        public Object nextElement()</p>
+<p style="text-align: left;">        {</p>
+<p style="text-align: left;">            // TODO Auto-generated method stub</p>
+<p style="text-align: left;">            return null;</p>
+<p style="text-align: left;">        }</p>
+<p style="text-align: left;">    }</p>
+<hr/>
+<h4 style="text-align: left;">Q91. Is there a way to increase the size of an array after its declaration?</h4>
+<p style="text-align: left;">Ans: Arrays are static and once we have specified its size, we can&#8217;t change it. If we want to use such collections where we may require a change of size ( no of items), we should prefer vector over array.</p>
+<hr/>
+<h4 style="text-align: left;">Q92. If an application has multiple classes in it, is it okay to have a main method in more than one class?</h4>
+<p style="text-align: left;">Ans: If there is main method in more than one classes in a java application, it won&#8217;t cause any issue as entry point for any application will be a specific class and code will start from the main method of that particular class only.</p>
+<hr/>
+<h4 style="text-align: left;">Q93. I want to persist data of objects for later use. What&#8217;s the best approach to do so?</h4>
+<p style="text-align: left;">Ans: The best way to persist data for future use is to use the concept of serialization.</p>
+<hr/>
+<h4 style="text-align: left;">Q94. What is a Local class in Java?</h4>
+<p style="text-align: left;">Ans: In Java, if we define a new class inside a particular block, it&#8217;s called a local class. Such a class has local scope and isn&#8217;t usable outside the block where its defined.</p>
+<hr/>
+<h4 style="text-align: left;">Q95. String and StringBuffer both represent String objects. Can we compare String and StringBuffer in Java?</h4>
+<p style="text-align: left;">Ans: Although String and StringBuffer both represent String objects, we can&#8217;t compare them with each other and if we try to compare them, we get an error.</p>
+<hr/>
+<h4 style="text-align: left;">Q96. Which API is provided by Java for operations on set of objects?</h4>
+<p style="text-align: left;">Ans: Java provides a Collection API which provides many useful methods which can be applied on a set of objects. Some of the important classes provided by Collection API include ArrayList, HashMap, TreeSet and TreeMap.</p>
+<hr/>
+<h4 style="text-align: left;">Q97. Can we cast any other type to Boolean Type with type casting?</h4>
+<p style="text-align: left;">Ans: No, we can neither cast any other primitive type to Boolean data type nor can cast Boolean data type to any other primitive data type.</p>
+<hr/>
+<h4 style="text-align: left;">Q98. Can we use different return types for methods when overridden?</h4>
+<p style="text-align: left;">Ans: The basic requirement of method overriding in Java is that the overridden method should have same name, and parameters.But a method can be overridden with a different return type as long as the new return type extends the original.</p>
+<p style="text-align: left;">For example , method is returning a reference type.</p>
+<p style="text-align: left;">Class B extends A {</p>
+<p style="text-align: left;">    A method(int x) {</p>
+<p style="text-align: left;">        //original method</p>
+<p style="text-align: left;">    }</p>
+<p style="text-align: left;">    B method(int x) {</p>
+<p style="text-align: left;">        //overridden method</p>
+<p style="text-align: left;">    }</p>
+<p style="text-align: left;">}</p>
+<hr/>
+<h4 style="text-align: left;">Q99. What&#8217;s the base class of all exception classes?</h4>
+<p style="text-align: left;">Ans: In Java, <strong>Java.lang.Throwable</strong> is the super class of all exception classes and all exception classes are derived from this base class.</p>
+<hr/>
+<h4 style="text-align: left;">Q100. What&#8217;s the order of call of constructors in inheritiance?</h4>
+<p style="text-align: left;">Ans: In case of inheritance, when a new object of a derived class is created, first the constructor of the super class is invoked and then the constructor of the derived class is invoked.</p>
+<hr/>
+<h4>1.Define Java Servlet?</h4>
+<p>Ans: A Java Servlet is a simple Java Class, which is dynamically loaded onto Web Server and therefore, enhances the functionality of the Web Server. A Java Servlet is secure and portable as it runs on the Web Server and cannot operate outside its domain.</p>
+<hr/>
+<h4>Define Servlet Container?</h4>
+<p>Ans: Servlet Container, sometimes also known as Servlet Engine, is an integrated set of objects that provide runtime environment for java Servlet componenets. In other words, it is a system that manages Java Servlet components on top of a Web Server to handle the Web client requests.</p>
+<hr/>
+<h4>What is Servlet API?</h4>
+<p>Ans: The Servlet API is part of the Java Servlet Specification designed by  Sun-JCP. This API is supported by all Servlet Containers. This API contains classes and Interfaces that define a standard contract between the Servlet Class and Servlet Container.</p>
+<hr/>
+<h4>Hierarch of Servlet API?</h4>
+<p>Ans : javax.servlet.Servlet interface is root of Servlet API</p>
+<hr/>
+<h4>Define getParameter() method?</h4>
+<p>Ans :  This getParameter() method is used to get the parameter values from the ServletRequest Object into Servlet Program. This method is available from javax.servlet.ServletRequest.</p>
+<hr/>
+<h4>Define getInitParameter() method?</h4>
+<p>Ans :  This getInitParameter() method is used to get the initializaed parameter valaue from javax.servlet.ServletConfig and javax.servlet.ServletContext.</p>
+<hr/>
+<h4>Describe include() method?</h4>
+<p>Ans: The include() method of the RequestDispatcher object includes the response of another Servlet into the calling Servlet. You can invoke this method any time from the calling Servlet while servicing request.</p>
+<hr/>
+<h4>Describe forward() method?</h4>
+<p>Ans: The forward() method of RequestDispatcher forwards requests to the navigated resource, such as Servlet (target Servlet) and this method can be invoked by the Servlet while servicing the request when no output has been committed.</p>
+<hr/>
+<h4>Explore the methods of Buffering?</h4>
+<p>Ans : The ServletResponse interface allows a Servlet to access and set buffering parameters.</p>
+<p>The following methods of the ServletResponse interface are used to access and set buffering informations:</p>
+<p><strong>setBufferSize(int) :</strong> Sets the required Buffer size</p>
+<p><strong>int getBufferSize() :</strong> Gets the buffer size of the Underlying buffer being used.</p>
+<p><strong>flushBuffer() :</strong> Forces the content in the buffer to be written to the client.</p>
+<p><strong>Boolean isCommited() :</strong> Returns true if the response bytes have been sent to client; Otherwise it returns false.</p>
+<p><strong>Reset() :</strong> Clears the data in the buffer , including the status codes and headers sets, if the response is not committed.</p>
+<p><strong>resetBuffer() :</strong> Clears the data in the buffer if the response in not Committed.</p>
+<hr/>
+<h3>Define Session Tracking?</h3>
+<p>Ans : Session Tracking is a Mechanism used to maintain the state of a user within a series of requests across some period, i.e., the lifetime of User.</p>
+<p>The following are the mechanisms used for Session Tracking</p>
+<p>=&gt;URL rewriting</p>
+<p>=&gt;Hidden form fields</p>
+<p>=&gt;Cookies</p>
+<p>=&gt;HTTP Session</p>
+<hr/>
+<h3>Define Session?</h3>
+<p>Ans: A Session is collection of HTTP requests over a period of time between a client and a Web Server. The lifetime of a session specifies the period of time till the session is active. When a session expires, the session is destroyed, and its resources are returned to the Servlet Engine.</p>
+<hr/>
+<h3>Describe Scopes of Web Application objects?</h3>
+<p>Ans : Scope describes the lifetime and availability of Web application objects. The following is a brief description of the various scopes available in a Web application.</p>
+<p><strong>Page :</strong> Starts when a request enters the service method of a Servlet and ends as a request leaves the service method.</p>
+<p><strong>Request :</strong> Starts when a request object comes into the scope of a Web Component and ends when the request object goes out of the Web Component scope.</p>
+<p><strong>Session :</strong> Starts when a client request enters the session and ends when the client leaves the Session.</p>
+<p>Context(or)application : Starts when a Web application is started and ends when the Web Application is destroyed.</p>
+<hr/>
+<h3>what is the difference between getSession() and getSession(Boolean) methods?</h3>
+<p>Ans :</p>
+<p>=&gt;When getSession(false) method is used, the Web container tries to locate and return the Session, but if the Web Container is not able to locate the session, it returns null.</p>
+<p>=&gt;when getSesssion() or getSession(true) is used, the Web Container tries to locate the Session and returns it, but if the Web Container is not able to locate the Session, it creates new session and associates it with the client request.</p>
+<hr/>
+<h3>What is diff between &lt;init-param&gt; and &lt;context-param&gt;?</h3>
+<p>Ans:</p>
+<p>&lt;init-param&gt; tag part of web.xml will initialize the parameters in ServletConfig object</p>
+<p>&lt;context-param&gt; tag part of web.xml will initialize the parameters in ServletContext object</p>
+<hr/>
+<h3>Types of InterServlet Communications?</h3>
+<p>Ans:</p>
+<p><strong>  (a)Direct servlet manipulation :</strong> In this a Servlet can gain access rights to the currently running servlets and can perform operations on each of then.</p>
+<p><strong>(b)Servlet reuse :</strong> This is a method where one servlet uses another’s servlet capability for its own purpose.</p>
+<p><strong>(c)Servlet collaboration :</strong> This is most widely used interservlet communication. It includes two or more servlets sharing the state data. The Servlet collaboration can be done through the system properties list, shared objects, and inheritance.</p>
+<hr/>
+<h3>Define Asynchronous Request Processing?</h3>
+<p>Ans : Asynchronous request processing was an important feature added in Servlet 3.0. With the help of asynchronous support, Servlet 3.0 does not need to wait for a response a resource. Rather the thread can continue to process and thus in Servlet 3.0 threads are not Blocked.</p>
+<hr/>
+<h3>Describing URL Rewriting?</h3>
+<p>Ans : URL rewriting implies adding session data to the URL path, which is then interpreted by a Web Container to associate the request with session. That is, in this mechanism, the session data required in the next request is appended to the URL path used by the client to make the next request.</p>
+<hr/>
+<h3>Describing Hidden Form Fields?</h3>
+<p>Ans : A Hidden form field is a type of HTML form field but remains hidden in the view.</p>
+<p>&lt;input type=”hidden” name=”uname” value =”user1”/&gt;</p>
+<hr/>
+<h3>Describing Cookies?</h3>
+<p>Ans : A Cookie is a file containing the information that is sent by a Web Server to a Client. Cookies are transmitted to clients through the HTTP response header from the Server. They are saved at the client side for the given domain and path. Whenever the browser requests a resource, the cookie matching the domain and path of the request URL is sent to the Web Server as a request header.</p>
+<hr/>
+<h3>How to invalidate session?</h3>
+<p>Ans : A Session can be invalidated by explicitly calling  invalidate() method on the Session Object. The Session also be invalidated automatically if it is not accessed within a Specific time interval, i.e., timeout.</p>
+<hr/>
+<h3 style="text-align: center;">JSP</h3>
+<hr/>
+<h4>What is JSP?</h4>
+<p>Ans: JSP is totally tag-based, which means that each piece of code in JSP is enclosed within a tag. JSP tags reduce the necessity of large amount of Java Code in JSP pages by implementing the functionality of the tags into tag implementation classes.These tags help developers build dynamic pages, improve their code by reducing Java code, separate the presentation logic from the business logic.</p>
+<hr/>
+<h4>JSP Architectures?</h4>
+<p>Ans: JSP specifications demonstrate two approaches to build Web applications by using JSP. These approaches are known as JSP Model 1 and Model 2 architectures.</p>
+<p>JSP Model 1 Architecture:</p>
+<p>JSP Model 2 Architecture:</p>
+<hr/>
+<h4>The Major Stages of JSP Life Cycle?</h4>
+<p>Ans:</p>
+<p>(i)Page Translation</p>
+<p>(ii)Compilation</p>
+<p>(iii)Loading and Initialization</p>
+<p>(iv)Request Handling</p>
+<p>(v)Destroing</p>
+<hr/>
+<h4>Define Scripting tags?</h4>
+<p>Ans: JSP Scripting tags, also called as JSP Scripting elements, allow you to add a script code into the Java code of  a JSP page generated by the JSP translator.</p>
+<h4>Type of Scipting tags?</h4>
+<ul>
+<li><strong>Scriptlet tag</strong></li>
+</ul>
+<p>&lt;%</p>
+<p>Script code(allow multiple statements)</p>
+<p>%&gt;</p>
+<ul>
+<li><strong>Declarative tags</strong></li>
+</ul>
+<p>&lt;%!</p>
+<p>Script Code(allow multiple statements)</p>
+<p>%&gt;</p>
+<ul>
+<li><strong>Expression tag</strong></li>
+</ul>
+<p>&lt;%=</p>
+<p>Script code (allow multiple statements)</p>
+<p>%&gt;</p>
+<hr/>
+<h4>JSP implicit objects?</h4>
+<p>Ans: JSP implicit objects are used in a JSP page to make the page dynamic .The dynamic content can be created and accessed by using Java Objects within the Scripting elements. JSP implicit objects are predefined objects that are accessible  to all JSP pages. These objects are called implicit objects because you don’t need to instantiate them. The JSP container automatically instantiates these objects while writing the script content in the scriptlet and expression tags.</p>
+<hr/>
+<h4>List of Implicit objects?</h4>
+<p>-&gt;request</p>
+<p>-&gt;response</p>
+<p>-&gt;out</p>
+<p>-&gt;page</p>
+<p>-&gt;pageContext</p>
+<p>-&gt;application</p>
+<p>-&gt;session</p>
+<p>-&gt;config</p>
+<p>-&gt;exception</p>
+<hr/>
+<h4>Define Directive tags?</h4>
+<p>Ans : Directive tags are used to give directions used by the JSP translator during translation stage of the JSP life cycle. These tags are used to set global values such as class declarations, methods to be implemented, output content type, and so on.</p>
+<hr/>
+<h4>9.Type of Directive Tags?</h4>
+<p>Ans : According JSP specification, three standard directive tags are available.</p>
+<p>(a)page</p>
+<p>(b)include</p>
+<p>(c)taglib</p>
+<p><strong>(a)page:</strong></p>
+<p>The page directive tag holds the instructions used by the translator  during the translation stage of the JSP life cycle. These instructions affect the various properties associated with the whole JSP page.</p>
+<p>&lt;%@page attributes %&gt;</p>
+<p><strong>(b)include:</strong></p>
+<p>The include directive tage is used to merge the contents of two or more files during the translation stage of the JSP life cycle. The include directive tag adds text of the included file to the JSP page, without any processing or modification.</p>
+<p>&lt;%@include file=”file path”%&gt;</p>
+<p><strong>(c)taglib:</strong></p>
+<p>The taglib directive tag is used to declare a custom tag lib in JSP page so that the tags related to that custom tag library can be used in the same JSP page.</p>
+<p>&lt;@taglib uri=”URI” prefix=”unique-prefix”%&gt;</p>
+<hr/>
+<h4>10.What is JavaBean?</h4>
+<p>Ans: JavaBeans are reusable software components that separate the business logic from the presentation logic. In general, JavaBeans are simple Java classes that follow certain specifications to develop dynamic content.</p>
+<hr/>
+<h4>11.Advantages of JavaBeans?</h4>
+<p>Ans:</p>
+<p>(i)With the use of JavaBeans, users can menage presentation code and business logic separately.</p>
+<p>(ii)Using JavaBeans with JSP has made object sharing between multiple Web pages simple</p>
+<p>(iii)Using JavaBeans with JSP has simplified the process of request and response handling.</p>
+<hr/>
+<h4>12.Define Action tags?</h4>
+<p>Ans: Actions tags are executed at execution process of JSP page, using Actions tags we can perform the actions like inserting some other page resources, forwarding the request to another page, creating or locating the JavaBean instances and setting and retrieving bean properties, in JSP pages.</p>
+<hr/>
+<h4>List of JSP Action tags?</h4>
+<p>&lt;jsp:include&gt;</p>
+<p>&lt;jsp:forward&gt;</p>
+<p>&lt;jsp:param&gt;</p>
+<p>&lt;jsp:useBean&gt;</p>
+<p>&lt;jsp:setProperty&gt;</p>
+<p>&lt;jsp:getProperty&gt;</p>
+<p>&lt;jsp:plugin&gt;</p>
+<p>&lt;jsp:params&gt;</p>
+<p>&lt;jsp:fallback&gt;</p>
+<p>&lt;jsp:attribute&gt;</p>
+<p>&lt;jsp:body&gt;</p>
+<p>&lt;jsp:element&gt;</p>
+<p>&lt;jsp:text&gt;</p>
+<hr/>
+<h4>14.What is the difference between include directive tag and include Action tags?</h4>
+<p>(i)The “include” directive tag inserts the given page and includes the content in the generated Servlet page during the translation phase of the JSP life cycle.</p>
+<p>(ii)The “include” action tag is used to include the response generated b executing the specified JSP page or Servlet. The response is included during the request processing phase, when the page is requested b the user.</p>
+<hr/>
+<h4>15.Define Custom tags?</h4>
+<p>Ans:A Custom tag is a user-defined JSP language element. If a JSP page which contains a custom tag is translated into a servlet, then the custom tag is converted to operations on a tag handler.</p>
+<ol start="16">
+<li>
+<h4>Features provided by the Custom tags?</h4>
+</li>
+</ol>
+<p>(i)The tags are customized to pass the attributes from the current page to the calling page within an application</p>
+<p>(ii)These are able to access all the objects available in a JSP page.</p>
+<p>(iii)These are used to modify the response generated by calling the attributes from the main page</p>
+<p>(iv)The Custom tags can communicate with each other.</p>
+<p>(v)The Custom tags can be nested within each other to provide complexit in a JSP page.</p>
+<hr/>
+<h4>17.List EL(Expression Language) implicit objects?</h4>
+<p>-&gt;pageContext</p>
+<p>-&gt;pageScope</p>
+<p>-&gt;requestScope</p>
+<p>-&gt;sessionScope</p>
+<p>-&gt;applicationScope</p>
+<p>-&gt;param</p>
+<p>-&gt;paramValues</p>
+<p>-&gt;header</p>
+<p>-&gt;headerValues</p>
+<p>-&gt;cookie</p>
+<p>-&gt;initParam</p>
+<hr/>
+<h4>18.Define JSTL?</h4>
+<p>Ans:JSTL stands for JSP Standard Tag Library , which is a collection of custom tag libraries, which provides core functionality used for JSP documents. JSTL reduces the use of Scriptlets in JSP page. The use of JSTL tags allows developers to use predefined tags instead of writing the JavaCode.</p>
+<hr/>
+<h4>19.Types of JSTL tags?</h4>
+<p>Ans:JSTL provides four types of tags:</p>
+<p>(i)JSTL Core Tags : Used to process a JSP page in an application</p>
+<p>(ii)XML tags : Used for parsing,selecting, and transforming XML data in JSP page</p>
+<p>(iii)Format tags :Used for formatting the data used in JSP page</p>
+<p>(iv)SQL tags: Used to access the relational Database used in JSP page</p>
+<p>(v)Function tags:Used for String manipulations.</p>
+<hr/>
+<h3 style="text-align: center;">JDBC</h3>
+<hr/>
+<h4>1.define JDBC Statements?</h4>
+<p>Ans: JDBC statements are used to execute SQL statements. JDBC API supports three types of JDBC statement objects to work with SQL statements , Which are as follows:</p>
+<p>(i)Statement – Executes normal SQL statements with no IN and OUT parameters</p>
+<p>(ii)PreparedStatement – Executes parameterized SQL statement the supports IN parameters</p>
+<p>(iii)CallableStatement – Executes parameterized SQL statement that invokes DB procedure or function and supports IN and OUT parameters</p>
+<h4>2.Define Transaction?</h4>
+<p>Ans:Transaction is a set of statements executed on a resource or resources applying ACID(Atomocity,Consistency,Isolation,Durability) properties.</p>
+<hr/>
+<h4>3.define Meta Data?</h4>
+<p>Ans:The data holding the information about other data is known as meta data.</p>
+<p>Metadata components in JDBC</p>
+<p>(i)DatabaseMetaData</p>
+<p>(ii)ParameterMetaData</p>
+<p>(iii)ResultSetMetaData</p>
+<hr/>
+<h4>4.Define BLOB datatype?</h4>
+<p>Ans:A BLOB is built-in data type supported by the database implementing SQL-99 standards. As the name implies, this is used to store large binary data, such as bit imagaes,audios and, multimedia clips, as the column values in a database table.</p>
+<hr/>
+<h4>5.Define ROWID Type?</h4>
+<p>Ans:A ROWId refers to a number that provides a unique identification to each row in a table. It serves as a virtual column, Containing the address of the corresponding row. It is useful in identifying cases of duplicate records and identical rows in a database.</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+
+
+
+<br>
+
+
+</body>
+{% endblock %}

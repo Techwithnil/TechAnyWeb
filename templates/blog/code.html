@@ -1,0 +1,61 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</header>
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+
+  <div class="container"> 
+
+        <div>
+          
+        </div>
+        <!--end portfolio-area -->
+</div>
+    <section class="contact content-section" style="background-color:white;border-color:black ;">
+      <div class="container-fluid py-md-2 py-3 py-sm-2 text-center">
+        <header>
+          <h1 class="text-white text-center" style="background-color:black;"><b>Program</b></h1><hr>
+        </header>     
+            <div>
+            <h5 class="text-danger">This program in not work it comming working</h5>
+              <a class="image-gal" href="/ccode/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/c1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+             
+              <a class="image-gal" href="/cpp/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/c++1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+    
+              <a class="image-gal" href="#" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/c#1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+    
+              <a class="image-gal" href="#" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/java1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+    
+              <a class="image-gal" href="#" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/python1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+             
+              <a class="image-gal" href="#" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/django.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+      
+    
+              
+            </div>
+          </div>
+    </section>
+
+
+
+
+</body>
+{% endblock %}

@@ -1,0 +1,35 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   About Blog
+{% endblock %}
+
+{% block body %}
+<body>
+        <h5 class="text-white" style="background-color: green;">Thank You For Vigiting...</h5>
+ 
+        <main class="container">
+               <div class="row">
+                   <div class="col-md-6">
+                    <img src="{% static 'blog/image/logout.jpg' %}" alt="Logout" width="100%">
+
+                   </div>
+
+                    <section class="contact content-section col-md-6">
+                        <h1 class=" text-center"><b>Logout</b></h1><hr>
+                        <div class="container text-center">
+                            <a class="btn btn-info btn-block " href="/user/login/">Login_Again</a>  
+                            <a class="btn btn-secondary btn-block" href="{% url 'password_reset' %}">Forget Password</a>
+                            <a class="btn btn-danger btn-block" href="{% url 'register'%}">Register</a>
+                            <a class="btn btn-warning btn-block" href="/admin/">Admin Login</a>  
+                          
+                        </div>                         
+                    </section>
+                   
+           </main>
+           <br>
+</body>
+
+{% endblock %}

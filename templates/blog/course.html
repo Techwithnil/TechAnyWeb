@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</header>
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+
+  <div class="container"> 
+
+        <div>
+    <img src="{% static 'blog/image/blogbanner.jpg' %}" alt="blogbanner" width="100%"><br><br><br><br><br>
+          
+        </div>
+        <!--end portfolio-area -->
+</div>
+<section class="contact content-section" style="background-color:white;border-color:black ;">
+<div class="container-fluid py-md-2 py-3 py-sm-2 text-center">
+  <a href="/sub/" class="btn btn-info btn-block"  style="background-color:maroon;" role="button" >Course</a>
+  <a href="/code/" class="btn btn-info btn-block"  style="background-color:maroon;" role="button" >Code</a>
+  <a href="/interview/" class="btn btn-info btn-block"  style="background-color:maroon;" role="button" >Interview Quetions</a>
+</div>
+      </section>
+
+</body>
+{% endblock %}

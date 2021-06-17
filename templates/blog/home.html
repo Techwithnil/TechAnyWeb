@@ -1,0 +1,226 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+   Home Blog
+{% endblock %}
+{% block body %}
+<body>
+    <div class="carousel-inner">
+        <div class="item active">
+          <img src="{% static 'blog/image/main1.jpg' %}" alt="Avatar" width="100%">
+           <div class="carousel-caption">
+           <div class="hero-image">
+            <div class="hero-text">
+              <a class="center" href="/user/login/">
+                <img src="{% static 'blog/image/logo1.jpg' %}" alt="Avatar" width="100px" class="image">
+              </a>
+              <h3 class="text-white">Tech With Nil</h3>            
+              <a href="/user/login/" class="btn btn-info btn-lg" role="button" aria-pressed="true">Blog</a>
+              <a href="user/login/" class="btn btn-info btn-lg" role="button" aria-pressed="true">Post</a>
+              <a href="/website/" class="btn btn-info btn-lg" role="button" aria-pressed="true">Website</a>
+
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="container" style="margin-top: 30px;">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="container">
+    
+                <header>
+                  <h3 class="text-dark text-center"><b>Services</b></h3><br>
+                </header>
+                
+                  <section class="content-section bg-dark" >
+                      <main class="container">
+                          <div class="row">
+                              <div class="col-md-4">
+                                     <div class="container">
+                                       <img src="{% static 'blog/image/s.jpg' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                                     </div>
+                              </div>
+                              <div class="col-md-8">
+                                  <div class="container">
+                                      <h5 class="text-white text-center">Web Development services</h5><hr>
+                                      <p class="text-warning"> We have a team of skilled Web Designer and Development to manage your website. The best web design and development features at the best price. </p>      
+                                  </div>
+                              </div>
+                          </div>
+                      </main>
+                  </section>
+                
+                  <section class="content-section bg-dark " >
+                      <main class="container">
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="container">
+                                      <h5 class="text-white text-center">Free Programming Courses</h5><hr>
+                                      <p class="text-warning">Online computer programming courses from Learn Java, C++, Python,HTML and other programming languages with free courses. </p>      
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="container" margin-top:90px>
+                                  <img src="{% static 'blog/image/s2.png' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                                </div>
+                         </div>
+                          </div>
+                      </main>
+                  </section>
+                  
+                  <section class="content-section bg-dark " >
+                    <main class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                   <div class="container" margin-top:90px>
+                                     <img src="{% static 'blog/image/s3.jpg' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                                   </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="container">
+                                    <h5 class="text-white text-center">Free Program Material</h5><hr>   
+                                    <p class="text-warning">Free Program Material and Code with output available. </p>      
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+              
+                <section class="content-section bg-dark " >
+                  <main class="container">
+                      <div class="row">
+                          
+                          <div class="col-md-8">
+                              <div class="container">
+                                  <h5 class="text-white text-center">Free Video Material</h5><hr>   
+                                  <p class="text-warning">Free video Material available in youtube channel.  </p>      
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="container" margin-top:90px>
+                              <img src="{% static 'blog/image/s4.jpg' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                            </div>
+                     </div>
+                      </div>
+                  </main>
+              </section>
+
+              <section class="content-section bg-dark " >
+                <main class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                               <div class="container" margin-top:90px>
+                                 <img src="{% static 'blog/image/s5.png' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                               </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="container">
+                                <h5 class="text-white text-center">Blogging Platforms Provide </h5><hr>   
+                                <p class="text-warning">Free Blogging Platforms available in user. user can Comment, Like  and DisLike   </p>      
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </section>
+
+            <section class="content-section bg-dark " >
+              <main class="container">
+                  <div class="row">
+                      <div class="col-md-8">
+                          <div class="container">
+                              <h5 class="text-white text-center">Social Post By Programming</h5><hr>   
+                              <p class="text-warning">Free Social Post By Programming Platforms available in user. user can Comment,  Like, DisLike and New Post  </p>      
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="container" margin-top:90px>
+                          <img src="{% static 'blog/image/s6.png' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                        </div>
+                 </div>
+                 
+                  </div>
+              </main>
+          </section>
+          
+          <section class="content-section bg-dark " >
+            <main class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="container" margin-top:90px>
+                      <img src="{% static 'blog/image/s7.jpg' %}" class="rounded-circle" alt="Avatar" width="150px" class="image">
+                    </div>
+             </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <h5 class="text-white text-center">Hacking Course</h5><hr>   
+                            <p class="text-warning">Free Hacking Course available. user can enjoy this Course.  </p>      
+                        </div>
+                    </div>               
+                </div>
+            </main>
+        </section>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="container">
+       <section class="contact content-section" style="border-color: black; background-color:yellow;">
+        <h3 class="text-center text-white" style="background-color:orangered;"><b></b>Courses List</b></h3><hr>
+          <img src="{% static 'blog/image/logo/c1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 5px;">
+          <img src="{% static 'blog/image/logo/c++1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 20px;">
+          <img src="{% static 'blog/image/logo/c#1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 5px;">
+          <img src="{% static 'blog/image/logo/java1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 20px;">
+          <img src="{% static 'blog/image/logo/python1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 5px;">
+          <img src="{% static 'blog/image/logo/django.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 20px;">
+       </section>
+      <section class="contact content-section" style="background-color: black; border-color: lime;" >
+        <h5 class="text-center text-white" style="background-color: black;"><b></b>PAYMENT OPTION</b></h5><br><br>
+        <img src="{% static 'blog/image/qrt.png' %}" alt="Avatar" width="100%">
+      </section>
+      <section class="contact content-section" style="background-color:aquamarine; border-color:teal; border-width:10px;">
+        <h4 class="text-center text-white" style="background-color:teal;"><b>NEWS</b></h4>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hellos</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+        <h5 class="text-danger"> thia ia  My fist news hello</h5>
+      </section>
+     </div>
+</div>
+
+    </div>
+  </main>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+{% endblock %}

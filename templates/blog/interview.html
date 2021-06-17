@@ -1,0 +1,67 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</header>
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+
+  <div class="container"> 
+
+        <div>
+          
+        </div>
+        <!--end portfolio-area -->
+</div>
+
+    <section class="contact content-section" style="background-color:white;border-color: black;" >
+      <div class="container-fluid py-md-2 py-3 py-sm-2 text-center">
+        <header>
+          <h1 class="text-center text-white" style="background-color:black;"><b>Interview Quetions</b></h1><hr>
+        </header>     
+            <div>
+         
+              <a class="image-gal" href="/cq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/c1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+             
+              <a class="image-gal" href="/cppq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/c++1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+    
+              <a class="image-gal" href="/csq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/c#1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+    
+              <a class="image-gal" href="/javaq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/java1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+    
+              <a class="image-gal" href="/pythonint/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/python1.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+             
+              <a class="image-gal" href="/djangoq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/django.png' %}" alt="a1" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+      
+              <a class="image-gal" href="/htmlq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/html.png' %}" alt="html" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+              
+              <a class="image-gal" href="/javasq/" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'blog/image/logo/js.png' %}" alt="html" width="100px" height="100px" class="image" style="margin: 30px;">
+              </a>
+              
+            </div>
+          </div>
+    </section>
+
+
+
+</body>
+{% endblock %}

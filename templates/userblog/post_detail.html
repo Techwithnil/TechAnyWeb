@@ -1,0 +1,58 @@
+
+
+{% extends 'blog/base.html' %}
+
+{% block title %}
+     Post Detail
+{% endblock %}
+
+{% block body %}
+{% if object.author == user %}
+                        <div>
+                           <a href="{% url 'post_create' %}" class="btn btn-info btn-block " role="button" >New Post</a>
+                           <a href="{% url  'post_update' object.id %}" class="btn btn-success btn-block">Update</a>
+                           <a href="{% url  'post_delete' object.id %}" class="btn btn-danger btn-block">Delete</a>
+                        </div>
+                   {% endif %}
+<br>
+       <article class="media content-section" style="background-color: orangered;">
+        <main class="container">
+            <div class="row">
+                <div class="col-md-3">
+                       <div class="container" style="margin-top: 40px;">
+                            <img src="{{ post.author.profile.image.url}}" class="rounded" width="100%" height="250px">
+                       </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="container" style="margin-top: 40px;"> 
+                        <div class="media-body">
+                            <div class="article-metadata">
+                                <a class="mr-2 text-dark" href="#"><h4>{{user.first_name}} {{ user.last_name }}</h4></a>  {# April 14,2021 #}
+                                <small class="text-dark">{{ post.date_posted|date:'F d,Y' }}</small>
+                            </div> <!-- article-metadata -->
+             
+                            <h1 class="text-white">
+                                {{ post.title }}
+                            </h1><hr>
+                            <p class="article-content">{{ post.content }}</p>
+             
+                        </div> <!-- media-body-->
+                    </div>
+                </div>
+            </div>
+        </main>
+             
+       </article>
+
+
+
+
+      
+
+
+
+
+
+
+
+{% endblock %}
